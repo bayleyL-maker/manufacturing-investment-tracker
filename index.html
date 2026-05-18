@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>US Manufacturing Investment Tracker</title>
+
+  <!-- Leaflet CSS (map library) -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <!-- MarkerCluster CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-title">
+      <h1>US Manufacturing Investment Tracker</h1>
+      <span id="record-count" class="record-count"></span>
+    </div>
+
+    <div class="filters">
+      <label class="filter">
+        <span>Industry</span>
+        <select id="filter-industry">
+          <option value="">All</option>
+          <option value="agriculture_machinery">Agriculture Machinery</option>
+          <option value="heavy_equipment">Heavy Equipment</option>
+          <option value="food_beverage_machinery">Food &amp; Beverage Machinery</option>
+          <option value="automotive">Automotive</option>
+          <option value="ev_battery">EV / Battery</option>
+          <option value="non_auto_transportation">Non-Auto Transportation</option>
+        </select>
+      </label>
+
+      <label class="filter">
+        <span>Type</span>
+        <select id="filter-type">
+          <option value="">All</option>
+          <option value="new_facility">New facility</option>
+          <option value="expansion">Expansion</option>
+          <option value="equipment_upgrade">Equipment upgrade</option>
+          <option value="onshoring">Onshoring</option>
+          <option value="automation">Automation</option>
+          <option value="retooling">Retooling</option>
+          <option value="reopening">Reopening</option>
+        </select>
+      </label>
+
+      <label class="filter">
+        <span>Amount</span>
+        <select id="filter-amount">
+          <option value="">Any</option>
+          <option value="0-100">Under $100M</option>
+          <option value="100-1000">$100M &ndash; $1B</option>
+          <option value="1000-">Over $1B</option>
+          <option value="undisclosed">Undisclosed</option>
+        </select>
+      </label>
+
+      <label class="filter">
+        <span>Announced</span>
+        <select id="filter-date">
+          <option value="">Any time</option>
+          <option value="30">Last 30 days</option>
+          <option value="90">Last 90 days</option>
+          <option value="365">Last year</option>
+        </select>
+      </label>
+
+      <button id="clear-filters" type="button">Clear</button>
+    </div>
+  </header>
+
+  <main>
+    <div id="map"></div>
+
+    <aside id="sidebar" class="sidebar sidebar-hidden" aria-hidden="true">
+      <button id="sidebar-close" class="sidebar-close" aria-label="Close">&times;</button>
+      <div id="sidebar-content"></div>
+    </aside>
+  </main>
+
+  <div id="empty-state" class="empty-state" hidden>
+    <p>No investments to show yet.</p>
+    <p class="muted">New announcements will appear here as the ingestion pipeline runs.</p>
+  </div>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <!-- MarkerCluster JS -->
+  <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+
+  <script src="state-centers.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

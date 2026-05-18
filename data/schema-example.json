@@ -1,0 +1,84 @@
+{
+  "_comment": "This file documents the shape of an investment record. It is not loaded by the site. The real data lives in investments.json. Every record there must follow this shape.",
+
+  "id": "2026-03-hyundai-ellabell-ga",
+
+  "company": {
+    "name": "Hyundai Motor Group",
+    "hq_country": "South Korea"
+  },
+
+  "industry": "automotive",
+  "_industry_allowed_values": [
+    "agriculture_machinery",
+    "heavy_equipment",
+    "food_beverage_machinery",
+    "automotive",
+    "ev_battery",
+    "non_auto_transportation"
+  ],
+
+  "investment_type": "new_facility",
+  "_investment_type_allowed_values": [
+    "new_facility",
+    "expansion",
+    "equipment_upgrade",
+    "onshoring",
+    "automation",
+    "retooling",
+    "reopening"
+  ],
+
+  "amount_usd": 7600000000,
+  "amount_disclosed": true,
+  "_amount_notes": "Raw integer USD, no commas or currency symbol. Set to null and amount_disclosed=false when undisclosed.",
+
+  "location": {
+    "city": "Ellabell",
+    "state": "GA",
+    "precision": "city",
+    "lat": 32.1632,
+    "lon": -81.4632
+  },
+  "_location_notes": "precision is either 'city' (solid pin) or 'state' (hollow pin at state center). lat/lon are always required so the map can render the pin.",
+
+  "dates": {
+    "announced": "2026-03-15",
+    "expected_start": "2026-Q3",
+    "expected_completion": "2028"
+  },
+  "_dates_notes": "announced is ISO date (YYYY-MM-DD), always required. expected_start and expected_completion are free-form strings because press releases are vague. Frontend displays them as text.",
+
+  "description": "Hyundai Motor Group announced a new electric vehicle assembly plant in Bryan County, Georgia, expected to produce 300,000 vehicles annually.",
+
+  "suppliers": [
+    {
+      "component_category": "stamping_presses",
+      "candidates": ["Schuler", "Fagor Arrasate", "AIDA"]
+    },
+    {
+      "component_category": "robotics_and_automation",
+      "candidates": ["FANUC", "ABB", "KUKA"]
+    },
+    {
+      "component_category": "conveyors_and_material_handling",
+      "candidates": ["Daifuku", "Dematic"]
+    }
+  ],
+  "_suppliers_notes": "Best-guess Tier 1/2 manufacturers per component category. Sourced from the curated supplier table (data/supplier_categories.json) and matched by the LLM. Plural 'candidates' emphasizes these are not confirmed contracts.",
+
+  "sources": [
+    {
+      "url": "https://www.manufacturingdive.com/news/example-article-url",
+      "publication": "Manufacturing Dive",
+      "fetched_at": "2026-03-16T06:00:00Z"
+    }
+  ],
+  "_sources_notes": "List, not single value, because the same investment may be confirmed by multiple articles after deduplication.",
+
+  "review": {
+    "status": "approved",
+    "reviewed_at": "2026-03-16T08:32:00Z"
+  },
+  "_review_notes": "status is one of: 'pending' (LLM-extracted, awaiting human review), 'approved' (visible on the map), 'rejected' (kept for audit but not shown). Only 'approved' records are rendered."
+}

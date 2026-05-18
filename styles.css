@@ -1,0 +1,241 @@
+/* ---------- reset & base ---------- */
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: #1a1a1a;
+  background: #f5f5f7;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 1.1rem;
+  margin: 0;
+  font-weight: 600;
+}
+
+/* ---------- top bar ---------- */
+.topbar {
+  background: #fff;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 0.75rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  flex-shrink: 0;
+  z-index: 500;
+}
+
+.topbar-title {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+}
+
+.record-count {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: end;
+}
+
+.filter {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.75rem;
+  color: #555;
+  gap: 0.2rem;
+}
+
+.filter select {
+  font-size: 0.9rem;
+  padding: 0.35rem 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #fff;
+  min-width: 140px;
+}
+
+#clear-filters {
+  padding: 0.4rem 0.75rem;
+  border: 1px solid #ccc;
+  background: #f9f9f9;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+#clear-filters:hover { background: #eee; }
+
+/* ---------- main / map ---------- */
+main {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+#map {
+  position: absolute;
+  inset: 0;
+  background: #e8eef3;
+}
+
+/* ---------- pins ---------- */
+/* Custom pin styles applied via L.divIcon */
+.pin {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.35);
+}
+.pin-precise {
+  background: #2563eb; /* solid blue */
+}
+.pin-approx {
+  background: transparent;
+  border-color: #2563eb;
+  border-width: 3px;
+}
+
+/* ---------- sidebar ---------- */
+.sidebar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 380px;
+  max-width: 90vw;
+  background: #fff;
+  box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+  transition: transform 0.25s ease;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+.sidebar-hidden {
+  transform: translateX(100%);
+  pointer-events: none;
+}
+
+.sidebar-close {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.75rem;
+  background: none;
+  border: none;
+  font-size: 1.6rem;
+  line-height: 1;
+  cursor: pointer;
+  color: #666;
+}
+.sidebar-close:hover { color: #000; }
+
+#sidebar-content {
+  padding: 1.5rem 1.25rem 2rem;
+}
+
+.sb-company {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0 0 0.25rem;
+}
+.sb-hq {
+  font-size: 0.8rem;
+  color: #777;
+  margin-bottom: 1rem;
+}
+
+.sb-field {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+}
+.sb-field-label {
+  color: #666;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.15rem;
+}
+.sb-field-value {
+  color: #1a1a1a;
+}
+
+.sb-amount {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #2563eb;
+}
+
+.sb-description {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  line-height: 1.45;
+  color: #333;
+}
+
+/* suppliers (collapsed by default via <details>) */
+.sb-suppliers {
+  margin-top: 1.25rem;
+  border-top: 1px solid #eee;
+  padding-top: 1rem;
+}
+.sb-suppliers summary {
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+.sb-supplier-group {
+  margin: 0.6rem 0;
+}
+.sb-supplier-category {
+  font-size: 0.8rem;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+.sb-supplier-list {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.sb-sources {
+  margin-top: 1.25rem;
+  border-top: 1px solid #eee;
+  padding-top: 0.75rem;
+  font-size: 0.85rem;
+}
+.sb-sources a {
+  color: #2563eb;
+  text-decoration: none;
+}
+.sb-sources a:hover { text-decoration: underline; }
+
+/* ---------- empty state ---------- */
+.empty-state {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background: rgba(255,255,255,0.95);
+  padding: 1.5rem 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  z-index: 600;
+}
+.empty-state p { margin: 0.25rem 0; }
+.muted { color: #777; font-size: 0.85rem; }

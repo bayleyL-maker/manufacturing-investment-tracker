@@ -1,0 +1,88 @@
+[
+  {
+    "company": {
+      "name": "Toyota Motor Corp.",
+      "hq_country": "Japan"
+    },
+    "industry": "automotive",
+    "investment_type": "new_facility",
+    "amount_usd": 2000000000,
+    "amount_disclosed": true,
+    "location": {
+      "city": "San Antonio",
+      "state": "TX",
+      "precision": "city",
+      "lat": 29.4246002,
+      "lon": -98.4951405
+    },
+    "dates": {
+      "announced": "2026-05-18",
+      "expected_start": "2026",
+      "expected_completion": "2030"
+    },
+    "description": "Toyota is expanding its San Antonio manufacturing campus with a new $2 billion vehicle assembly facility (Project Orca) that will create 2,000 jobs. The facility is expected to begin construction in 2026 and become operational in 2030.",
+    "id": "2026-05-toyota-motor-corp-san-antonio-tx",
+    "suppliers": [
+      {
+        "component_category": "stamping_presses",
+        "candidates": [
+          "Schuler",
+          "AIDA",
+          "Komatsu Industries"
+        ]
+      },
+      {
+        "component_category": "body_in_white_welding",
+        "candidates": [
+          "FANUC",
+          "ABB",
+          "KUKA",
+          "Yaskawa Motoman"
+        ]
+      },
+      {
+        "component_category": "paint_systems",
+        "candidates": [
+          "Durr",
+          "Eisenmann",
+          "Geico Taikisha"
+        ]
+      },
+      {
+        "component_category": "general_assembly_tooling",
+        "candidates": [
+          "Atlas Copco",
+          "Stanley Engineered Fastening",
+          "Ingersoll Rand"
+        ]
+      },
+      {
+        "component_category": "conveyors_and_material_handling",
+        "candidates": [
+          "Daifuku",
+          "Dematic",
+          "Honeywell Intelligrated"
+        ]
+      },
+      {
+        "component_category": "industrial_robots",
+        "candidates": [
+          "FANUC",
+          "ABB",
+          "KUKA"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.manufacturingdive.com/news/toyota-san-antonio-texas-2b-application-project-orca/820405/",
+        "publication": "Manufacturing Dive",
+        "fetched_at": "2026-05-18T22:09:42+00:00"
+      }
+    ],
+    "review": {
+      "status": "approved",
+      "reviewed_at": "2026-05-18T22:13:06+00:00"
+    }
+  }
+]

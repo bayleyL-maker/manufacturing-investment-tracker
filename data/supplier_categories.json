@@ -1,0 +1,66 @@
+{
+  "_comment": "Curated reference table: industry -> component_category -> [Tier 1/2 manufacturers]. The supplier matcher constrains its picks to names that appear here. Expand over time as you notice missing entries during review. Keep entries to companies that ACTUALLY MANUFACTURE the equipment (skip pure designers/integrators like Nvidia).",
+
+  "automotive": {
+    "stamping_presses": ["Schuler", "Fagor Arrasate", "AIDA", "Komatsu Industries", "Hitachi Zosen Fukui"],
+    "body_in_white_welding": ["FANUC", "ABB", "KUKA", "Yaskawa Motoman", "Lincoln Electric", "Comau"],
+    "paint_systems": ["Durr", "Eisenmann", "Geico Taikisha", "B&P Process Equipment"],
+    "general_assembly_tooling": ["Atlas Copco", "Stanley Engineered Fastening", "Ingersoll Rand"],
+    "conveyors_and_material_handling": ["Daifuku", "Dematic", "Honeywell Intelligrated"],
+    "automated_guided_vehicles": ["Seegrid", "Oceaneering", "JBT"],
+    "engine_and_transmission_machining": ["Mazak", "DMG Mori", "Makino", "Grob"],
+    "industrial_robots": ["FANUC", "ABB", "KUKA", "Yaskawa Motoman"]
+  },
+
+  "ev_battery": {
+    "electrode_coating": ["Hirano Tecseed", "PNT", "Techland", "Mitsubishi Heavy Industries"],
+    "calendaring": ["Hitachi High-Tech", "PNT", "Saueressig"],
+    "slitting_and_notching": ["Nishimura", "Hohsen", "PNT"],
+    "cell_winding_or_stacking": ["Manz", "CKD", "Koem"],
+    "formation_and_aging": ["PEC", "Bitrode", "Maccor"],
+    "battery_test_equipment": ["Arbin", "Maccor", "Bitrode", "Chroma"],
+    "dry_rooms_and_cleanrooms": ["Munters", "Bry-Air", "AAF Flanders", "Daikin Applied"],
+    "pack_and_module_assembly": ["ATS Automation", "Comau", "Durr", "Hirata"],
+    "industrial_robots": ["FANUC", "ABB", "KUKA", "Yaskawa Motoman"]
+  },
+
+  "agriculture_machinery": {
+    "heavy_machining_centers": ["Mazak", "DMG Mori", "Okuma", "Makino"],
+    "robotic_welding": ["Lincoln Electric", "Miller Electric (ITW)", "FANUC", "ABB", "KUKA"],
+    "industrial_paint_systems": ["Durr", "Eisenmann", "Nordson"],
+    "stamping_and_forming": ["Schuler", "AIDA", "Komatsu Industries"],
+    "powertrain_assembly": ["Atlas Copco", "Comau"],
+    "automated_guided_vehicles": ["Seegrid", "Oceaneering", "JBT"],
+    "tire_handling": ["JBT", "Dematic"]
+  },
+
+  "heavy_equipment": {
+    "large_machining_centers": ["Mazak", "Doosan (DN Solutions)", "Okuma", "Toshiba Machine"],
+    "large_fabrication_and_welding": ["Lincoln Electric", "Miller Electric (ITW)", "ESAB"],
+    "robotic_welding": ["FANUC", "ABB", "KUKA", "Yaskawa Motoman"],
+    "industrial_paint_systems": ["Durr", "Eisenmann", "Nordson"],
+    "heavy_lift_cranes_and_handling": ["Konecranes", "Demag"],
+    "stamping_and_forming": ["Schuler", "AIDA", "Komatsu Industries"],
+    "casting_and_forging_equipment": ["SMS group", "Danieli", "Inductotherm"]
+  },
+
+  "food_beverage_machinery": {
+    "filling_and_capping": ["Krones", "KHS", "Sidel", "Tetra Pak"],
+    "packaging_machinery": ["Bosch Packaging (Syntegon)", "ProMach", "Coesia", "Multivac"],
+    "thermal_processing": ["GEA", "Alfa Laval", "JBT"],
+    "hygienic_pumps_and_valves": ["Alfa Laval", "GEA", "SPX Flow"],
+    "conveyors_and_material_handling": ["Dorner", "Intralox", "Dematic"],
+    "cleanroom_and_HVAC": ["Munters", "AAF Flanders", "Daikin Applied"],
+    "industrial_robots": ["FANUC", "ABB", "KUKA", "Stäubli"]
+  },
+
+  "non_auto_transportation": {
+    "composite_layup_and_curing": ["Electroimpact", "MAG IAS", "Coast Composites", "Ascent Aerospace"],
+    "large_machining_centers": ["Mazak", "DMG Mori", "Makino", "MAG IAS"],
+    "robotic_drilling_and_fastening": ["Electroimpact", "Broetje-Automation", "KUKA"],
+    "rail_wheel_and_axle_equipment": ["Niles-Simmons", "Hegenscheidt-MFD"],
+    "industrial_paint_systems": ["Durr", "Eisenmann"],
+    "non_destructive_testing": ["Olympus (Evident)", "Zetec", "Waygate Technologies"],
+    "industrial_robots": ["FANUC", "ABB", "KUKA", "Yaskawa Motoman"]
+  }
+}

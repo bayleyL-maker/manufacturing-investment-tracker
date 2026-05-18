@@ -1,0 +1,80 @@
+[
+  {
+    "id": "demo-hyundai-ellabell-ga",
+    "company": { "name": "Hyundai Motor Group", "hq_country": "South Korea" },
+    "industry": "automotive",
+    "investment_type": "new_facility",
+    "amount_usd": 7600000000,
+    "amount_disclosed": true,
+    "location": { "city": "Ellabell", "state": "GA", "precision": "city", "lat": 32.1632, "lon": -81.4632 },
+    "dates": { "announced": "2025-09-12", "expected_start": "2026-Q1", "expected_completion": "2028" },
+    "description": "New electric vehicle assembly plant in Bryan County, Georgia, expected to produce 300,000 vehicles annually.",
+    "suppliers": [
+      { "component_category": "stamping_presses", "candidates": ["Schuler", "Fagor Arrasate", "AIDA"] },
+      { "component_category": "robotics_and_automation", "candidates": ["FANUC", "ABB", "KUKA"] },
+      { "component_category": "conveyors_and_material_handling", "candidates": ["Daifuku", "Dematic"] }
+    ],
+    "sources": [
+      { "url": "https://example.com/demo-article-1", "publication": "Demo Source", "fetched_at": "2025-09-13T06:00:00Z" }
+    ],
+    "review": { "status": "approved", "reviewed_at": "2025-09-13T08:00:00Z" }
+  },
+  {
+    "id": "demo-john-deere-iowa-state",
+    "company": { "name": "John Deere", "hq_country": "United States" },
+    "industry": "agriculture_machinery",
+    "investment_type": "automation",
+    "amount_usd": 250000000,
+    "amount_disclosed": true,
+    "location": { "city": null, "state": "IA", "precision": "state", "lat": null, "lon": null },
+    "dates": { "announced": "2026-02-04", "expected_start": "2026", "expected_completion": "2027" },
+    "description": "Automation upgrade across Iowa-based agricultural machinery plants, including new robotic welding cells and AGV material handling.",
+    "suppliers": [
+      { "component_category": "robotic_welding", "candidates": ["Lincoln Electric", "Miller Electric", "FANUC"] },
+      { "component_category": "automated_guided_vehicles", "candidates": ["Seegrid", "Oceaneering", "JBT"] }
+    ],
+    "sources": [
+      { "url": "https://example.com/demo-article-2", "publication": "Demo Source", "fetched_at": "2026-02-05T06:00:00Z" }
+    ],
+    "review": { "status": "approved", "reviewed_at": "2026-02-05T08:00:00Z" }
+  },
+  {
+    "id": "demo-lges-queen-creek-az",
+    "company": { "name": "LG Energy Solution", "hq_country": "South Korea" },
+    "industry": "ev_battery",
+    "investment_type": "new_facility",
+    "amount_usd": 5500000000,
+    "amount_disclosed": true,
+    "location": { "city": "Queen Creek", "state": "AZ", "precision": "city", "lat": 33.2487, "lon": -111.6343 },
+    "dates": { "announced": "2025-11-20", "expected_start": "2026", "expected_completion": "2027" },
+    "description": "Standalone cylindrical battery cell manufacturing facility in Queen Creek, Arizona, targeting EV and ESS markets.",
+    "suppliers": [
+      { "component_category": "coating_and_drying_equipment", "candidates": ["Hirano Tecseed", "PNT", "Techland"] },
+      { "component_category": "cleanroom_systems", "candidates": ["Daikin Applied", "AAF Flanders"] },
+      { "component_category": "battery_test_equipment", "candidates": ["Arbin", "Maccor", "Bitrode"] }
+    ],
+    "sources": [
+      { "url": "https://example.com/demo-article-3", "publication": "Demo Source", "fetched_at": "2025-11-21T06:00:00Z" }
+    ],
+    "review": { "status": "approved", "reviewed_at": "2025-11-21T08:00:00Z" }
+  },
+  {
+    "id": "demo-caterpillar-decatur-il",
+    "company": { "name": "Caterpillar", "hq_country": "United States" },
+    "industry": "heavy_equipment",
+    "investment_type": "expansion",
+    "amount_usd": 90000000,
+    "amount_disclosed": true,
+    "location": { "city": "Decatur", "state": "IL", "precision": "city", "lat": 39.8403, "lon": -88.9548 },
+    "dates": { "announced": "2026-01-15", "expected_start": "2026-Q2", "expected_completion": "2027" },
+    "description": "Expansion of large mining truck assembly capacity at the Decatur facility.",
+    "suppliers": [
+      { "component_category": "heavy_machining_centers", "candidates": ["Mazak", "Doosan", "Okuma"] },
+      { "component_category": "industrial_paint_systems", "candidates": ["Durr", "Eisenmann"] }
+    ],
+    "sources": [
+      { "url": "https://example.com/demo-article-4", "publication": "Demo Source", "fetched_at": "2026-01-16T06:00:00Z" }
+    ],
+    "review": { "status": "approved", "reviewed_at": "2026-01-16T08:00:00Z" }
+  }
+]
