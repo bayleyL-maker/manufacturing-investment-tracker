@@ -1,11 +1,10 @@
 name: Daily ingest
 
 on:
-  # Run every day at 11:00 UTC (~6am US Central). Adjust as you like.
-  schedule:
-    - cron: "0 11 * * *"
-  # Also allow manual triggering from the Actions tab
+  # Manual-only for now. To re-enable daily runs, uncomment the schedule block.
   workflow_dispatch:
+  # schedule:
+  #   - cron: "0 11 * * *"  # every day at 11:00 UTC (~6am US Central)
 
 # Allow the workflow to commit back to the repo
 permissions:
