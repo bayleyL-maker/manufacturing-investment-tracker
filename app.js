@@ -46,9 +46,13 @@ const map = L.map("map", {
   maxZoom: 10
 });
 
-// OpenStreetMap tiles - free, no API key required
-L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-  attribution: "&copy; OpenStreetMap contributors",
+// CartoDB Dark Matter - dark, minimal-label, no-roads aesthetic.
+// Other free options to swap in:
+//   Positron (light minimal): https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png
+//   Voyager (color minimal):  https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png
+L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}{r}.png", {
+  attribution: "&copy; OpenStreetMap contributors &copy; CARTO",
+  subdomains: "abcd",
   maxZoom: 19
 }).addTo(map);
 
@@ -141,6 +145,13 @@ function render() {
     });
 
     const marker = L.marker([lat, lon], { icon });
+    const tooltipText = buildTooltip(inv);
+    marker.bindTooltip(tooltipText, {
+      direction: "top",
+      offset: [0, -10],
+      className: "pin-tooltip",
+      opacity: 1
+    });
     marker.on("click", () => openSidebar(inv));
     clusterGroup.addLayer(marker);
   });
@@ -268,6 +279,18 @@ function renderSidebar(inv) {
 // -----------------------------------------------------------------------------
 // Helpers
 // -----------------------------------------------------------------------------
+function buildTooltip(inv) {
+  const company = escapeHtml(inv.company.name);
+  const amount = inv.amount_disclosed && inv.amount_usd != null
+    ? formatAmount(inv.amount_usd)
+    : "Undisclosed";
+  const type = TYPE_LABELS[inv.investment_type] || inv.investment_type;
+  return `
+    <div class="tt-company">${company}</div>
+    <div class="tt-meta">${escapeHtml(type)} &middot; ${amount}</div>
+  `;
+}
+
 function formatAmount(usd) {
   if (usd >= 1_000_000_000) return `$${(usd / 1_000_000_000).toFixed(usd % 1_000_000_000 === 0 ? 0 : 1)}B`;
   if (usd >= 1_000_000) return `$${(usd / 1_000_000).toFixed(0)}M`;
