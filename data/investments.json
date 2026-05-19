@@ -84,5 +84,1523 @@
       "status": "approved",
       "reviewed_at": "2026-05-18T22:13:06+00:00"
     }
+  },
+  {
+    "company": {
+      "name": "United Foods International",
+      "hq_country": "Japan"
+    },
+    "industry": "food_beverage_machinery",
+    "investment_type": "new_facility",
+    "amount_usd": null,
+    "amount_disclosed": false,
+    "location": {
+      "city": "Phoenix",
+      "state": "AZ",
+      "precision": "city",
+      "lat": 33.4484367,
+      "lon": -112.074141
+    },
+    "dates": {
+      "announced": "2026-05-12",
+      "expected_start": null,
+      "expected_completion": null
+    },
+    "description": "United Foods International established a new 126,000-square-foot manufacturing facility in Phoenix capable of processing 8 million gallons of liquid food products annually. The facility handles formulation, liquid processing, packaging, and distribution of food ingredient products for commercial customers.",
+    "id": "2026-05-united-foods-international-phoenix-az",
+    "suppliers": [
+      {
+        "component_category": "thermal_processing",
+        "candidates": [
+          "GEA",
+          "Alfa Laval",
+          "JBT"
+        ]
+      },
+      {
+        "component_category": "hygienic_pumps_and_valves",
+        "candidates": [
+          "Alfa Laval",
+          "GEA",
+          "SPX Flow"
+        ]
+      },
+      {
+        "component_category": "filling_and_capping",
+        "candidates": [
+          "Krones",
+          "Sidel",
+          "Tetra Pak"
+        ]
+      },
+      {
+        "component_category": "packaging_machinery",
+        "candidates": [
+          "Bosch Packaging (Syntegon)",
+          "ProMach",
+          "Coesia"
+        ]
+      },
+      {
+        "component_category": "conveyors_and_material_handling",
+        "candidates": [
+          "Dorner",
+          "Intralox",
+          "Dematic"
+        ]
+      },
+      {
+        "component_category": "cleanroom_and_HVAC",
+        "candidates": [
+          "Munters",
+          "AAF Flanders",
+          "Daikin Applied"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.areadevelopment.com/newsItems/5-11-2026/united-foods-international-phoenix-arizona.shtml",
+        "publication": "Area Development",
+        "fetched_at": "2026-05-19T00:39:31+00:00"
+      }
+    ],
+    "review": {
+      "status": "approved",
+      "reviewed_at": "2026-05-19T00:46:40+00:00"
+    }
+  },
+  {
+    "company": {
+      "name": "Clarios",
+      "hq_country": null
+    },
+    "industry": "ev_battery",
+    "investment_type": "expansion",
+    "amount_usd": null,
+    "amount_disclosed": false,
+    "location": {
+      "city": "St. Joseph",
+      "state": "MO",
+      "precision": "city",
+      "lat": 39.7686055,
+      "lon": -94.8466322
+    },
+    "dates": {
+      "announced": "2026-05-09",
+      "expected_start": null,
+      "expected_completion": null
+    },
+    "description": "Clarios is expanding and modernizing its existing automotive battery manufacturing facility and distribution center in St. Joseph, Missouri to increase production capacity. The company will receive $5.6 million in tax credits through the Missouri Works Program tied to job creation and investment requirements.",
+    "id": "2026-05-clarios-st-joseph-mo",
+    "suppliers": [
+      {
+        "component_category": "electrode_coating",
+        "candidates": [
+          "Hirano Tecseed",
+          "PNT",
+          "Mitsubishi Heavy Industries"
+        ]
+      },
+      {
+        "component_category": "calendaring",
+        "candidates": [
+          "Hitachi High-Tech",
+          "PNT",
+          "Saueressig"
+        ]
+      },
+      {
+        "component_category": "cell_winding_or_stacking",
+        "candidates": [
+          "Manz",
+          "CKD",
+          "Koem"
+        ]
+      },
+      {
+        "component_category": "formation_and_aging",
+        "candidates": [
+          "PEC",
+          "Bitrode",
+          "Maccor"
+        ]
+      },
+      {
+        "component_category": "battery_test_equipment",
+        "candidates": [
+          "Arbin",
+          "Bitrode",
+          "Chroma"
+        ]
+      },
+      {
+        "component_category": "pack_and_module_assembly",
+        "candidates": [
+          "ATS Automation",
+          "Comau",
+          "Hirata"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.areadevelopment.com/newsItems/5-9-2026/clarios-st-joseph-missouri.shtml",
+        "publication": "Area Development",
+        "fetched_at": "2026-05-19T00:39:46+00:00"
+      }
+    ],
+    "review": {
+      "status": "approved",
+      "reviewed_at": "2026-05-19T00:46:42+00:00"
+    }
+  },
+  {
+    "company": {
+      "name": "Southern Classic Food Group",
+      "hq_country": null
+    },
+    "industry": "food_beverage_machinery",
+    "investment_type": "expansion",
+    "amount_usd": null,
+    "amount_disclosed": false,
+    "location": {
+      "city": "Brundidge",
+      "state": "AL",
+      "precision": "city",
+      "lat": 31.7201615,
+      "lon": -85.8160567
+    },
+    "dates": {
+      "announced": "2026-05-05",
+      "expected_start": null,
+      "expected_completion": null
+    },
+    "description": "Southern Classic Food Group is expanding its existing Brundidge, Alabama production facility with new manufacturing lines, equipment upgrades, and supporting infrastructure to support growing demand and enhance operational efficiency.",
+    "id": "2026-05-southern-classic-food-group-brundidge-al",
+    "suppliers": [
+      {
+        "component_category": "filling_and_capping",
+        "candidates": [
+          "Krones",
+          "KHS",
+          "Sidel",
+          "Tetra Pak"
+        ]
+      },
+      {
+        "component_category": "packaging_machinery",
+        "candidates": [
+          "Bosch Packaging (Syntegon)",
+          "ProMach",
+          "Coesia",
+          "Multivac"
+        ]
+      },
+      {
+        "component_category": "conveyors_and_material_handling",
+        "candidates": [
+          "Dorner",
+          "Intralox",
+          "Dematic"
+        ]
+      },
+      {
+        "component_category": "thermal_processing",
+        "candidates": [
+          "GEA",
+          "Alfa Laval",
+          "JBT"
+        ]
+      },
+      {
+        "component_category": "hygienic_pumps_and_valves",
+        "candidates": [
+          "Alfa Laval",
+          "GEA",
+          "SPX Flow"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.areadevelopment.com/newsItems/5-5-2026/classic-food-group-brundidge-alabama.shtml",
+        "publication": "Area Development",
+        "fetched_at": "2026-05-19T00:40:06+00:00"
+      }
+    ],
+    "review": {
+      "status": "approved",
+      "reviewed_at": "2026-05-19T00:46:47+00:00"
+    }
+  },
+  {
+    "company": {
+      "name": "GHH-BONATRANS",
+      "hq_country": "Czech Republic"
+    },
+    "industry": "non_auto_transportation",
+    "investment_type": "new_facility",
+    "amount_usd": null,
+    "amount_disclosed": false,
+    "location": {
+      "city": "Wayland",
+      "state": "NY",
+      "precision": "city",
+      "lat": 42.5677412,
+      "lon": -77.5895798
+    },
+    "dates": {
+      "announced": "2026-05-05",
+      "expected_start": null,
+      "expected_completion": "2028-Q4"
+    },
+    "description": "GHH-BONATRANS is constructing a new manufacturing facility at Wayland Business Park in New York to produce railway wheelsets, axles, and related rail components. Production is scheduled to begin in late 2028 and will serve customers across the U.S. and Canada.",
+    "id": "2026-05-ghh-bonatrans-wayland-ny",
+    "suppliers": [
+      {
+        "component_category": "rail_wheel_and_axle_equipment",
+        "candidates": [
+          "Niles-Simmons",
+          "Hegenscheidt-MFD"
+        ]
+      },
+      {
+        "component_category": "large_machining_centers",
+        "candidates": [
+          "Mazak",
+          "DMG Mori",
+          "Makino",
+          "MAG IAS"
+        ]
+      },
+      {
+        "component_category": "non_destructive_testing",
+        "candidates": [
+          "Olympus (Evident)",
+          "Zetec",
+          "Waygate Technologies"
+        ]
+      },
+      {
+        "component_category": "industrial_paint_systems",
+        "candidates": [
+          "Durr",
+          "Eisenmann"
+        ]
+      },
+      {
+        "component_category": "industrial_robots",
+        "candidates": [
+          "FANUC",
+          "ABB",
+          "KUKA",
+          "Yaskawa Motoman"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.areadevelopment.com/newsItems/5-5-2026/ghh-bonatrans-wayland-new-york.shtml",
+        "publication": "Area Development",
+        "fetched_at": "2026-05-19T00:40:26+00:00"
+      }
+    ],
+    "review": {
+      "status": "approved",
+      "reviewed_at": "2026-05-19T00:46:51+00:00"
+    }
+  },
+  {
+    "company": {
+      "name": "Niagara Bottling",
+      "hq_country": "US"
+    },
+    "industry": "food_beverage_machinery",
+    "investment_type": "new_facility",
+    "amount_usd": null,
+    "amount_disclosed": false,
+    "location": {
+      "city": "Perth",
+      "state": "NY",
+      "precision": "city",
+      "lat": 43.0175246,
+      "lon": -74.193982
+    },
+    "dates": {
+      "announced": "2026-04-26",
+      "expected_start": "early 2027",
+      "expected_completion": null
+    },
+    "description": "Niagara Bottling is constructing a 362,000-square-foot manufacturing and warehousing facility at Tryon Technology Park in Perth, New York, specializing in private label bottling, packaging, and production for beverage brands. Operations are scheduled to begin in early 2027.",
+    "id": "2026-04-niagara-bottling-perth-ny",
+    "suppliers": [
+      {
+        "component_category": "filling_and_capping",
+        "candidates": [
+          "Krones",
+          "KHS",
+          "Sidel",
+          "Tetra Pak"
+        ]
+      },
+      {
+        "component_category": "packaging_machinery",
+        "candidates": [
+          "Bosch Packaging (Syntegon)",
+          "ProMach",
+          "Coesia"
+        ]
+      },
+      {
+        "component_category": "conveyors_and_material_handling",
+        "candidates": [
+          "Dorner",
+          "Intralox",
+          "Dematic"
+        ]
+      },
+      {
+        "component_category": "hygienic_pumps_and_valves",
+        "candidates": [
+          "Alfa Laval",
+          "SPX Flow",
+          "GEA"
+        ]
+      },
+      {
+        "component_category": "cleanroom_and_HVAC",
+        "candidates": [
+          "Munters",
+          "AAF Flanders",
+          "Daikin Applied"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.areadevelopment.com/newsitems/4-26-2026/niagara-bottling-perth-new-york.shtml",
+        "publication": "Area Development",
+        "fetched_at": "2026-05-19T00:40:57+00:00"
+      }
+    ],
+    "review": {
+      "status": "approved",
+      "reviewed_at": "2026-05-19T00:46:56+00:00"
+    }
+  },
+  {
+    "company": {
+      "name": "Hyundai Steel-Posco",
+      "hq_country": "South Korea"
+    },
+    "industry": "metals_and_primary_materials",
+    "investment_type": "new_facility",
+    "amount_usd": null,
+    "amount_disclosed": false,
+    "location": {
+      "city": "Donaldsonville",
+      "state": "LA",
+      "precision": "city",
+      "lat": 30.1051938,
+      "lon": -90.9875923
+    },
+    "dates": {
+      "announced": "2025-03-01",
+      "expected_start": null,
+      "expected_completion": null
+    },
+    "description": "Hyundai Motor Group's first steelmaking venture in North America, an electric arc furnace mill in Louisiana focused on the automotive sector. Posco invested $582 million as a 20% stakeholder.",
+    "id": "2025-03-hyundai-steel-posco-donaldsonville-la",
+    "suppliers": [
+      {
+        "component_category": "electric_arc_furnaces",
+        "candidates": [
+          "SMS group",
+          "Danieli",
+          "Tenova"
+        ]
+      },
+      {
+        "component_category": "ladle_metallurgy_and_refining",
+        "candidates": [
+          "SMS group",
+          "Tenova",
+          "Danieli"
+        ]
+      },
+      {
+        "component_category": "continuous_casters",
+        "candidates": [
+          "SMS group",
+          "Danieli",
+          "Primetals Technologies"
+        ]
+      },
+      {
+        "component_category": "rolling_mills",
+        "candidates": [
+          "SMS group",
+          "Danieli",
+          "Primetals Technologies"
+        ]
+      },
+      {
+        "component_category": "fume_extraction_and_baghouses",
+        "candidates": [
+          "AAF Flanders",
+          "Camfil APC",
+          "Donaldson Torit"
+        ]
+      },
+      {
+        "component_category": "industrial_cranes",
+        "candidates": [
+          "Konecranes",
+          "Demag",
+          "Whiting Cranes"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.manufacturingdive.com/news/entergy-signs-hyundai-steel-posco-recent-metals-deals-alcoa-fabarc/820466/",
+        "publication": "Manufacturing Dive",
+        "fetched_at": "2026-05-19T01:06:31+00:00"
+      }
+    ],
+    "review": {
+      "status": "approved",
+      "reviewed_at": "2026-05-19T01:10:40+00:00"
+    }
+  },
+  {
+    "company": {
+      "name": "USG Corp.",
+      "hq_country": "United States"
+    },
+    "industry": "fabricated_metal_products",
+    "investment_type": "new_facility",
+    "amount_usd": 1180000000,
+    "amount_disclosed": true,
+    "location": {
+      "city": "Orange",
+      "state": "TX",
+      "precision": "city",
+      "lat": 30.1228634,
+      "lon": -93.9041169
+    },
+    "dates": {
+      "announced": "2026-05-15",
+      "expected_start": "2025-Q4",
+      "expected_completion": "2028-Q1"
+    },
+    "description": "USG Corp. will invest $1.18 billion to build a new drywall and gypsum-based construction materials production facility in Orange, Texas, with an initial project investment of $650 million and expected creation of nearly 200 jobs. Construction was previously set to begin fall 2025 and reach operational status by early 2028.",
+    "id": "2026-05-usg-corp-orange-tx",
+    "suppliers": [
+      {
+        "component_category": "powder_coating_lines",
+        "candidates": [
+          "Nordson",
+          "Wagner",
+          "Gema"
+        ]
+      },
+      {
+        "component_category": "industrial_paint_systems",
+        "candidates": [
+          "Durr",
+          "Eisenmann",
+          "Nordson"
+        ]
+      },
+      {
+        "component_category": "automated_storage_retrieval",
+        "candidates": [
+          "Daifuku",
+          "Dematic",
+          "Kardex"
+        ]
+      },
+      {
+        "component_category": "assembly_automation",
+        "candidates": [
+          "ATS Automation",
+          "Comau",
+          "Stäubli"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.manufacturingdive.com/news/usg-invest-1b-orange-texas-factory-drywall-gypsum/820348/",
+        "publication": "Manufacturing Dive",
+        "fetched_at": "2026-05-19T01:06:42+00:00"
+      }
+    ],
+    "review": {
+      "status": "approved",
+      "reviewed_at": "2026-05-19T01:10:45+00:00"
+    }
+  },
+  {
+    "company": {
+      "name": "U.S. Steel",
+      "hq_country": "United States"
+    },
+    "industry": "metals_and_primary_materials",
+    "investment_type": "expansion",
+    "amount_usd": 1900000000,
+    "amount_disclosed": true,
+    "location": {
+      "city": "Osceola",
+      "state": "AR",
+      "precision": "city",
+      "lat": 35.7050778,
+      "lon": -89.969532
+    },
+    "dates": {
+      "announced": "2026-05-13",
+      "expected_start": null,
+      "expected_completion": "2029-Q1"
+    },
+    "description": "U.S. Steel (owned by Nippon Steel) announced a $1.9 billion investment in a direct reduced iron plant at Big River Works in Osceola, Arkansas, with completion expected in Q1 2029. This is part of Nippon Steel's $11+ billion commitment to U.S. Steel investments following its acquisition.",
+    "id": "2026-05-u-s-steel-osceola-ar",
+    "suppliers": [
+      {
+        "component_category": "electric_arc_furnaces",
+        "candidates": [
+          "SMS group",
+          "Danieli",
+          "Tenova"
+        ]
+      },
+      {
+        "component_category": "ladle_metallurgy_and_refining",
+        "candidates": [
+          "SMS group",
+          "Tenova",
+          "Danieli"
+        ]
+      },
+      {
+        "component_category": "continuous_casters",
+        "candidates": [
+          "SMS group",
+          "Danieli",
+          "Primetals Technologies"
+        ]
+      },
+      {
+        "component_category": "rolling_mills",
+        "candidates": [
+          "SMS group",
+          "Danieli",
+          "Primetals Technologies"
+        ]
+      },
+      {
+        "component_category": "fume_extraction_and_baghouses",
+        "candidates": [
+          "AAF Flanders",
+          "Camfil APC",
+          "Donaldson Torit"
+        ]
+      },
+      {
+        "component_category": "industrial_cranes",
+        "candidates": [
+          "Konecranes",
+          "Demag",
+          "Whiting Cranes"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.manufacturingdive.com/news/nippon-steel-fy2025-profit-plunges-95-percent-us-steel/820113/",
+        "publication": "Manufacturing Dive",
+        "fetched_at": "2026-05-19T01:06:54+00:00"
+      }
+    ],
+    "review": {
+      "status": "approved",
+      "reviewed_at": "2026-05-19T01:10:46+00:00"
+    }
+  },
+  {
+    "company": {
+      "name": "Kalmbach Feeds",
+      "hq_country": "United States"
+    },
+    "industry": "food_and_beverage",
+    "investment_type": "new_facility",
+    "amount_usd": 125000000,
+    "amount_disclosed": true,
+    "location": {
+      "city": null,
+      "state": "OH",
+      "precision": "state",
+      "lat": null,
+      "lon": null
+    },
+    "dates": {
+      "announced": "2026-05-16",
+      "expected_start": "2027",
+      "expected_completion": null
+    },
+    "description": "Kalmbach Feeds is constructing a new manufacturing facility for K9 & Kin Brands in Wyandot County, Ohio to produce premium dog and cat food products. The $125 million investment, the largest private expansion in the county's history, is expected to begin production in 2027.",
+    "id": "2026-05-kalmbach-feeds-oh",
+    "suppliers": [
+      {
+        "component_category": "processing_equipment",
+        "candidates": [
+          "GEA",
+          "Alfa Laval",
+          "JBT"
+        ]
+      },
+      {
+        "component_category": "ovens_and_thermal",
+        "candidates": [
+          "Wenger",
+          "Buhler",
+          "Reading Bakery Systems"
+        ]
+      },
+      {
+        "component_category": "packaging_machinery",
+        "candidates": [
+          "Bosch Packaging (Syntegon)",
+          "Multivac",
+          "ProMach",
+          "Coesia"
+        ]
+      },
+      {
+        "component_category": "conveyors_and_material_handling",
+        "candidates": [
+          "Dorner",
+          "Intralox",
+          "Dematic",
+          "Honeywell Intelligrated"
+        ]
+      },
+      {
+        "component_category": "weighing_and_inspection",
+        "candidates": [
+          "Mettler-Toledo",
+          "Anritsu",
+          "Ishida"
+        ]
+      },
+      {
+        "component_category": "refrigeration_and_HVAC",
+        "candidates": [
+          "Munters",
+          "GEA",
+          "Mayekawa"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.areadevelopment.com/newsItems/5-16-2026/kalmbach-feeds-wyandot-county-ohio.shtml",
+        "publication": "Area Development",
+        "fetched_at": "2026-05-19T01:07:19+00:00"
+      }
+    ],
+    "review": {
+      "status": "approved",
+      "reviewed_at": "2026-05-19T01:10:47+00:00"
+    }
+  },
+  {
+    "company": {
+      "name": "Maschinenfabrik Reinhausen (Reinhausen Inc.)",
+      "hq_country": "Germany"
+    },
+    "industry": "electrical_equipment_and_grid",
+    "investment_type": "expansion",
+    "amount_usd": null,
+    "amount_disclosed": false,
+    "location": {
+      "city": "Humboldt",
+      "state": "TN",
+      "precision": "city",
+      "lat": 35.8197917,
+      "lon": -88.9158953
+    },
+    "dates": {
+      "announced": "2026-05-16",
+      "expected_start": null,
+      "expected_completion": null
+    },
+    "description": "Reinhausen is expanding its existing manufacturing facility in Humboldt, Tennessee to increase production of advanced transformer control systems, voltage regulation systems, and grid-automation technologies for power transmission and distribution networks.",
+    "id": "2026-05-maschinenfabrik-reinhausen-rei-humboldt-tn",
+    "suppliers": [
+      {
+        "component_category": "switchgear_assembly",
+        "candidates": [
+          "ABB",
+          "Schneider Electric",
+          "Eaton",
+          "Siemens"
+        ]
+      },
+      {
+        "component_category": "transformer_manufacturing_equipment",
+        "candidates": [
+          "Hitachi Energy",
+          "Siemens Energy",
+          "GE Vernova",
+          "Howard Industries"
+        ]
+      },
+      {
+        "component_category": "coil_winding",
+        "candidates": [
+          "Marsilli",
+          "Schleuniger",
+          "Komax"
+        ]
+      },
+      {
+        "component_category": "cable_and_wire_manufacturing",
+        "candidates": [
+          "Maillefer",
+          "Niehoff",
+          "Rosendahl Nextrom"
+        ]
+      },
+      {
+        "component_category": "robotic_welding",
+        "candidates": [
+          "FANUC",
+          "ABB",
+          "KUKA"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.areadevelopment.com/newsitems/5-16-2026/reinhausen-humboldt-tennessee.shtml",
+        "publication": "Area Development",
+        "fetched_at": "2026-05-19T01:07:23+00:00"
+      }
+    ],
+    "review": {
+      "status": "approved",
+      "reviewed_at": "2026-05-19T01:10:50+00:00"
+    }
+  },
+  {
+    "company": {
+      "name": "Lockers Manufacturing",
+      "hq_country": null
+    },
+    "industry": "fabricated_metal_products",
+    "investment_type": "expansion",
+    "amount_usd": null,
+    "amount_disclosed": false,
+    "location": {
+      "city": "Batesville",
+      "state": "MS",
+      "precision": "city",
+      "lat": 34.316488,
+      "lon": -89.9527108
+    },
+    "dates": {
+      "announced": "2026-05-12",
+      "expected_start": null,
+      "expected_completion": null
+    },
+    "description": "Lockers Manufacturing is expanding its Batesville, Mississippi production operations through the purchase of an existing facility and addition of new production capabilities for manufacturing custom storage and locker systems for commercial, institutional, and industrial applications.",
+    "id": "2026-05-lockers-manufacturing-batesville-ms",
+    "suppliers": [
+      {
+        "component_category": "laser_cutting_systems",
+        "candidates": [
+          "Trumpf",
+          "Bystronic",
+          "Amada",
+          "Prima Power"
+        ]
+      },
+      {
+        "component_category": "press_brakes_and_bending",
+        "candidates": [
+          "Trumpf",
+          "Amada",
+          "LVD",
+          "Salvagnini"
+        ]
+      },
+      {
+        "component_category": "punching_and_stamping",
+        "candidates": [
+          "Trumpf",
+          "Amada",
+          "Prima Power",
+          "AIDA"
+        ]
+      },
+      {
+        "component_category": "robotic_welding",
+        "candidates": [
+          "Lincoln Electric",
+          "FANUC",
+          "ABB",
+          "KUKA"
+        ]
+      },
+      {
+        "component_category": "powder_coating_lines",
+        "candidates": [
+          "Nordson",
+          "Wagner",
+          "Gema"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.areadevelopment.com/newsItems/5-12-2026/lockers-manufacturing-batesville-mississippi.shtml",
+        "publication": "Area Development",
+        "fetched_at": "2026-05-19T01:07:29+00:00"
+      }
+    ],
+    "review": {
+      "status": "approved",
+      "reviewed_at": "2026-05-19T01:10:53+00:00"
+    }
+  },
+  {
+    "company": {
+      "name": "Acra Cast, Inc.",
+      "hq_country": "United States"
+    },
+    "industry": "metals_and_primary_materials",
+    "investment_type": "expansion",
+    "amount_usd": null,
+    "amount_disclosed": false,
+    "location": {
+      "city": "Bay City",
+      "state": "MI",
+      "precision": "city",
+      "lat": 43.5962107,
+      "lon": -83.8881711
+    },
+    "dates": {
+      "announced": "2026-05-12",
+      "expected_start": null,
+      "expected_completion": null
+    },
+    "description": "Acra Cast, Inc. is expanding its existing foundry operations in Bay City, Michigan with additional production space, new equipment purchases, and workforce growth to support increased demand for American-made metal casting components for industrial, commercial, defense, and automotive applications.",
+    "id": "2026-05-acra-cast-inc-bay-city-mi",
+    "suppliers": [
+      {
+        "component_category": "electric_arc_furnaces",
+        "candidates": [
+          "SMS group",
+          "Danieli",
+          "Tenova"
+        ]
+      },
+      {
+        "component_category": "ladle_metallurgy_and_refining",
+        "candidates": [
+          "SMS group",
+          "Tenova",
+          "Danieli"
+        ]
+      },
+      {
+        "component_category": "fume_extraction_and_baghouses",
+        "candidates": [
+          "AAF Flanders",
+          "Camfil APC",
+          "Donaldson Torit"
+        ]
+      },
+      {
+        "component_category": "industrial_cranes",
+        "candidates": [
+          "Konecranes",
+          "Demag",
+          "Whiting Cranes"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.areadevelopment.com/newsitems/5-11-2026/acra-cast-bay-city-michigan.shtml",
+        "publication": "Area Development",
+        "fetched_at": "2026-05-19T01:07:33+00:00"
+      }
+    ],
+    "review": {
+      "status": "approved",
+      "reviewed_at": "2026-05-19T01:10:53+00:00"
+    }
+  },
+  {
+    "company": {
+      "name": "LEV Manufacturing",
+      "hq_country": null
+    },
+    "industry": "automotive",
+    "investment_type": "new_facility",
+    "amount_usd": null,
+    "amount_disclosed": false,
+    "location": {
+      "city": "Putnam County",
+      "state": "TN",
+      "precision": "state",
+      "lat": null,
+      "lon": null
+    },
+    "dates": {
+      "announced": "2026-05-05",
+      "expected_start": null,
+      "expected_completion": null
+    },
+    "description": "LEV Manufacturing will establish a 100,000-square-foot assembly, logistics, and fulfillment center in Putnam County, Tennessee to serve as its primary U.S. hub for electric mobility brands including Rad Power Bikes, Serial 1, and Life EV. The facility will support design, assembly, and distribution of light electric vehicles and related components.",
+    "id": "2026-05-lev-manufacturing-putnam-county-tn",
+    "suppliers": [
+      {
+        "component_category": "conveyors_and_material_handling",
+        "candidates": [
+          "Daifuku",
+          "Dematic",
+          "Honeywell Intelligrated"
+        ]
+      },
+      {
+        "component_category": "automated_guided_vehicles",
+        "candidates": [
+          "Seegrid",
+          "Oceaneering",
+          "JBT"
+        ]
+      },
+      {
+        "component_category": "general_assembly_tooling",
+        "candidates": [
+          "Atlas Copco",
+          "Stanley Engineered Fastening",
+          "Ingersoll Rand"
+        ]
+      },
+      {
+        "component_category": "body_in_white_welding",
+        "candidates": [
+          "FANUC",
+          "ABB",
+          "KUKA",
+          "Yaskawa Motoman"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.areadevelopment.com/newsItems/5-5-2026/lev-manufacturing-algood-tennessee.shtml",
+        "publication": "Area Development",
+        "fetched_at": "2026-05-19T01:08:10+00:00"
+      }
+    ],
+    "review": {
+      "status": "approved",
+      "reviewed_at": "2026-05-19T01:10:54+00:00"
+    }
+  },
+  {
+    "company": {
+      "name": "Stella-Jones Corporation",
+      "hq_country": "Canada"
+    },
+    "industry": "electrical_equipment_and_grid",
+    "investment_type": "new_facility",
+    "amount_usd": null,
+    "amount_disclosed": false,
+    "location": {
+      "city": "Fayetteville",
+      "state": "TN",
+      "precision": "city",
+      "lat": 35.1520267,
+      "lon": -86.5705509
+    },
+    "dates": {
+      "announced": "2026-05-02",
+      "expected_start": null,
+      "expected_completion": "2027-Q4"
+    },
+    "description": "Stella-Jones Corporation is constructing a new steel lattice tower manufacturing facility in Fayetteville, Tennessee. This is the company's first U.S.-based steel structure manufacturing facility, with production scheduled to begin by the end of 2027.",
+    "id": "2026-05-stella-jones-corporation-fayetteville-tn",
+    "suppliers": [
+      {
+        "component_category": "structural_steel_fabrication",
+        "candidates": [
+          "Peddinghaus",
+          "Voortman",
+          "FICEP"
+        ]
+      },
+      {
+        "component_category": "robotic_welding",
+        "candidates": [
+          "FANUC",
+          "ABB",
+          "KUKA",
+          "Lincoln Electric"
+        ]
+      },
+      {
+        "component_category": "industrial_paint_systems",
+        "candidates": [
+          "Durr",
+          "Eisenmann",
+          "Nordson"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.areadevelopment.com/newsItems/5-2-2026/stella-jones-corporation-fayetteville-tennessee.shtml",
+        "publication": "Area Development",
+        "fetched_at": "2026-05-19T01:08:34+00:00"
+      }
+    ],
+    "review": {
+      "status": "approved",
+      "reviewed_at": "2026-05-19T01:10:55+00:00"
+    }
+  },
+  {
+    "company": {
+      "name": "Adrian Steel Company",
+      "hq_country": null
+    },
+    "industry": "fabricated_metal_products",
+    "investment_type": "expansion",
+    "amount_usd": null,
+    "amount_disclosed": false,
+    "location": {
+      "city": "Adrian",
+      "state": "MI",
+      "precision": "city",
+      "lat": 41.8975152,
+      "lon": -84.0373054
+    },
+    "dates": {
+      "announced": "2026-05-02",
+      "expected_start": null,
+      "expected_completion": null
+    },
+    "description": "Adrian Steel Company is expanding its Lenawee County, Michigan facility by 112,000 square feet to enhance capabilities in raw material storage, cutting, forming, welding, painting, assembly, and shipping. The company designs and manufactures shelving, partitions, racks, and accessories for work vans and trucks.",
+    "id": "2026-05-adrian-steel-company-adrian-mi",
+    "suppliers": [
+      {
+        "component_category": "laser_cutting_systems",
+        "candidates": [
+          "Trumpf",
+          "Bystronic",
+          "Amada",
+          "Prima Power"
+        ]
+      },
+      {
+        "component_category": "press_brakes_and_bending",
+        "candidates": [
+          "Trumpf",
+          "Amada",
+          "LVD",
+          "Salvagnini"
+        ]
+      },
+      {
+        "component_category": "robotic_welding",
+        "candidates": [
+          "Lincoln Electric",
+          "FANUC",
+          "ABB",
+          "KUKA"
+        ]
+      },
+      {
+        "component_category": "powder_coating_lines",
+        "candidates": [
+          "Nordson",
+          "Wagner",
+          "Gema"
+        ]
+      },
+      {
+        "component_category": "automated_storage_retrieval",
+        "candidates": [
+          "Daifuku",
+          "Dematic",
+          "Kardex"
+        ]
+      },
+      {
+        "component_category": "assembly_automation",
+        "candidates": [
+          "ATS Automation",
+          "Comau",
+          "Stäubli"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.areadevelopment.com/newsItems/5-2-2026/adrian-steel-company-lenawee-county-michigan.shtml",
+        "publication": "Area Development",
+        "fetched_at": "2026-05-19T01:08:38+00:00"
+      }
+    ],
+    "review": {
+      "status": "approved",
+      "reviewed_at": "2026-05-19T01:10:55+00:00"
+    }
+  },
+  {
+    "company": {
+      "name": "Marubeni-Itochu Steel America Inc.",
+      "hq_country": "Japan"
+    },
+    "industry": "metals_and_primary_materials",
+    "investment_type": "new_facility",
+    "amount_usd": null,
+    "amount_disclosed": false,
+    "location": {
+      "city": "Osceola",
+      "state": "AR",
+      "precision": "city",
+      "lat": 35.7050778,
+      "lon": -89.969532
+    },
+    "dates": {
+      "announced": "2026-04-25",
+      "expected_start": null,
+      "expected_completion": null
+    },
+    "description": "Marubeni-Itochu Steel America plans to construct an advanced flat-rolled steel processing facility in Osceola, Arkansas, adjacent to Big River Steel, to produce steel for automotive and other industries across the South-Central U.S.",
+    "id": "2026-04-marubeni-itochu-steel-america--osceola-ar",
+    "suppliers": [
+      {
+        "component_category": "rolling_mills",
+        "candidates": [
+          "SMS group",
+          "Danieli",
+          "Primetals Technologies"
+        ]
+      },
+      {
+        "component_category": "continuous_casters",
+        "candidates": [
+          "SMS group",
+          "Danieli",
+          "Primetals Technologies"
+        ]
+      },
+      {
+        "component_category": "coil_processing_and_slitting",
+        "candidates": [
+          "Red Bud Industries",
+          "Bradbury Group",
+          "Stamco",
+          "Braner"
+        ]
+      },
+      {
+        "component_category": "annealing_and_heat_treat",
+        "candidates": [
+          "Drever",
+          "Tenova",
+          "Andritz"
+        ]
+      },
+      {
+        "component_category": "ladle_metallurgy_and_refining",
+        "candidates": [
+          "SMS group",
+          "Tenova",
+          "Danieli"
+        ]
+      },
+      {
+        "component_category": "fume_extraction_and_baghouses",
+        "candidates": [
+          "AAF Flanders",
+          "Camfil APC",
+          "Donaldson Torit"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.areadevelopment.com/newsItems/4-25-2026/marubeni-itochu-steel-america-osceola-arkansa.shtml",
+        "publication": "Area Development",
+        "fetched_at": "2026-05-19T01:08:55+00:00"
+      }
+    ],
+    "review": {
+      "status": "approved",
+      "reviewed_at": "2026-05-19T01:10:56+00:00"
+    }
+  },
+  {
+    "company": {
+      "name": "Ferrara Candy Company",
+      "hq_country": "Italy"
+    },
+    "industry": "food_and_beverage",
+    "investment_type": "new_facility",
+    "amount_usd": 675000000,
+    "amount_disclosed": true,
+    "location": {
+      "city": "Orangeburg",
+      "state": "SC",
+      "precision": "city",
+      "lat": 33.4918203,
+      "lon": -80.8556476
+    },
+    "dates": {
+      "announced": "2026-04-25",
+      "expected_start": "2029-Q1",
+      "expected_completion": null
+    },
+    "description": "Ferrara Candy Company is constructing a 750,000-square-foot manufacturing facility in Orangeburg County, South Carolina to produce and package confectionery products including gummies, chocolates, and sugar-based candies. Production is scheduled to begin in Q1 2029.",
+    "id": "2026-04-ferrara-candy-company-orangeburg-sc",
+    "suppliers": [
+      {
+        "component_category": "processing_equipment",
+        "candidates": [
+          "GEA",
+          "Alfa Laval",
+          "JBT"
+        ]
+      },
+      {
+        "component_category": "ovens_and_thermal",
+        "candidates": [
+          "Wenger",
+          "Buhler",
+          "Reading Bakery Systems"
+        ]
+      },
+      {
+        "component_category": "packaging_machinery",
+        "candidates": [
+          "Bosch Packaging (Syntegon)",
+          "Multivac",
+          "ProMach",
+          "Coesia"
+        ]
+      },
+      {
+        "component_category": "conveyors_and_material_handling",
+        "candidates": [
+          "Dorner",
+          "Intralox",
+          "Dematic",
+          "Honeywell Intelligrated"
+        ]
+      },
+      {
+        "component_category": "weighing_and_inspection",
+        "candidates": [
+          "Mettler-Toledo",
+          "Anritsu",
+          "Ishida"
+        ]
+      },
+      {
+        "component_category": "refrigeration_and_HVAC",
+        "candidates": [
+          "Munters",
+          "GEA",
+          "Mayekawa"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.areadevelopment.com/newsItems/4-25-2026/ferrara-candy-company-orangeburg-county-south-carolina.shtml",
+        "publication": "Area Development",
+        "fetched_at": "2026-05-19T01:09:02+00:00"
+      }
+    ],
+    "review": {
+      "status": "approved",
+      "reviewed_at": "2026-05-19T01:10:57+00:00"
+    }
+  },
+  {
+    "company": {
+      "name": "Virginia Transformer Corporation",
+      "hq_country": "United States"
+    },
+    "industry": "electrical_equipment_and_grid",
+    "investment_type": "expansion",
+    "amount_usd": null,
+    "amount_disclosed": false,
+    "location": {
+      "city": "Rincon",
+      "state": "GA",
+      "precision": "city",
+      "lat": 32.2960289,
+      "lon": -81.2353905
+    },
+    "dates": {
+      "announced": "2026-04-25",
+      "expected_start": null,
+      "expected_completion": null
+    },
+    "description": "Virginia Transformer Corporation is expanding its Rincon, Georgia production facility with advanced manufacturing equipment, upgraded material handling systems, and an automated warehouse to increase production capacity by 50 percent. The facility manufactures power transformers and electrical equipment for utility, industrial, and infrastructure applications.",
+    "id": "2026-04-virginia-transformer-corporati-rincon-ga",
+    "suppliers": [
+      {
+        "component_category": "transformer_manufacturing_equipment",
+        "candidates": [
+          "Hitachi Energy",
+          "Siemens Energy",
+          "GE Vernova",
+          "Howard Industries"
+        ]
+      },
+      {
+        "component_category": "coil_winding",
+        "candidates": [
+          "Marsilli",
+          "Schleuniger",
+          "Komax"
+        ]
+      },
+      {
+        "component_category": "vacuum_pressure_impregnation",
+        "candidates": [
+          "Hedrich",
+          "Elantas"
+        ]
+      },
+      {
+        "component_category": "robotic_welding",
+        "candidates": [
+          "FANUC",
+          "ABB",
+          "KUKA",
+          "Lincoln Electric"
+        ]
+      },
+      {
+        "component_category": "structural_steel_fabrication",
+        "candidates": [
+          "Peddinghaus",
+          "Voortman",
+          "FICEP"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.areadevelopment.com/newsItems/4-25-2026/virginia-transformer-rincon-georgia.shtml",
+        "publication": "Area Development",
+        "fetched_at": "2026-05-19T01:09:08+00:00"
+      }
+    ],
+    "review": {
+      "status": "approved",
+      "reviewed_at": "2026-05-19T01:10:58+00:00"
+    }
+  },
+  {
+    "company": {
+      "name": "AbbVie",
+      "hq_country": "United States"
+    },
+    "industry": "pharma_biotech",
+    "investment_type": "new_facility",
+    "amount_usd": 1295000000,
+    "amount_disclosed": true,
+    "location": {
+      "city": "Durham",
+      "state": "NC",
+      "precision": "city",
+      "lat": 35.996653,
+      "lon": -78.9018053
+    },
+    "dates": {
+      "announced": "2026-04-24",
+      "expected_start": null,
+      "expected_completion": null
+    },
+    "description": "AbbVie is constructing a new pharmaceutical production campus on 185 acres in Durham, North Carolina, integrating advanced manufacturing and laboratory technologies with AI to support immunology, neuroscience, and oncology medicines. The project represents AbbVie's largest capital investment to date and is expected to create over 700 jobs.",
+    "id": "2026-04-abbvie-durham-nc",
+    "suppliers": [
+      {
+        "component_category": "bioreactors_and_fermentation",
+        "candidates": [
+          "Sartorius",
+          "Cytiva",
+          "Thermo Fisher",
+          "ABEC"
+        ]
+      },
+      {
+        "component_category": "aseptic_filling_lines",
+        "candidates": [
+          "Bosch Packaging (Syntegon)",
+          "Optima",
+          "IMA",
+          "Marchesini"
+        ]
+      },
+      {
+        "component_category": "isolators_and_cleanrooms",
+        "candidates": [
+          "Getinge",
+          "SKAN",
+          "Comecer",
+          "AAF Flanders"
+        ]
+      },
+      {
+        "component_category": "chromatography_and_filtration",
+        "candidates": [
+          "Cytiva",
+          "Sartorius",
+          "Repligen"
+        ]
+      },
+      {
+        "component_category": "single_use_systems",
+        "candidates": [
+          "Sartorius",
+          "Cytiva",
+          "Thermo Fisher"
+        ]
+      },
+      {
+        "component_category": "HVAC_and_utilities",
+        "candidates": [
+          "Munters",
+          "AAF Flanders",
+          "Daikin Applied"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.areadevelopment.com/newsItems/4-24-2026/abbvie-durham-north-carolina.shtml",
+        "publication": "Area Development",
+        "fetched_at": "2026-05-19T01:09:14+00:00"
+      }
+    ],
+    "review": {
+      "status": "approved",
+      "reviewed_at": "2026-05-19T01:10:58+00:00"
+    }
   }
 ]

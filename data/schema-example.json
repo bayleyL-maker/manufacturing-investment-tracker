@@ -13,9 +13,15 @@
     "agriculture_machinery",
     "heavy_equipment",
     "food_beverage_machinery",
+    "food_and_beverage",
     "automotive",
     "ev_battery",
-    "non_auto_transportation"
+    "non_auto_transportation",
+    "pharma_biotech",
+    "metals_and_primary_materials",
+    "fabricated_metal_products",
+    "electrical_equipment_and_grid",
+    "consumer_packaged_goods"
   ],
 
   "investment_type": "new_facility",

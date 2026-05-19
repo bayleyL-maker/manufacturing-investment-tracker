@@ -62,5 +62,71 @@
     "industrial_paint_systems": ["Durr", "Eisenmann"],
     "non_destructive_testing": ["Olympus (Evident)", "Zetec", "Waygate Technologies"],
     "industrial_robots": ["FANUC", "ABB", "KUKA", "Yaskawa Motoman"]
+  },
+
+  "pharma_biotech": {
+    "bioreactors_and_fermentation": ["Sartorius", "Cytiva", "Thermo Fisher", "ABEC", "Eppendorf"],
+    "aseptic_filling_lines": ["Bosch Packaging (Syntegon)", "Optima", "IMA", "Marchesini"],
+    "isolators_and_cleanrooms": ["Getinge", "SKAN", "Comecer", "AAF Flanders"],
+    "chromatography_and_filtration": ["Cytiva", "Sartorius", "Pall (Cytiva)", "Repligen"],
+    "single_use_systems": ["Sartorius", "Cytiva", "Thermo Fisher", "Pall (Cytiva)"],
+    "packaging_and_serialization": ["Marchesini", "IMA", "Bosch Packaging (Syntegon)", "Korber Pharma"],
+    "HVAC_and_utilities": ["Munters", "AAF Flanders", "Daikin Applied", "Trane"],
+    "water_purification": ["Veolia Water Technologies", "MECO", "Elga (Veolia)"]
+  },
+
+  "food_and_beverage": {
+    "processing_equipment": ["GEA", "Alfa Laval", "Tetra Pak", "JBT"],
+    "ovens_and_thermal": ["Wenger", "Buhler", "Reading Bakery Systems", "AMF Bakery Systems"],
+    "packaging_machinery": ["Bosch Packaging (Syntegon)", "Multivac", "ProMach", "Coesia", "IMA"],
+    "filling_and_bottling": ["Krones", "KHS", "Sidel", "Tetra Pak"],
+    "conveyors_and_material_handling": ["Dorner", "Intralox", "Dematic", "Honeywell Intelligrated"],
+    "weighing_and_inspection": ["Mettler-Toledo", "Anritsu", "Ishida"],
+    "refrigeration_and_HVAC": ["Munters", "AAF Flanders", "GEA", "Mayekawa"],
+    "industrial_robots": ["FANUC", "ABB", "KUKA", "Stäubli"]
+  },
+
+  "metals_and_primary_materials": {
+    "rolling_mills": ["SMS group", "Danieli", "Primetals Technologies"],
+    "electric_arc_furnaces": ["SMS group", "Danieli", "Tenova"],
+    "continuous_casters": ["SMS group", "Danieli", "Primetals Technologies"],
+    "coil_processing_and_slitting": ["Red Bud Industries", "Bradbury Group", "Stamco", "Braner"],
+    "annealing_and_heat_treat": ["Drever", "Tenova", "Andritz"],
+    "fume_extraction_and_baghouses": ["AAF Flanders", "Camfil APC", "Donaldson Torit"],
+    "industrial_cranes": ["Konecranes", "Demag", "Whiting Cranes"],
+    "ladle_metallurgy_and_refining": ["SMS group", "Tenova", "Danieli"]
+  },
+
+  "fabricated_metal_products": {
+    "laser_cutting_systems": ["Trumpf", "Bystronic", "Amada", "Prima Power", "Mitsubishi Electric"],
+    "press_brakes_and_bending": ["Trumpf", "Bystronic", "Amada", "LVD", "Salvagnini"],
+    "robotic_welding": ["Lincoln Electric", "Miller Electric (ITW)", "FANUC", "ABB", "KUKA", "Yaskawa Motoman"],
+    "punching_and_stamping": ["Trumpf", "Amada", "Prima Power", "AIDA"],
+    "powder_coating_lines": ["Nordson", "Wagner", "Gema", "IntelliFinishing"],
+    "industrial_paint_systems": ["Durr", "Eisenmann", "Nordson"],
+    "automated_storage_retrieval": ["Daifuku", "Dematic", "Kardex"],
+    "assembly_automation": ["ATS Automation", "Comau", "Stäubli"]
+  },
+
+  "electrical_equipment_and_grid": {
+    "transformer_manufacturing_equipment": ["Hitachi Energy", "Siemens Energy", "GE Vernova", "Howard Industries", "Tuboly-Astronic"],
+    "switchgear_assembly": ["ABB", "Schneider Electric", "Eaton", "Siemens", "GE Vernova"],
+    "coil_winding": ["Marsilli", "Schleuniger", "Komax"],
+    "vacuum_pressure_impregnation": ["Hedrich", "Elantas"],
+    "cable_and_wire_manufacturing": ["Maillefer", "Niehoff", "Rosendahl Nextrom"],
+    "industrial_paint_systems": ["Durr", "Eisenmann", "Nordson"],
+    "robotic_welding": ["FANUC", "ABB", "KUKA", "Lincoln Electric"],
+    "structural_steel_fabrication": ["Peddinghaus", "Voortman", "FICEP"]
+  },
+
+  "consumer_packaged_goods": {
+    "filling_and_capping": ["Bosch Packaging (Syntegon)", "IMA", "Marchesini", "Krones"],
+    "mixers_and_blenders": ["GEA", "Charles Ross & Son", "Quadro", "Silverson"],
+    "form_fill_seal": ["Bosch Packaging (Syntegon)", "Multivac", "Bossar", "ProMach"],
+    "cartoners_and_case_packers": ["Coesia", "IMA", "Marchesini", "ProMach"],
+    "conveyors_and_material_handling": ["Dorner", "Intralox", "Dematic"],
+    "printing_and_labeling": ["Markem-Imaje", "Domino Printing", "Videojet"],
+    "weighing_and_inspection": ["Mettler-Toledo", "Anritsu", "Ishida"],
+    "industrial_robots": ["FANUC", "ABB", "KUKA", "Stäubli"]
   }
 }

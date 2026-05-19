@@ -35,9 +35,7 @@ DATA_DIR = ROOT / "data"
 SEEN_PATH = DATA_DIR / "seen_urls.json"
 PENDING_PATH = DATA_DIR / "pending.json"
 APPROVED_PATH = DATA_DIR / "investments.json"
-
-FEED_URL = "https://www.manufacturingdive.com/feeds/news/"
-FEED_PUBLICATION = "Manufacturing Dive"
+FEEDS_PATH = DATA_DIR / "feeds.json"
 
 # ---------------------------------------------------------------------------
 # JSON helpers
@@ -80,10 +78,11 @@ def build_id(record: dict) -> str:
 # Main pipeline
 # ---------------------------------------------------------------------------
 def main():
-    print(f"Fetching {FEED_URL}")
-    feed = feedparser.parse(FEED_URL)
-    entries = feed.entries
-    print(f"Feed returned {len(entries)} entries.\n")
+    feeds = load_json(FEEDS_PATH, [])
+    enabled_feeds = [f for f in feeds if f.get("enabled", True)]
+    if not enabled_feeds:
+        print("No enabled feeds in data/feeds.json. Nothing to do.")
+        return
 
     seen = set(load_json(SEEN_PATH, []))
     pending = load_json(PENDING_PATH, [])
@@ -94,7 +93,22 @@ def main():
     counts = {"new": 0, "skipped_seen": 0, "skipped_not_relevant": 0,
               "skipped_dup": 0, "errors": 0, "added": 0}
 
-    for entry in entries:
+    # Build the list of (entry, publication) tuples across all enabled feeds
+    all_entries = []
+    for feed_cfg in enabled_feeds:
+        name = feed_cfg["name"]
+        url = feed_cfg["url"]
+        print(f"\nFetching feed: {name}  ({url})")
+        feed = feedparser.parse(url)
+        if feed.bozo:
+            print(f"  warning: parser reported issue: {feed.bozo_exception}")
+        print(f"  -> {len(feed.entries)} entries")
+        for entry in feed.entries:
+            all_entries.append((entry, name))
+
+    print(f"\nTotal entries across all feeds: {len(all_entries)}\n")
+
+    for entry, publication in all_entries:
         url = entry.link
         if url in seen:
             counts["skipped_seen"] += 1
@@ -151,7 +165,7 @@ def main():
         record["suppliers"] = []
         record["sources"] = [{
             "url": url,
-            "publication": FEED_PUBLICATION,
+            "publication": publication,
             "fetched_at": datetime.now(timezone.utc).isoformat(timespec="seconds")
         }]
         record["review"] = {"status": "pending", "reviewed_at": None}

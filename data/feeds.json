@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Manufacturing Dive",
+    "url": "https://www.manufacturingdive.com/feeds/news/",
+    "enabled": true
+  },
+  {
+    "name": "Area Development",
+    "url": "https://www.areadevelopment.com/rss/NewsItems.xml?t=2",
+    "enabled": true
+  }
+]

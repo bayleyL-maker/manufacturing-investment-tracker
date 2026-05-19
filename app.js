@@ -21,9 +21,15 @@ const INDUSTRY_LABELS = {
   agriculture_machinery: "Agriculture Machinery",
   heavy_equipment: "Heavy Equipment",
   food_beverage_machinery: "Food & Beverage Machinery",
+  food_and_beverage: "Food & Beverage Products",
   automotive: "Automotive",
   ev_battery: "EV / Battery",
-  non_auto_transportation: "Non-Auto Transportation"
+  non_auto_transportation: "Non-Auto Transportation",
+  pharma_biotech: "Pharma & Biotech",
+  metals_and_primary_materials: "Metals & Primary Materials",
+  fabricated_metal_products: "Fabricated Metal Products",
+  electrical_equipment_and_grid: "Electrical Equipment & Grid",
+  consumer_packaged_goods: "Consumer Packaged Goods"
 };
 
 const TYPE_LABELS = {

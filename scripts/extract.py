@@ -26,17 +26,23 @@ MODEL = "claude-haiku-4-5"
 
 EXTRACTION_PROMPT = """You are extracting structured data about US manufacturing investments from a news article.
 
-We track investments in these 6 industries only:
-- agriculture_machinery       (tractors, combines, sprayers, ag equipment)
-- heavy_equipment             (construction, mining, earthmoving equipment)
-- food_beverage_machinery     (food processing, packaging equipment)
-- automotive                  (vehicle assembly plants, any powertrain)
-- ev_battery                  (battery cell/pack/module manufacturing, battery components)
-- non_auto_transportation     (rail, aerospace, marine, commercial trucking, off-highway)
+We track investments in these 12 industries only:
+- agriculture_machinery         (tractors, combines, sprayers, ag equipment)
+- heavy_equipment               (construction, mining, earthmoving equipment)
+- food_beverage_machinery       (machines/equipment used to process or package food and drink)
+- food_and_beverage             (actual food/drink products: bakeries, candy, beverages, pet food)
+- automotive                    (motor vehicle assembly of any kind: cars, trucks, e-bikes, scooters, golf carts, micromobility, light EVs)
+- ev_battery                    (battery cell/pack/module manufacturing, battery-specific components)
+- non_auto_transportation       (rail, aerospace, marine, commercial trucking, off-highway)
+- pharma_biotech                (drugs, biologics, vaccines, medical devices)
+- metals_and_primary_materials  (steel mills, aluminum, foundries, castings, primary metal output)
+- fabricated_metal_products     (products built from finished metal: lockers, racks, towers, vehicle upfits, structural shapes)
+- electrical_equipment_and_grid (transformers, switchgear, voltage regulators, transmission towers, generators)
+- consumer_packaged_goods       (personal care, household products, cleaning products, oral care)
 
 An article is RELEVANT only if ALL of the following are true:
 1. It describes a specific investment in a US-based manufacturing facility
-2. The facility is or will be in one of the 6 industries above
+2. The facility is or will be in one of the 12 industries above
 3. The investment involves physical manufacturing on US soil (not just R&D, not just software, not just sales offices)
 4. The investment type is one of: new_facility, expansion, equipment_upgrade, onshoring, automation, retooling, reopening
 
@@ -48,7 +54,7 @@ If the article IS relevant, respond with EXACTLY this JSON shape and nothing els
   "relevant": true,
   "record": {
     "company": {"name": "<official company name>", "hq_country": "<country or null>"},
-    "industry": "<one of the 6 values above>",
+    "industry": "<one of the 12 values above>",
     "investment_type": "<one of: new_facility, expansion, equipment_upgrade, onshoring, automation, retooling, reopening>",
     "amount_usd": <integer dollars, or null if not disclosed>,
     "amount_disclosed": <true or false>,

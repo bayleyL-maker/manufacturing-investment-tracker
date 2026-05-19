@@ -1,21 +1,24 @@
 """
-Step 1: RSS reader.
+RSS reader / feed inspector.
 
-Fetches the configured RSS feed and prints each entry's title, date, and URL.
-No LLM calls, no scraping - just confirms the feed works and shows what's in it.
+Fetches a feed and prints each entry's title, date, and URL. Useful for
+testing a new feed URL before adding it to data/feeds.json.
 
-Run with:  python scripts/fetch_feed.py
+Run with:
+    python scripts/fetch_feed.py                            # uses default
+    python scripts/fetch_feed.py <feed-url>                 # test a specific URL
 """
+import sys
 import feedparser
 
-FEED_URL = "https://www.manufacturingdive.com/feeds/news/"
+DEFAULT_FEED = "https://www.manufacturingdive.com/feeds/news/"
 
 def main():
-    print(f"Fetching: {FEED_URL}\n")
-    feed = feedparser.parse(FEED_URL)
+    url = sys.argv[1] if len(sys.argv) > 1 else DEFAULT_FEED
+    print(f"Fetching: {url}\n")
+    feed = feedparser.parse(url)
 
     if feed.bozo:
-        # bozo is feedparser's flag for "something looked off about this feed"
         print(f"Warning: feed parser reported an issue: {feed.bozo_exception}")
 
     entries = feed.entries
