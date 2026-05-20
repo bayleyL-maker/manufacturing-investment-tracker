@@ -1,1 +1,819 @@
-[]
+[
+  {
+    "company": {
+      "name": "Nestlé Purina PetCare",
+      "hq_country": "Switzerland"
+    },
+    "industry": "food_and_beverage",
+    "investment_type": "new_facility",
+    "amount_usd": 550000000,
+    "amount_disclosed": true,
+    "location": {
+      "city": "Williamsburg Township",
+      "state": "OH",
+      "precision": "city",
+      "lat": 39.0392993,
+      "lon": -84.066131
+    },
+    "dates": {
+      "announced": "2020-10-26",
+      "expected_start": "2020-Q4",
+      "expected_completion": "2023"
+    },
+    "description": "Nestlé Purina PetCare announced a $550 million investment to build a new 1.2 million-square-foot pet food manufacturing facility in Williamsburg Township, Ohio. The facility will produce dry dog and cat food brands including Purina Pro Plan, Purina ONE, and Dog Chow, with construction beginning in fall 2020 and operations expected in 2023.",
+    "id": "2020-10-nestl-purina-petcare-williamsburg-townshi-oh",
+    "suppliers": [
+      {
+        "component_category": "processing_equipment",
+        "candidates": [
+          "GEA",
+          "Alfa Laval",
+          "JBT",
+          "Tetra Pak"
+        ]
+      },
+      {
+        "component_category": "ovens_and_thermal",
+        "candidates": [
+          "Wenger",
+          "Buhler",
+          "Reading Bakery Systems",
+          "AMF Bakery Systems"
+        ]
+      },
+      {
+        "component_category": "packaging_machinery",
+        "candidates": [
+          "Bosch Packaging (Syntegon)",
+          "ProMach",
+          "Multivac",
+          "Coesia"
+        ]
+      },
+      {
+        "component_category": "conveyors_and_material_handling",
+        "candidates": [
+          "Dorner",
+          "Intralox",
+          "Dematic",
+          "Honeywell Intelligrated"
+        ]
+      },
+      {
+        "component_category": "weighing_and_inspection",
+        "candidates": [
+          "Mettler-Toledo",
+          "Anritsu",
+          "Ishida"
+        ]
+      },
+      {
+        "component_category": "refrigeration_and_HVAC",
+        "candidates": [
+          "GEA",
+          "Munters",
+          "AAF Flanders",
+          "Mayekawa"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://newscenter.purina.com/2020-10-26-Nestle-Purina-PetCare-Plans-to-Build-New-Factory-in-Ohio-to-Meet-Growing-Pet-Food-Demand",
+        "publication": "Google News - New US Plants",
+        "fetched_at": "2026-05-20T01:21:58+00:00"
+      }
+    ],
+    "review": {
+      "status": "rejected",
+      "reviewed_at": "2026-05-20T01:47:53+00:00"
+    }
+  },
+  {
+    "company": {
+      "name": "Barry Callebaut",
+      "hq_country": "Switzerland"
+    },
+    "industry": "food_and_beverage",
+    "investment_type": "new_facility",
+    "amount_usd": 104000000,
+    "amount_disclosed": true,
+    "location": {
+      "city": "Ontario",
+      "state": "CA",
+      "precision": "city",
+      "lat": 34.065846,
+      "lon": -117.64843
+    },
+    "dates": {
+      "announced": "2022-05-03",
+      "expected_start": null,
+      "expected_completion": "2024"
+    },
+    "description": "Barry Callebaut is building a new state-of-the-art chocolate manufacturing facility in Ontario, California with an initial annual production capacity of over 50,000 tonnes, focusing on sugar-free chocolate and specialty products. The $104 million investment over 10 years is expected to create over 200 jobs and be operational by 2024.",
+    "id": "2022-05-barry-callebaut-ontario-ca",
+    "suppliers": [
+      {
+        "component_category": "processing_equipment",
+        "candidates": [
+          "GEA",
+          "Alfa Laval",
+          "Tetra Pak",
+          "JBT"
+        ]
+      },
+      {
+        "component_category": "ovens_and_thermal",
+        "candidates": [
+          "Buhler",
+          "Wenger",
+          "Reading Bakery Systems"
+        ]
+      },
+      {
+        "component_category": "packaging_machinery",
+        "candidates": [
+          "Bosch Packaging (Syntegon)",
+          "Multivac",
+          "ProMach",
+          "Coesia"
+        ]
+      },
+      {
+        "component_category": "conveyors_and_material_handling",
+        "candidates": [
+          "Dematic",
+          "Intralox",
+          "Dorner",
+          "Honeywell Intelligrated"
+        ]
+      },
+      {
+        "component_category": "weighing_and_inspection",
+        "candidates": [
+          "Mettler-Toledo",
+          "Anritsu",
+          "Ishida"
+        ]
+      },
+      {
+        "component_category": "refrigeration_and_HVAC",
+        "candidates": [
+          "GEA",
+          "Munters",
+          "Mayekawa",
+          "AAF Flanders"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.confectionerynews.com/Article/2022/05/03/barry-callebaut-to-scale-up-its-north-american-production-with-new-factory-in-ontario/",
+        "publication": "Google News - New US Plants",
+        "fetched_at": "2026-05-20T01:22:20+00:00"
+      }
+    ],
+    "review": {
+      "status": "rejected",
+      "reviewed_at": "2026-05-20T01:48:16+00:00"
+    }
+  },
+  {
+    "company": {
+      "name": "Caterpillar Inc.",
+      "hq_country": "United States"
+    },
+    "industry": "heavy_equipment",
+    "investment_type": "new_facility",
+    "amount_usd": 200000000,
+    "amount_disclosed": true,
+    "location": {
+      "city": "Athens",
+      "state": "GA",
+      "precision": "city",
+      "lat": 33.9597677,
+      "lon": -83.376398
+    },
+    "dates": {
+      "announced": "2012-02-17",
+      "expected_start": "2012-Q1",
+      "expected_completion": "2013-Q4"
+    },
+    "description": "Caterpillar announced a new $200 million manufacturing facility near Athens, Georgia to produce small track-type tractors and mini hydraulic excavators, with 1,400 direct employees expected once fully operational. The facility will serve as Caterpillar's global source for small track-type tractors and will relocate production from Japan to better serve North American and European customers.",
+    "id": "2012-02-caterpillar-inc-athens-ga",
+    "suppliers": [
+      {
+        "component_category": "large_machining_centers",
+        "candidates": [
+          "Mazak",
+          "Doosan (DN Solutions)",
+          "Okuma",
+          "Toshiba Machine"
+        ]
+      },
+      {
+        "component_category": "large_fabrication_and_welding",
+        "candidates": [
+          "Lincoln Electric",
+          "Miller Electric (ITW)",
+          "ESAB"
+        ]
+      },
+      {
+        "component_category": "robotic_welding",
+        "candidates": [
+          "FANUC",
+          "ABB",
+          "KUKA",
+          "Yaskawa Motoman"
+        ]
+      },
+      {
+        "component_category": "industrial_paint_systems",
+        "candidates": [
+          "Durr",
+          "Eisenmann",
+          "Nordson"
+        ]
+      },
+      {
+        "component_category": "heavy_lift_cranes_and_handling",
+        "candidates": [
+          "Konecranes",
+          "Demag"
+        ]
+      },
+      {
+        "component_category": "casting_and_forging_equipment",
+        "candidates": [
+          "SMS group",
+          "Danieli",
+          "Inductotherm"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.prnewswire.com/news-releases/caterpillar-expands-operations-in-united-states-new-factory-near-athens-georgia-expected-to-employ-1400-people-139512648.html",
+        "publication": "Google News - New US Plants",
+        "fetched_at": "2026-05-20T01:22:47+00:00"
+      }
+    ],
+    "review": {
+      "status": "rejected",
+      "reviewed_at": "2026-05-20T01:48:24+00:00"
+    }
+  },
+  {
+    "company": {
+      "name": "Honda Motor Co.",
+      "hq_country": "Japan"
+    },
+    "industry": "automotive",
+    "investment_type": "new_facility",
+    "amount_usd": 550000000,
+    "amount_disclosed": true,
+    "location": {
+      "city": "Greensburg",
+      "state": "IN",
+      "precision": "city",
+      "lat": 39.3372722,
+      "lon": -85.483581
+    },
+    "dates": {
+      "announced": "2006-06-27",
+      "expected_start": "2006-fall",
+      "expected_completion": "2008"
+    },
+    "description": "Honda Motor Co. announced a $550 million investment to build a new assembly plant in Greensburg, Indiana, Honda's sixth North American plant. The facility will eventually produce 200,000 vehicles annually and create approximately 2,000 jobs, with construction beginning in fall 2006 and completion expected in 2008.",
+    "id": "2006-06-honda-motor-co-greensburg-in",
+    "suppliers": [
+      {
+        "component_category": "stamping_presses",
+        "candidates": [
+          "Schuler",
+          "AIDA",
+          "Komatsu Industries",
+          "Fagor Arrasate"
+        ]
+      },
+      {
+        "component_category": "body_in_white_welding",
+        "candidates": [
+          "FANUC",
+          "ABB",
+          "KUKA",
+          "Yaskawa Motoman",
+          "Comau"
+        ]
+      },
+      {
+        "component_category": "paint_systems",
+        "candidates": [
+          "Durr",
+          "Eisenmann",
+          "Geico Taikisha"
+        ]
+      },
+      {
+        "component_category": "conveyors_and_material_handling",
+        "candidates": [
+          "Daifuku",
+          "Dematic",
+          "Honeywell Intelligrated"
+        ]
+      },
+      {
+        "component_category": "general_assembly_tooling",
+        "candidates": [
+          "Atlas Copco",
+          "Stanley Engineered Fastening",
+          "Ingersoll Rand"
+        ]
+      },
+      {
+        "component_category": "industrial_robots",
+        "candidates": [
+          "FANUC",
+          "ABB",
+          "KUKA",
+          "Yaskawa Motoman"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.nbcnews.com/id/wbna13583311",
+        "publication": "Google News - New US Plants",
+        "fetched_at": "2026-05-20T01:25:09+00:00"
+      }
+    ],
+    "review": {
+      "status": "rejected",
+      "reviewed_at": "2026-05-20T01:48:57+00:00"
+    }
+  },
+  {
+    "company": {
+      "name": "Saab",
+      "hq_country": "Sweden"
+    },
+    "industry": "non_auto_transportation",
+    "investment_type": "onshoring",
+    "amount_usd": null,
+    "amount_disclosed": false,
+    "location": {
+      "city": "West Lafayette",
+      "state": "IN",
+      "precision": "city",
+      "lat": 40.4258686,
+      "lon": -86.9080655
+    },
+    "dates": {
+      "announced": "2025-12-23",
+      "expected_start": null,
+      "expected_completion": null
+    },
+    "description": "Saab advanced production of the first American-made T-7A Red Hawk aft fuselage in West Lafayette, Indiana, onshoring manufacturing from Sweden. The aircraft is designed to train more than 1,000 pilots annually for the U.S. Air Force.",
+    "id": "2025-12-saab-west-lafayette-in",
+    "suppliers": [
+      {
+        "component_category": "composite_layup_and_curing",
+        "candidates": [
+          "Electroimpact",
+          "MAG IAS",
+          "Coast Composites",
+          "Ascent Aerospace"
+        ]
+      },
+      {
+        "component_category": "large_machining_centers",
+        "candidates": [
+          "Mazak",
+          "DMG Mori",
+          "Makino",
+          "MAG IAS"
+        ]
+      },
+      {
+        "component_category": "robotic_drilling_and_fastening",
+        "candidates": [
+          "Electroimpact",
+          "Broetje-Automation",
+          "KUKA"
+        ]
+      },
+      {
+        "component_category": "industrial_paint_systems",
+        "candidates": [
+          "Durr",
+          "Eisenmann"
+        ]
+      },
+      {
+        "component_category": "non_destructive_testing",
+        "candidates": [
+          "Olympus (Evident)",
+          "Zetec",
+          "Waygate Technologies"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://defence-industry.eu/saab-highlights-defence-contracts-training-and-manufacturing-expansion-in-the-united-states-in-2025/",
+        "publication": "Google News - US Plant Expansions",
+        "fetched_at": "2026-05-20T01:25:57+00:00"
+      }
+    ],
+    "review": {
+      "status": "rejected",
+      "reviewed_at": "2026-05-20T01:49:12+00:00"
+    }
+  },
+  {
+    "company": {
+      "name": "Amgen Inc.",
+      "hq_country": "United States"
+    },
+    "industry": "pharma_biotech",
+    "investment_type": "expansion",
+    "amount_usd": 300000000,
+    "amount_disclosed": true,
+    "location": {
+      "city": "Juncos",
+      "state": "PR",
+      "precision": "city",
+      "lat": 18.2066971,
+      "lon": -65.9139804
+    },
+    "dates": {
+      "announced": "2026-05-04",
+      "expected_start": null,
+      "expected_completion": null
+    },
+    "description": "Amgen is investing an additional $300 million in its biologics production facility in Juncos, Puerto Rico, established in 1992, to increase production capacity and support workforce development in the region.",
+    "id": "2026-05-amgen-inc-juncos-pr",
+    "suppliers": [
+      {
+        "component_category": "bioreactors_and_fermentation",
+        "candidates": [
+          "Sartorius",
+          "Cytiva",
+          "Thermo Fisher",
+          "ABEC"
+        ]
+      },
+      {
+        "component_category": "chromatography_and_filtration",
+        "candidates": [
+          "Cytiva",
+          "Sartorius",
+          "Repligen",
+          "Pall (Cytiva)"
+        ]
+      },
+      {
+        "component_category": "single_use_systems",
+        "candidates": [
+          "Sartorius",
+          "Cytiva",
+          "Thermo Fisher"
+        ]
+      },
+      {
+        "component_category": "aseptic_filling_lines",
+        "candidates": [
+          "Bosch Packaging (Syntegon)",
+          "Optima",
+          "IMA"
+        ]
+      },
+      {
+        "component_category": "isolators_and_cleanrooms",
+        "candidates": [
+          "Getinge",
+          "SKAN",
+          "Comecer"
+        ]
+      },
+      {
+        "component_category": "HVAC_and_utilities",
+        "candidates": [
+          "Munters",
+          "AAF Flanders",
+          "Daikin Applied"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.fiercepharma.com/manufacturing/amgen-channels-another-300m-us-outlay-bolstering-puerto-rico-biologics-expansion",
+        "publication": "Google News - US Plant Expansions",
+        "fetched_at": "2026-05-20T01:26:54+00:00"
+      }
+    ],
+    "review": {
+      "status": "rejected",
+      "reviewed_at": "2026-05-20T01:49:56+00:00"
+    }
+  },
+  {
+    "company": {
+      "name": "Nestlé Purina PetCare",
+      "hq_country": "Switzerland"
+    },
+    "industry": "food_and_beverage",
+    "investment_type": "expansion",
+    "amount_usd": 250000000,
+    "amount_disclosed": true,
+    "location": {
+      "city": "Bloomfield",
+      "state": "MO",
+      "precision": "city",
+      "lat": 36.8858853,
+      "lon": -89.9292572
+    },
+    "dates": {
+      "announced": "2021-10-26",
+      "expected_start": null,
+      "expected_completion": null
+    },
+    "description": "Purina completed a $250 million expansion of its Bloomfield, Missouri cat litter factory, adding two new buildings including a dedicated production facility for Tidy Cats LightWeight litter, upgraded production equipment, in-house jug container manufacturing capability, and a 10-story automated warehouse. The expansion created 75 new jobs and increased total employment at the facility to over 450 people.",
+    "id": "2021-10-nestl-purina-petcare-bloomfield-mo",
+    "suppliers": [
+      {
+        "component_category": "processing_equipment",
+        "candidates": [
+          "GEA",
+          "Alfa Laval",
+          "JBT"
+        ]
+      },
+      {
+        "component_category": "packaging_machinery",
+        "candidates": [
+          "Bosch Packaging (Syntegon)",
+          "ProMach",
+          "Multivac"
+        ]
+      },
+      {
+        "component_category": "conveyors_and_material_handling",
+        "candidates": [
+          "Dematic",
+          "Honeywell Intelligrated",
+          "Dorner",
+          "Intralox"
+        ]
+      },
+      {
+        "component_category": "weighing_and_inspection",
+        "candidates": [
+          "Mettler-Toledo",
+          "Anritsu",
+          "Ishida"
+        ]
+      },
+      {
+        "component_category": "industrial_robots",
+        "candidates": [
+          "FANUC",
+          "ABB",
+          "KUKA"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://newscenter.purina.com/2021-10-26-Purina-celebrates-completion-of-250-million-factory-expansion-in-southeast-Missouri",
+        "publication": "Google News - US Plant Expansions",
+        "fetched_at": "2026-05-20T01:28:13+00:00"
+      }
+    ],
+    "review": {
+      "status": "rejected",
+      "reviewed_at": "2026-05-20T01:50:40+00:00"
+    }
+  },
+  {
+    "company": {
+      "name": "American Aerospace Technologies, Inc.",
+      "hq_country": "United States"
+    },
+    "industry": "non_auto_transportation",
+    "investment_type": "expansion",
+    "amount_usd": null,
+    "amount_disclosed": false,
+    "location": {
+      "city": null,
+      "state": null,
+      "precision": "state",
+      "lat": null,
+      "lon": null
+    },
+    "dates": {
+      "announced": "2022-03-15",
+      "expected_start": null,
+      "expected_completion": null
+    },
+    "description": "American Aerospace Technologies, Inc. is expanding its AiRanger Unmanned Aerial System (UAS) production operation through its manufacturing arm American Aerospace ISR, LLC. The expansion will double production capacity to nearly 150 aircraft per year.",
+    "id": "2022-03-american-aerospace-technologie",
+    "suppliers": [
+      {
+        "component_category": "composite_layup_and_curing",
+        "candidates": [
+          "Electroimpact",
+          "Ascent Aerospace",
+          "Coast Composites",
+          "MAG IAS"
+        ]
+      },
+      {
+        "component_category": "robotic_drilling_and_fastening",
+        "candidates": [
+          "Electroimpact",
+          "Broetje-Automation",
+          "KUKA"
+        ]
+      },
+      {
+        "component_category": "large_machining_centers",
+        "candidates": [
+          "Mazak",
+          "DMG Mori",
+          "Makino"
+        ]
+      },
+      {
+        "component_category": "industrial_robots",
+        "candidates": [
+          "FANUC",
+          "ABB",
+          "KUKA",
+          "Yaskawa Motoman"
+        ]
+      },
+      {
+        "component_category": "non_destructive_testing",
+        "candidates": [
+          "Olympus (Evident)",
+          "Zetec",
+          "Waygate Technologies"
+        ]
+      },
+      {
+        "component_category": "industrial_paint_systems",
+        "candidates": [
+          "Durr",
+          "Eisenmann"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.unmannedsystemstechnology.com/2022/03/american-aerospace-launches-airanger-uas-factory-expansion/",
+        "publication": "Google News - US Plant Expansions",
+        "fetched_at": "2026-05-20T01:28:21+00:00"
+      }
+    ],
+    "review": {
+      "status": "rejected",
+      "reviewed_at": "2026-05-20T01:50:47+00:00"
+    }
+  },
+  {
+    "company": {
+      "name": "American Packaging Corporation",
+      "hq_country": "US"
+    },
+    "industry": "fabricated_metal_products",
+    "investment_type": "expansion",
+    "amount_usd": 10100000,
+    "amount_disclosed": true,
+    "location": {
+      "city": "South Hutchinson",
+      "state": "KS",
+      "precision": "city",
+      "lat": 38.0280671,
+      "lon": -97.9403303
+    },
+    "dates": {
+      "announced": "2022-02-14",
+      "expected_start": "2020-12",
+      "expected_completion": "2022-01"
+    },
+    "description": "American Packaging Corporation, a corrugated cardboard box maker, completed a 100,000 square foot expansion at its South Hutchinson facility, adding over $10.1 million in capital investment including a new conveyor system, box folder/gluers, and other equipment. The expansion is expected to generate $4 million more in annual sales with 8-10 new jobs, primarily driven by automation improvements.",
+    "id": "2022-02-american-packaging-corporation-south-hutchinson-ks",
+    "suppliers": [
+      {
+        "component_category": "assembly_automation",
+        "candidates": [
+          "ATS Automation",
+          "Comau",
+          "Stäubli"
+        ]
+      },
+      {
+        "component_category": "automated_storage_retrieval",
+        "candidates": [
+          "Daifuku",
+          "Dematic",
+          "Kardex"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.hutchnews.com/story/news/2022/02/14/south-hutchinson-grants-tax-incentive-packaging-plant-expansion-american-corporation/6784448001/",
+        "publication": "Google News - US Plant Expansions",
+        "fetched_at": "2026-05-20T01:28:49+00:00"
+      }
+    ],
+    "review": {
+      "status": "rejected",
+      "reviewed_at": "2026-05-20T01:51:18+00:00"
+    }
+  },
+  {
+    "company": {
+      "name": "Volkswagen Group",
+      "hq_country": "Germany"
+    },
+    "industry": "ev_battery",
+    "investment_type": "expansion",
+    "amount_usd": 800000000,
+    "amount_disclosed": true,
+    "location": {
+      "city": "Chattanooga",
+      "state": "TN",
+      "precision": "city",
+      "lat": 35.0457219,
+      "lon": -85.3094883
+    },
+    "dates": {
+      "announced": "2019-11-13",
+      "expected_start": null,
+      "expected_completion": "2022"
+    },
+    "description": "Volkswagen expanding its Chattanooga, Tennessee factory with $800 million investment including a 564,000-square-foot body shop addition and a new battery pack assembly facility to serve as its North American EV manufacturing hub. Electric vehicle production expected to begin in 2022.",
+    "id": "2019-11-volkswagen-group-chattanooga-tn",
+    "suppliers": [
+      {
+        "component_category": "pack_and_module_assembly",
+        "candidates": [
+          "ATS Automation",
+          "Comau",
+          "Durr",
+          "Hirata"
+        ]
+      },
+      {
+        "component_category": "dry_rooms_and_cleanrooms",
+        "candidates": [
+          "Munters",
+          "Bry-Air",
+          "AAF Flanders",
+          "Daikin Applied"
+        ]
+      },
+      {
+        "component_category": "battery_test_equipment",
+        "candidates": [
+          "Arbin",
+          "Maccor",
+          "Bitrode",
+          "Chroma"
+        ]
+      },
+      {
+        "component_category": "industrial_robots",
+        "candidates": [
+          "FANUC",
+          "ABB",
+          "KUKA",
+          "Yaskawa Motoman"
+        ]
+      },
+      {
+        "component_category": "cell_winding_or_stacking",
+        "candidates": [
+          "Manz",
+          "CKD",
+          "Koem"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://techcrunch.com/2019/11/13/volkswagens-800m-tennessee-factory-expansion-to-include-battery-pack-plant/",
+        "publication": "Google News - US Plant Expansions",
+        "fetched_at": "2026-05-20T01:29:12+00:00"
+      }
+    ],
+    "review": {
+      "status": "rejected",
+      "reviewed_at": "2026-05-20T01:51:28+00:00"
+    }
+  }
+]

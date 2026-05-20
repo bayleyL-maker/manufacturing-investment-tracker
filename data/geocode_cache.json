@@ -66,5 +66,101 @@
   "durham|NC": {
     "lat": 35.996653,
     "lon": -78.9018053
+  },
+  "blytheville|AR": {
+    "lat": 35.9283249,
+    "lon": -89.9045612
+  },
+  "lebanon|IN": {
+    "lat": 40.0483744,
+    "lon": -86.4691677
+  },
+  "reading|OH": {
+    "lat": 39.2236694,
+    "lon": -84.4421641
+  },
+  "adairsville|GA": {
+    "lat": 34.3683267,
+    "lon": -84.9349057
+  },
+  "chili|NY": {
+    "lat": 43.0845231,
+    "lon": -77.754136
+  },
+  "houston|TX": {
+    "lat": 29.7589382,
+    "lon": -95.3676974
+  },
+  "winston-salem|NC": {
+    "lat": 36.0998131,
+    "lon": -80.2440518
+  },
+  "williamsburg township|OH": {
+    "lat": 39.0392993,
+    "lon": -84.066131
+  },
+  "ontario|CA": {
+    "lat": 34.065846,
+    "lon": -117.64843
+  },
+  "athens|GA": {
+    "lat": 33.9597677,
+    "lon": -83.376398
+  },
+  "tucson|AZ": {
+    "lat": 32.2228765,
+    "lon": -110.974847
+  },
+  "hagerstown|MD": {
+    "lat": 39.6430455,
+    "lon": -77.7191081
+  },
+  "austin|TX": {
+    "lat": 30.2711286,
+    "lon": -97.7436995
+  },
+  "greensburg|IN": {
+    "lat": 39.3372722,
+    "lon": -85.483581
+  },
+  "charles city|IA": {
+    "lat": 43.0662177,
+    "lon": -92.6794258
+  },
+  "west lafayette|IN": {
+    "lat": 40.4258686,
+    "lon": -86.9080655
+  },
+  "holland|MI": {
+    "lat": 42.7876022,
+    "lon": -86.1090828
+  },
+  "juncos|PR": {
+    "lat": 18.2066971,
+    "lon": -65.9139804
+  },
+  "bloomington|IL": {
+    "lat": 40.4797828,
+    "lon": -88.9939147
+  },
+  "fogelsville|PA": {
+    "lat": 40.5831514,
+    "lon": -75.6326882
+  },
+  "branchburg|NJ": {
+    "lat": 40.5688245,
+    "lon": -74.7002739
+  },
+  "bloomfield|MO": {
+    "lat": 36.8858853,
+    "lon": -89.9292572
+  },
+  "south hutchinson|KS": {
+    "lat": 38.0280671,
+    "lon": -97.9403303
+  },
+  "chattanooga|TN": {
+    "lat": 35.0457219,
+    "lon": -85.3094883
   }
 }

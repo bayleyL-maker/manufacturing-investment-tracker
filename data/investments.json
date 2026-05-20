@@ -1602,5 +1602,1996 @@
       "status": "approved",
       "reviewed_at": "2026-05-19T01:10:58+00:00"
     }
+  },
+  {
+    "company": {
+      "name": "Sandvik-Alpha Metallurgical Resources (Joint Venture)",
+      "hq_country": "Sweden"
+    },
+    "industry": "fabricated_metal_products",
+    "investment_type": "new_facility",
+    "amount_usd": null,
+    "amount_disclosed": false,
+    "location": {
+      "city": "Putnam County",
+      "state": "WV",
+      "precision": "state",
+      "lat": null,
+      "lon": null
+    },
+    "dates": {
+      "announced": "2026-05-19",
+      "expected_start": null,
+      "expected_completion": null
+    },
+    "description": "Joint venture between Sandvik and Alpha Metallurgical Resources establishing a new 100,000-square-foot manufacturing facility at Waterway Industrial Park to produce rock bolts and resin capsules for mining and infrastructure ground support applications, representing Sandvik's re-entry into the U.S. ground support market.",
+    "id": "2026-05-sandvik-alpha-metallurgical-re-putnam-county-wv",
+    "suppliers": [
+      {
+        "component_category": "punching_and_stamping",
+        "candidates": [
+          "Trumpf",
+          "Amada",
+          "Prima Power",
+          "AIDA"
+        ]
+      },
+      {
+        "component_category": "robotic_welding",
+        "candidates": [
+          "Lincoln Electric",
+          "FANUC",
+          "ABB",
+          "KUKA"
+        ]
+      },
+      {
+        "component_category": "press_brakes_and_bending",
+        "candidates": [
+          "Trumpf",
+          "Amada",
+          "LVD",
+          "Salvagnini"
+        ]
+      },
+      {
+        "component_category": "powder_coating_lines",
+        "candidates": [
+          "Nordson",
+          "Wagner",
+          "Gema"
+        ]
+      },
+      {
+        "component_category": "assembly_automation",
+        "candidates": [
+          "ATS Automation",
+          "Comau",
+          "Stäubli"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.areadevelopment.com/newsItems/5-19-2026/sandvik-alpha-metallurgical-resources-putnam-county-west-virginia.shtml",
+        "publication": "Area Development",
+        "fetched_at": "2026-05-20T01:15:49+00:00"
+      }
+    ],
+    "review": {
+      "status": "approved",
+      "reviewed_at": "2026-05-20T01:47:02+00:00"
+    }
+  },
+  {
+    "company": {
+      "name": "Gowan Milling",
+      "hq_country": null
+    },
+    "industry": "food_and_beverage",
+    "investment_type": "expansion",
+    "amount_usd": null,
+    "amount_disclosed": false,
+    "location": {
+      "city": "Blytheville",
+      "state": "AR",
+      "precision": "city",
+      "lat": 35.9283249,
+      "lon": -89.9045612
+    },
+    "dates": {
+      "announced": "2026-05-19",
+      "expected_start": null,
+      "expected_completion": null
+    },
+    "description": "Gowan Milling is expanding its existing grain milling and processing facility in Blytheville, Arkansas to increase production capabilities for food and feed applications. The expansion supports growing customer demand and strengthens the company's North American operations.",
+    "id": "2026-05-gowan-milling-blytheville-ar",
+    "suppliers": [
+      {
+        "component_category": "processing_equipment",
+        "candidates": [
+          "GEA",
+          "Alfa Laval"
+        ]
+      },
+      {
+        "component_category": "conveyors_and_material_handling",
+        "candidates": [
+          "Dorner",
+          "Intralox",
+          "Dematic"
+        ]
+      },
+      {
+        "component_category": "weighing_and_inspection",
+        "candidates": [
+          "Mettler-Toledo",
+          "Anritsu",
+          "Ishida"
+        ]
+      },
+      {
+        "component_category": "packaging_machinery",
+        "candidates": [
+          "Bosch Packaging (Syntegon)",
+          "ProMach",
+          "Coesia"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.areadevelopment.com/newsItems/5-19-2026/gowan-milling-blytheville-arkansas.shtml",
+        "publication": "Area Development",
+        "fetched_at": "2026-05-20T01:15:53+00:00"
+      }
+    ],
+    "review": {
+      "status": "approved",
+      "reviewed_at": "2026-05-20T01:47:13+00:00"
+    }
+  },
+  {
+    "company": {
+      "name": "Gorton's",
+      "hq_country": "Japan"
+    },
+    "industry": "food_and_beverage",
+    "investment_type": "new_facility",
+    "amount_usd": null,
+    "amount_disclosed": false,
+    "location": {
+      "city": "Lebanon",
+      "state": "IN",
+      "precision": "city",
+      "lat": 40.0483744,
+      "lon": -86.4691677
+    },
+    "dates": {
+      "announced": "2025-10-08",
+      "expected_start": null,
+      "expected_completion": null
+    },
+    "description": "Gorton's, a Nissui Group subsidiary, opened a new seafood processing factory in Lebanon, Indiana to increase North American production capacity and produce value-added products, complementing its primary facility in Gloucester, Massachusetts.",
+    "id": "2025-10-gorton-s-lebanon-in",
+    "suppliers": [
+      {
+        "component_category": "processing_equipment",
+        "candidates": [
+          "GEA",
+          "Alfa Laval",
+          "JBT"
+        ]
+      },
+      {
+        "component_category": "packaging_machinery",
+        "candidates": [
+          "Bosch Packaging (Syntegon)",
+          "Multivac",
+          "ProMach"
+        ]
+      },
+      {
+        "component_category": "conveyors_and_material_handling",
+        "candidates": [
+          "Dorner",
+          "Dematic",
+          "Intralox"
+        ]
+      },
+      {
+        "component_category": "weighing_and_inspection",
+        "candidates": [
+          "Mettler-Toledo",
+          "Anritsu",
+          "Ishida"
+        ]
+      },
+      {
+        "component_category": "refrigeration_and_HVAC",
+        "candidates": [
+          "GEA",
+          "Mayekawa",
+          "Munters"
+        ]
+      },
+      {
+        "component_category": "industrial_robots",
+        "candidates": [
+          "FANUC",
+          "ABB",
+          "KUKA"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.seafoodnews.com/Story/1321512/Gortons-Opens-New-Factory-as-Nissui-Expands-North-American-Seafood-Footprint",
+        "publication": "Google News - New US Plants",
+        "fetched_at": "2026-05-20T01:20:17+00:00"
+      }
+    ],
+    "review": {
+      "status": "approved",
+      "reviewed_at": "2026-05-20T01:47:18+00:00"
+    }
+  },
+  {
+    "company": {
+      "name": "Givaudan",
+      "hq_country": "Switzerland"
+    },
+    "industry": "food_beverage_machinery",
+    "investment_type": "new_facility",
+    "amount_usd": 215000000,
+    "amount_disclosed": true,
+    "location": {
+      "city": "Reading",
+      "state": "OH",
+      "precision": "city",
+      "lat": 39.2236694,
+      "lon": -84.4421641
+    },
+    "dates": {
+      "announced": "2025-10-08",
+      "expected_start": "2027",
+      "expected_completion": "2026-Q4 (18 months from groundbreaking)"
+    },
+    "description": "Givaudan is constructing a new state-of-the-art liquids production facility in Reading, Ohio, representing an initial investment of $215 million USD. The 24,000 square metre facility will create over 300 jobs and is expected to begin partial operations in 2027.",
+    "id": "2025-10-givaudan-reading-oh",
+    "suppliers": [
+      {
+        "component_category": "thermal_processing",
+        "candidates": [
+          "GEA",
+          "Alfa Laval",
+          "JBT"
+        ]
+      },
+      {
+        "component_category": "hygienic_pumps_and_valves",
+        "candidates": [
+          "Alfa Laval",
+          "GEA",
+          "SPX Flow"
+        ]
+      },
+      {
+        "component_category": "filling_and_capping",
+        "candidates": [
+          "Krones",
+          "KHS",
+          "Sidel"
+        ]
+      },
+      {
+        "component_category": "conveyors_and_material_handling",
+        "candidates": [
+          "Dematic",
+          "Dorner",
+          "Intralox"
+        ]
+      },
+      {
+        "component_category": "cleanroom_and_HVAC",
+        "candidates": [
+          "Munters",
+          "AAF Flanders",
+          "Daikin Applied"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.foodtechbiz.com/ingredients/givaudan-taste-wellbeing-breaks-ground-on-new-production-facility-near-cincinnati-ohio",
+        "publication": "Google News - New US Plants",
+        "fetched_at": "2026-05-20T01:20:23+00:00"
+      }
+    ],
+    "review": {
+      "status": "approved",
+      "reviewed_at": "2026-05-20T01:47:22+00:00"
+    }
+  },
+  {
+    "company": {
+      "name": "Stow Group",
+      "hq_country": "Belgium"
+    },
+    "industry": "fabricated_metal_products",
+    "investment_type": "new_facility",
+    "amount_usd": 36000000,
+    "amount_disclosed": true,
+    "location": {
+      "city": "Adairsville",
+      "state": "GA",
+      "precision": "city",
+      "lat": 34.3683267,
+      "lon": -84.9349057
+    },
+    "dates": {
+      "announced": "2025-08-21",
+      "expected_start": null,
+      "expected_completion": null
+    },
+    "description": "Belgian industrial storage and automation company Stow Group will build a $36 million manufacturing facility in Adairsville, Georgia to produce industrial racks and warehousing products, creating approximately 200 jobs to serve food and beverage, logistics, and life sciences sectors.",
+    "id": "2025-08-stow-group-adairsville-ga",
+    "suppliers": [
+      {
+        "component_category": "laser_cutting_systems",
+        "candidates": [
+          "Trumpf",
+          "Bystronic",
+          "Amada",
+          "Prima Power"
+        ]
+      },
+      {
+        "component_category": "press_brakes_and_bending",
+        "candidates": [
+          "Trumpf",
+          "Amada",
+          "LVD",
+          "Salvagnini"
+        ]
+      },
+      {
+        "component_category": "robotic_welding",
+        "candidates": [
+          "Lincoln Electric",
+          "FANUC",
+          "ABB",
+          "KUKA"
+        ]
+      },
+      {
+        "component_category": "punching_and_stamping",
+        "candidates": [
+          "Trumpf",
+          "Amada",
+          "Prima Power",
+          "AIDA"
+        ]
+      },
+      {
+        "component_category": "powder_coating_lines",
+        "candidates": [
+          "Nordson",
+          "Wagner",
+          "Gema"
+        ]
+      },
+      {
+        "component_category": "assembly_automation",
+        "candidates": [
+          "ATS Automation",
+          "Comau",
+          "Stäubli"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.ajc.com/business/2025/08/belgian-company-plans-new-factory-in-northwest-georgia-with-about-200-jobs/",
+        "publication": "Google News - New US Plants",
+        "fetched_at": "2026-05-20T01:20:31+00:00"
+      }
+    ],
+    "review": {
+      "status": "approved",
+      "reviewed_at": "2026-05-20T01:47:24+00:00"
+    }
+  },
+  {
+    "company": {
+      "name": "American Packaging Corporation",
+      "hq_country": "United States"
+    },
+    "industry": "fabricated_metal_products",
+    "investment_type": "expansion",
+    "amount_usd": 14700000,
+    "amount_disclosed": true,
+    "location": {
+      "city": "Chili",
+      "state": "NY",
+      "precision": "city",
+      "lat": 43.0845231,
+      "lon": -77.754136
+    },
+    "dates": {
+      "announced": "2018-06-27",
+      "expected_start": "2018-01",
+      "expected_completion": null
+    },
+    "description": "American Packaging Corporation opened a new 215,000 square-foot flexible packaging manufacturing facility in Chili, NY, enabling the company to hire 70 new employees at the site and plan up to 260 new full-time jobs over five years. The State of New York provided $14.7 million in performance-based incentives to secure the expansion.",
+    "id": "2018-06-american-packaging-corporation-chili-ny",
+    "suppliers": [
+      {
+        "component_category": "laser_cutting_systems",
+        "candidates": [
+          "Trumpf",
+          "Bystronic",
+          "Amada",
+          "Prima Power"
+        ]
+      },
+      {
+        "component_category": "punching_and_stamping",
+        "candidates": [
+          "Trumpf",
+          "Amada",
+          "Prima Power",
+          "AIDA"
+        ]
+      },
+      {
+        "component_category": "press_brakes_and_bending",
+        "candidates": [
+          "Trumpf",
+          "Bystronic",
+          "Amada",
+          "LVD"
+        ]
+      },
+      {
+        "component_category": "robotic_welding",
+        "candidates": [
+          "FANUC",
+          "ABB",
+          "KUKA",
+          "Yaskawa Motoman"
+        ]
+      },
+      {
+        "component_category": "powder_coating_lines",
+        "candidates": [
+          "Nordson",
+          "Wagner",
+          "Gema"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://esd.ny.gov/esd-media-center/press-releases/american-packaging-operations-monroe-county",
+        "publication": "Google News - New US Plants",
+        "fetched_at": "2026-05-20T01:20:50+00:00"
+      }
+    ],
+    "review": {
+      "status": "approved",
+      "reviewed_at": "2026-05-20T01:47:27+00:00"
+    }
+  },
+  {
+    "company": {
+      "name": "Apple Inc.",
+      "hq_country": "United States"
+    },
+    "industry": "non_auto_transportation",
+    "investment_type": "new_facility",
+    "amount_usd": 500000000000,
+    "amount_disclosed": true,
+    "location": {
+      "city": "Houston",
+      "state": "TX",
+      "precision": "city",
+      "lat": 29.7589382,
+      "lon": -95.3676974
+    },
+    "dates": {
+      "announced": "2025-02-24",
+      "expected_start": "2025",
+      "expected_completion": "2026"
+    },
+    "description": "Apple will build a new 250,000-square-foot advanced manufacturing facility in Houston to produce servers for Apple Intelligence and Private Cloud Compute. The facility is expected to open in 2026 and create thousands of jobs, with server production beginning later in 2025.",
+    "id": "2025-02-apple-inc-houston-tx",
+    "suppliers": [
+      {
+        "component_category": "large_machining_centers",
+        "candidates": [
+          "Mazak",
+          "DMG Mori",
+          "Makino"
+        ]
+      },
+      {
+        "component_category": "industrial_robots",
+        "candidates": [
+          "FANUC",
+          "ABB",
+          "KUKA",
+          "Yaskawa Motoman"
+        ]
+      },
+      {
+        "component_category": "robotic_drilling_and_fastening",
+        "candidates": [
+          "Electroimpact",
+          "Broetje-Automation",
+          "KUKA"
+        ]
+      },
+      {
+        "component_category": "non_destructive_testing",
+        "candidates": [
+          "Olympus (Evident)",
+          "Zetec",
+          "Waygate Technologies"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.apple.com/newsroom/2025/02/apple-will-spend-more-than-500-billion-usd-in-the-us-over-the-next-four-years/",
+        "publication": "Google News - New US Plants",
+        "fetched_at": "2026-05-20T01:20:59+00:00"
+      }
+    ],
+    "review": {
+      "status": "approved",
+      "reviewed_at": "2026-05-20T01:47:30+00:00"
+    }
+  },
+  {
+    "company": {
+      "name": "Ziehl-Abegg",
+      "hq_country": "Germany"
+    },
+    "industry": "electrical_equipment_and_grid",
+    "investment_type": "new_facility",
+    "amount_usd": 106000000,
+    "amount_disclosed": true,
+    "location": {
+      "city": "Winston-Salem",
+      "state": "NC",
+      "precision": "city",
+      "lat": 36.0998131,
+      "lon": -80.2440518
+    },
+    "dates": {
+      "announced": "2022-11-28",
+      "expected_start": null,
+      "expected_completion": "2024"
+    },
+    "description": "Ziehl-Abegg will construct a new 46,500 square meter manufacturing plant in Winston-Salem, North Carolina, representing the company's largest single investment in its 112-year history. The facility will produce energy-efficient fans and HVAC equipment with high vertical integration including engine manufacturing, welding, and CNC operations, with production transitioning from the existing Greensboro site in 2025.",
+    "id": "2022-11-ziehl-abegg-winston-salem-nc",
+    "suppliers": [
+      {
+        "component_category": "robotic_welding",
+        "candidates": [
+          "FANUC",
+          "ABB",
+          "KUKA",
+          "Lincoln Electric"
+        ]
+      },
+      {
+        "component_category": "industrial_paint_systems",
+        "candidates": [
+          "Durr",
+          "Eisenmann",
+          "Nordson"
+        ]
+      },
+      {
+        "component_category": "structural_steel_fabrication",
+        "candidates": [
+          "Peddinghaus",
+          "Voortman",
+          "FICEP"
+        ]
+      },
+      {
+        "component_category": "cable_and_wire_manufacturing",
+        "candidates": [
+          "Maillefer",
+          "Niehoff",
+          "Rosendahl Nextrom"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.acrlatinoamerica.com/en/news/latest-news/348-enterprises/18719-ziehl-abegg-to-build-new-production-facility-in-the-united-states.html",
+        "publication": "Google News - New US Plants",
+        "fetched_at": "2026-05-20T01:21:34+00:00"
+      }
+    ],
+    "review": {
+      "status": "approved",
+      "reviewed_at": "2026-05-20T01:47:35+00:00"
+    }
+  },
+  {
+    "company": {
+      "name": "American Battery Factory",
+      "hq_country": "US"
+    },
+    "industry": "ev_battery",
+    "investment_type": "new_facility",
+    "amount_usd": 1200000000,
+    "amount_disclosed": true,
+    "location": {
+      "city": "Tucson",
+      "state": "AZ",
+      "precision": "city",
+      "lat": 32.2228765,
+      "lon": -110.974847
+    },
+    "dates": {
+      "announced": "2024-06-29",
+      "expected_start": "2024-Q4",
+      "expected_completion": "2025-01-15"
+    },
+    "description": "American Battery Factory is constructing a $1.2 billion advanced battery gigafactory on Tucson's south side at the Aerospace Research Campus, with plans to produce lithium-iron phosphate battery cells using Honeywell's AI-enabled automated manufacturing equipment. The facility is targeted for completion by January 2025 and is expected to employ approximately 1,000 workers at full buildout.",
+    "id": "2024-06-american-battery-factory-tucson-az",
+    "suppliers": [
+      {
+        "component_category": "electrode_coating",
+        "candidates": [
+          "Hirano Tecseed",
+          "PNT",
+          "Mitsubishi Heavy Industries",
+          "Techland"
+        ]
+      },
+      {
+        "component_category": "calendaring",
+        "candidates": [
+          "Hitachi High-Tech",
+          "PNT",
+          "Saueressig"
+        ]
+      },
+      {
+        "component_category": "cell_winding_or_stacking",
+        "candidates": [
+          "Manz",
+          "CKD",
+          "Koem"
+        ]
+      },
+      {
+        "component_category": "formation_and_aging",
+        "candidates": [
+          "PEC",
+          "Bitrode",
+          "Maccor"
+        ]
+      },
+      {
+        "component_category": "battery_test_equipment",
+        "candidates": [
+          "Arbin",
+          "Maccor",
+          "Bitrode",
+          "Chroma"
+        ]
+      },
+      {
+        "component_category": "dry_rooms_and_cleanrooms",
+        "candidates": [
+          "Munters",
+          "Bry-Air",
+          "AAF Flanders",
+          "Daikin Applied"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://tucson.com/news/local/business/article_272f70b0-331e-11ef-b3f2-37e67f12a1f8.html",
+        "publication": "Google News - New US Plants",
+        "fetched_at": "2026-05-20T01:23:05+00:00"
+      }
+    ],
+    "review": {
+      "status": "approved",
+      "reviewed_at": "2026-05-20T01:48:39+00:00"
+    }
+  },
+  {
+    "company": {
+      "name": "Hitachi Ltd.",
+      "hq_country": "Japan"
+    },
+    "industry": "non_auto_transportation",
+    "investment_type": "new_facility",
+    "amount_usd": 100000000,
+    "amount_disclosed": true,
+    "location": {
+      "city": "Hagerstown",
+      "state": "MD",
+      "precision": "city",
+      "lat": 39.6430455,
+      "lon": -77.7191081
+    },
+    "dates": {
+      "announced": "2025-09-09",
+      "expected_start": "2024",
+      "expected_completion": "2028"
+    },
+    "description": "Hitachi's new railway rolling stock factory in Hagerstown, Maryland has commenced full operations, supplying railcars for North American operators including Washington D.C. Metro. The $100 million facility produces up to 20 cars per month and relocated operations from Florida, creating approximately 1,300 jobs.",
+    "id": "2025-09-hitachi-ltd-hagerstown-md",
+    "suppliers": [
+      {
+        "component_category": "rail_wheel_and_axle_equipment",
+        "candidates": [
+          "Niles-Simmons",
+          "Hegenscheidt-MFD"
+        ]
+      },
+      {
+        "component_category": "large_machining_centers",
+        "candidates": [
+          "Mazak",
+          "DMG Mori",
+          "Makino",
+          "MAG IAS"
+        ]
+      },
+      {
+        "component_category": "industrial_robots",
+        "candidates": [
+          "FANUC",
+          "ABB",
+          "KUKA",
+          "Yaskawa Motoman"
+        ]
+      },
+      {
+        "component_category": "industrial_paint_systems",
+        "candidates": [
+          "Durr",
+          "Eisenmann"
+        ]
+      },
+      {
+        "component_category": "robotic_drilling_and_fastening",
+        "candidates": [
+          "Electroimpact",
+          "Broetje-Automation",
+          "KUKA"
+        ]
+      },
+      {
+        "component_category": "non_destructive_testing",
+        "candidates": [
+          "Olympus (Evident)",
+          "Zetec",
+          "Waygate Technologies"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.asahi.com/ajw/articles/16017343",
+        "publication": "Google News - New US Plants",
+        "fetched_at": "2026-05-20T01:23:13+00:00"
+      }
+    ],
+    "review": {
+      "status": "approved",
+      "reviewed_at": "2026-05-20T01:48:43+00:00"
+    }
+  },
+  {
+    "company": {
+      "name": "Base Power",
+      "hq_country": "United States"
+    },
+    "industry": "ev_battery",
+    "investment_type": "new_facility",
+    "amount_usd": 265000000,
+    "amount_disclosed": true,
+    "location": {
+      "city": "Austin",
+      "state": "TX",
+      "precision": "city",
+      "lat": 30.2711286,
+      "lon": -97.7436995
+    },
+    "dates": {
+      "announced": "2026-02-04",
+      "expected_start": null,
+      "expected_completion": null
+    },
+    "description": "Base Power plans to invest $265 million in a new 486,000-square-foot battery manufacturing facility near Austin-Bergstrom International Airport, creating 500 new full-time jobs. The facility will manufacture residential batteries for the company's growing energy storage business.",
+    "id": "2026-02-base-power-austin-tx",
+    "suppliers": [
+      {
+        "component_category": "electrode_coating",
+        "candidates": [
+          "Hirano Tecseed",
+          "PNT",
+          "Techland",
+          "Mitsubishi Heavy Industries"
+        ]
+      },
+      {
+        "component_category": "calendaring",
+        "candidates": [
+          "Hitachi High-Tech",
+          "PNT",
+          "Saueressig"
+        ]
+      },
+      {
+        "component_category": "cell_winding_or_stacking",
+        "candidates": [
+          "Manz",
+          "CKD",
+          "Koem"
+        ]
+      },
+      {
+        "component_category": "formation_and_aging",
+        "candidates": [
+          "PEC",
+          "Bitrode",
+          "Maccor"
+        ]
+      },
+      {
+        "component_category": "battery_test_equipment",
+        "candidates": [
+          "Arbin",
+          "Maccor",
+          "Bitrode",
+          "Chroma"
+        ]
+      },
+      {
+        "component_category": "dry_rooms_and_cleanrooms",
+        "candidates": [
+          "Munters",
+          "Bry-Air",
+          "AAF Flanders",
+          "Daikin Applied"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.statesman.com/business/technology/article/base-power-zach-dell-new-factory-incentives-21331054.php",
+        "publication": "Google News - New US Plants",
+        "fetched_at": "2026-05-20T01:24:30+00:00"
+      }
+    ],
+    "review": {
+      "status": "approved",
+      "reviewed_at": "2026-05-20T01:48:47+00:00"
+    }
+  },
+  {
+    "company": {
+      "name": "Cambrex",
+      "hq_country": null
+    },
+    "industry": "pharma_biotech",
+    "investment_type": "expansion",
+    "amount_usd": 120000000,
+    "amount_disclosed": true,
+    "location": {
+      "city": "Charles City",
+      "state": "IA",
+      "precision": "city",
+      "lat": 43.0662177,
+      "lon": -92.6794258
+    },
+    "dates": {
+      "announced": "2026-03-25",
+      "expected_start": "late 2026",
+      "expected_completion": null
+    },
+    "description": "Cambrex is expanding its API manufacturing capacity in Charles City, Iowa with a new large-scale facility featuring 140,000 liters of additional capacity for complex chemistries including highly potent active pharmaceutical ingredients and peptide manufacturing. The $120 million US investment includes advanced equipment and reactor systems with groundbreaking expected in late 2026.",
+    "id": "2026-03-cambrex-charles-city-ia",
+    "suppliers": [
+      {
+        "component_category": "bioreactors_and_fermentation",
+        "candidates": [
+          "Sartorius",
+          "Cytiva",
+          "Thermo Fisher",
+          "ABEC"
+        ]
+      },
+      {
+        "component_category": "chromatography_and_filtration",
+        "candidates": [
+          "Cytiva",
+          "Sartorius",
+          "Repligen",
+          "Pall (Cytiva)"
+        ]
+      },
+      {
+        "component_category": "single_use_systems",
+        "candidates": [
+          "Sartorius",
+          "Cytiva",
+          "Thermo Fisher",
+          "Pall (Cytiva)"
+        ]
+      },
+      {
+        "component_category": "isolators_and_cleanrooms",
+        "candidates": [
+          "Getinge",
+          "SKAN",
+          "Comecer"
+        ]
+      },
+      {
+        "component_category": "water_purification",
+        "candidates": [
+          "Veolia Water Technologies",
+          "MECO",
+          "Elga (Veolia)"
+        ]
+      },
+      {
+        "component_category": "HVAC_and_utilities",
+        "candidates": [
+          "Munters",
+          "AAF Flanders",
+          "Daikin Applied",
+          "Trane"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://themachinemaker.com/news/cambrex-advances-manufacturing-expansion-plans-across-the-united-states-and-europe/",
+        "publication": "Google News - US Plant Expansions",
+        "fetched_at": "2026-05-20T01:25:50+00:00"
+      }
+    ],
+    "review": {
+      "status": "approved",
+      "reviewed_at": "2026-05-20T01:49:03+00:00"
+    }
+  },
+  {
+    "company": {
+      "name": "Hankook Tire & Technology Co.",
+      "hq_country": "South Korea"
+    },
+    "industry": "automotive",
+    "investment_type": "expansion",
+    "amount_usd": null,
+    "amount_disclosed": false,
+    "location": {
+      "city": null,
+      "state": "TN",
+      "precision": "state",
+      "lat": null,
+      "lon": null
+    },
+    "dates": {
+      "announced": "2025-12-12",
+      "expected_start": "2025-12",
+      "expected_completion": "2026-end"
+    },
+    "description": "Hankook Tire completed expansion of its Tennessee plant to double passenger car and light truck tire production capacity from 5.5 million to 11 million units annually, and add 1 million truck and bus tire capacity. The company is conducting trial production with plans to reach full operational capacity by end of 2026, aiming to increase local North American production from 25% to approximately 50% of sales to reduce tariffs and logistics costs.",
+    "id": "2025-12-hankook-tire-technology-co-tn",
+    "suppliers": [
+      {
+        "component_category": "conveyors_and_material_handling",
+        "candidates": [
+          "Daifuku",
+          "Dematic",
+          "Honeywell Intelligrated"
+        ]
+      },
+      {
+        "component_category": "industrial_robots",
+        "candidates": [
+          "FANUC",
+          "ABB",
+          "KUKA",
+          "Yaskawa Motoman"
+        ]
+      },
+      {
+        "component_category": "automated_guided_vehicles",
+        "candidates": [
+          "Seegrid",
+          "Oceaneering",
+          "JBT"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.businesskorea.co.kr/news/articleView.html?idxno=258642",
+        "publication": "Google News - US Plant Expansions",
+        "fetched_at": "2026-05-20T01:26:11+00:00"
+      }
+    ],
+    "review": {
+      "status": "approved",
+      "reviewed_at": "2026-05-20T01:49:17+00:00"
+    }
+  },
+  {
+    "company": {
+      "name": "Stellantis",
+      "hq_country": "Netherlands"
+    },
+    "industry": "automotive",
+    "investment_type": "expansion",
+    "amount_usd": 13000000000,
+    "amount_disclosed": true,
+    "location": {
+      "city": null,
+      "state": null,
+      "precision": "state",
+      "lat": null,
+      "lon": null
+    },
+    "dates": {
+      "announced": "2025-10-18",
+      "expected_start": null,
+      "expected_completion": "2029"
+    },
+    "description": "Stellantis announced a $13 billion U.S. manufacturing expansion to reopen key plants, launch five new vehicle models, and create more than 5,000 jobs across multiple states by 2029. The investment reflects the company's strategy to expand North American capacity and address tariff headwinds, with production shifting from Canada to the U.S.",
+    "id": "2025-10-stellantis",
+    "suppliers": [
+      {
+        "component_category": "stamping_presses",
+        "candidates": [
+          "Schuler",
+          "AIDA",
+          "Fagor Arrasate",
+          "Komatsu Industries"
+        ]
+      },
+      {
+        "component_category": "body_in_white_welding",
+        "candidates": [
+          "FANUC",
+          "ABB",
+          "KUKA",
+          "Yaskawa Motoman",
+          "Comau"
+        ]
+      },
+      {
+        "component_category": "paint_systems",
+        "candidates": [
+          "Durr",
+          "Eisenmann",
+          "Geico Taikisha"
+        ]
+      },
+      {
+        "component_category": "conveyors_and_material_handling",
+        "candidates": [
+          "Daifuku",
+          "Dematic",
+          "Honeywell Intelligrated"
+        ]
+      },
+      {
+        "component_category": "general_assembly_tooling",
+        "candidates": [
+          "Atlas Copco",
+          "Stanley Engineered Fastening",
+          "Ingersoll Rand"
+        ]
+      },
+      {
+        "component_category": "engine_and_transmission_machining",
+        "candidates": [
+          "Mazak",
+          "DMG Mori",
+          "Grob",
+          "Makino"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://finance.yahoo.com/news/stellantis-us-13-billion-us-071157295.html",
+        "publication": "Google News - US Plant Expansions",
+        "fetched_at": "2026-05-20T01:26:18+00:00"
+      }
+    ],
+    "review": {
+      "status": "approved",
+      "reviewed_at": "2026-05-20T01:49:23+00:00"
+    }
+  },
+  {
+    "company": {
+      "name": "LG Energy Solution",
+      "hq_country": "South Korea"
+    },
+    "industry": "ev_battery",
+    "investment_type": "expansion",
+    "amount_usd": 1700000000,
+    "amount_disclosed": true,
+    "location": {
+      "city": "Holland",
+      "state": "MI",
+      "precision": "city",
+      "lat": 42.7876022,
+      "lon": -86.1090828
+    },
+    "dates": {
+      "announced": "2023-07-13",
+      "expected_start": "2024",
+      "expected_completion": "2024"
+    },
+    "description": "LG Energy Solution is expanding its existing EV battery manufacturing facility in Holland, Michigan with a $1.7 billion investment that will increase battery production capacity fivefold and create 1,200 jobs. The expansion will manufacture advanced long cell design batteries with improved energy density for electric vehicles.",
+    "id": "2023-07-lg-energy-solution-holland-mi",
+    "suppliers": [
+      {
+        "component_category": "electrode_coating",
+        "candidates": [
+          "Hirano Tecseed",
+          "PNT",
+          "Mitsubishi Heavy Industries"
+        ]
+      },
+      {
+        "component_category": "calendaring",
+        "candidates": [
+          "Hitachi High-Tech",
+          "PNT",
+          "Saueressig"
+        ]
+      },
+      {
+        "component_category": "cell_winding_or_stacking",
+        "candidates": [
+          "Manz",
+          "CKD",
+          "Koem"
+        ]
+      },
+      {
+        "component_category": "formation_and_aging",
+        "candidates": [
+          "PEC",
+          "Bitrode",
+          "Maccor"
+        ]
+      },
+      {
+        "component_category": "battery_test_equipment",
+        "candidates": [
+          "Arbin",
+          "Bitrode",
+          "Chroma"
+        ]
+      },
+      {
+        "component_category": "dry_rooms_and_cleanrooms",
+        "candidates": [
+          "Munters",
+          "Bry-Air",
+          "AAF Flanders"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.americanprogress.org/article/lg-energy-battery-plant-expansion-project/",
+        "publication": "Google News - US Plant Expansions",
+        "fetched_at": "2026-05-20T01:26:30+00:00"
+      }
+    ],
+    "review": {
+      "status": "approved",
+      "reviewed_at": "2026-05-20T01:49:31+00:00"
+    }
+  },
+  {
+    "company": {
+      "name": "Clarios",
+      "hq_country": null
+    },
+    "industry": "ev_battery",
+    "investment_type": "expansion",
+    "amount_usd": 6000000000,
+    "amount_disclosed": true,
+    "location": {
+      "city": null,
+      "state": null,
+      "precision": "state",
+      "lat": null,
+      "lon": null
+    },
+    "dates": {
+      "announced": "2025-03-04",
+      "expected_start": null,
+      "expected_completion": "2035"
+    },
+    "description": "Clarios announced a $6 billion expansion plan for U.S. battery manufacturing through 2035, including $2.5 billion for advanced battery production (AGM and energy storage), $1.9 billion for critical minerals processing and recovery, $1 billion for next-generation technologies (sodium-ion, AI storage), and $600 million for facility modernization.",
+    "id": "2025-03-clarios",
+    "suppliers": [
+      {
+        "component_category": "electrode_coating",
+        "candidates": [
+          "Hirano Tecseed",
+          "PNT",
+          "Mitsubishi Heavy Industries",
+          "Techland"
+        ]
+      },
+      {
+        "component_category": "calendaring",
+        "candidates": [
+          "Hitachi High-Tech",
+          "PNT",
+          "Saueressig"
+        ]
+      },
+      {
+        "component_category": "cell_winding_or_stacking",
+        "candidates": [
+          "Manz",
+          "CKD",
+          "Koem"
+        ]
+      },
+      {
+        "component_category": "formation_and_aging",
+        "candidates": [
+          "PEC",
+          "Bitrode",
+          "Maccor"
+        ]
+      },
+      {
+        "component_category": "battery_test_equipment",
+        "candidates": [
+          "Arbin",
+          "Maccor",
+          "Bitrode",
+          "Chroma"
+        ]
+      },
+      {
+        "component_category": "dry_rooms_and_cleanrooms",
+        "candidates": [
+          "Munters",
+          "Bry-Air",
+          "AAF Flanders",
+          "Daikin Applied"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.thebuzzevnews.com/us-battery-manufacturing-expansion/",
+        "publication": "Google News - US Plant Expansions",
+        "fetched_at": "2026-05-20T01:26:43+00:00"
+      }
+    ],
+    "review": {
+      "status": "approved",
+      "reviewed_at": "2026-05-20T01:49:37+00:00"
+    }
+  },
+  {
+    "company": {
+      "name": "Ferrero North America",
+      "hq_country": "Italy"
+    },
+    "industry": "food_and_beverage",
+    "investment_type": "expansion",
+    "amount_usd": 75000000,
+    "amount_disclosed": true,
+    "location": {
+      "city": "Bloomington",
+      "state": "IL",
+      "precision": "city",
+      "lat": 40.4797828,
+      "lon": -88.9939147
+    },
+    "dates": {
+      "announced": "2024-05-09",
+      "expected_start": null,
+      "expected_completion": null
+    },
+    "description": "Ferrero completed a $75 million expansion of its Bloomington, Illinois chocolate factory, adding 70,000 square feet to produce chocolate for Kinder, Ferrero Rocher, Butterfinger, and CRUNCH products.",
+    "id": "2024-05-ferrero-north-america-bloomington-il",
+    "suppliers": [
+      {
+        "component_category": "processing_equipment",
+        "candidates": [
+          "GEA",
+          "Alfa Laval",
+          "JBT"
+        ]
+      },
+      {
+        "component_category": "ovens_and_thermal",
+        "candidates": [
+          "Buhler",
+          "Wenger",
+          "Reading Bakery Systems"
+        ]
+      },
+      {
+        "component_category": "packaging_machinery",
+        "candidates": [
+          "Bosch Packaging (Syntegon)",
+          "Multivac",
+          "ProMach",
+          "Coesia"
+        ]
+      },
+      {
+        "component_category": "conveyors_and_material_handling",
+        "candidates": [
+          "Dematic",
+          "Dorner",
+          "Intralox"
+        ]
+      },
+      {
+        "component_category": "weighing_and_inspection",
+        "candidates": [
+          "Mettler-Toledo",
+          "Anritsu",
+          "Ishida"
+        ]
+      },
+      {
+        "component_category": "refrigeration_and_HVAC",
+        "candidates": [
+          "GEA",
+          "Munters",
+          "Mayekawa"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.wqad.com/article/news/local/ferrero-chocolate-factory-bloomington/526-64658ec7-6a8e-45be-9faa-dd8a374e9929",
+        "publication": "Google News - US Plant Expansions",
+        "fetched_at": "2026-05-20T01:27:00+00:00"
+      }
+    ],
+    "review": {
+      "status": "approved",
+      "reviewed_at": "2026-05-20T01:50:01+00:00"
+    }
+  },
+  {
+    "company": {
+      "name": "CSL Limited",
+      "hq_country": "Australia"
+    },
+    "industry": "pharma_biotech",
+    "investment_type": "expansion",
+    "amount_usd": 1500000000,
+    "amount_disclosed": true,
+    "location": {
+      "city": null,
+      "state": null,
+      "precision": "state",
+      "lat": null,
+      "lon": null
+    },
+    "dates": {
+      "announced": "2025-11-20",
+      "expected_start": null,
+      "expected_completion": "2030"
+    },
+    "description": "CSL announced a $1.5 billion expansion of US manufacturing operations over five years to increase production capacity for plasma-derived therapies including immunoglobulin treatments. The investment will create hundreds of high-quality jobs across scientific and advanced manufacturing roles while strengthening U.S. therapeutic self-sufficiency.",
+    "id": "2025-11-csl-limited",
+    "suppliers": [
+      {
+        "component_category": "chromatography_and_filtration",
+        "candidates": [
+          "Cytiva",
+          "Sartorius",
+          "Repligen",
+          "Pall (Cytiva)"
+        ]
+      },
+      {
+        "component_category": "single_use_systems",
+        "candidates": [
+          "Sartorius",
+          "Cytiva",
+          "Thermo Fisher",
+          "Pall (Cytiva)"
+        ]
+      },
+      {
+        "component_category": "aseptic_filling_lines",
+        "candidates": [
+          "Bosch Packaging (Syntegon)",
+          "Optima",
+          "IMA",
+          "Marchesini"
+        ]
+      },
+      {
+        "component_category": "isolators_and_cleanrooms",
+        "candidates": [
+          "Getinge",
+          "SKAN",
+          "Comecer",
+          "AAF Flanders"
+        ]
+      },
+      {
+        "component_category": "water_purification",
+        "candidates": [
+          "Veolia Water Technologies",
+          "MECO",
+          "Elga (Veolia)"
+        ]
+      },
+      {
+        "component_category": "HVAC_and_utilities",
+        "candidates": [
+          "Munters",
+          "AAF Flanders",
+          "Daikin Applied",
+          "Trane"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://pulse2.com/csl-1-5-billion-manufacturing-expansion/",
+        "publication": "Google News - US Plant Expansions",
+        "fetched_at": "2026-05-20T01:27:07+00:00"
+      }
+    ],
+    "review": {
+      "status": "approved",
+      "reviewed_at": "2026-05-20T01:50:06+00:00"
+    }
+  },
+  {
+    "company": {
+      "name": "Ferrero North America",
+      "hq_country": "Italy"
+    },
+    "industry": "food_and_beverage",
+    "investment_type": "expansion",
+    "amount_usd": 214400000,
+    "amount_disclosed": true,
+    "location": {
+      "city": "Bloomington",
+      "state": "IL",
+      "precision": "city",
+      "lat": 40.4797828,
+      "lon": -88.9939147
+    },
+    "dates": {
+      "announced": "2022-06-14",
+      "expected_start": "Fall 2022",
+      "expected_completion": "2024"
+    },
+    "description": "Ferrero is investing $214.4 million to expand its Bloomington, Illinois manufacturing facility with a 169,000-square-foot expansion dedicated to producing Kinder Bueno premium chocolate bars, creating up to 200 new jobs over four years. This is Ferrero's first time manufacturing Kinder products in North America.",
+    "id": "2022-06-ferrero-north-america-bloomington-il",
+    "suppliers": [
+      {
+        "component_category": "processing_equipment",
+        "candidates": [
+          "GEA",
+          "Alfa Laval"
+        ]
+      },
+      {
+        "component_category": "ovens_and_thermal",
+        "candidates": [
+          "Buhler",
+          "Wenger",
+          "Reading Bakery Systems"
+        ]
+      },
+      {
+        "component_category": "packaging_machinery",
+        "candidates": [
+          "Bosch Packaging (Syntegon)",
+          "Multivac",
+          "ProMach",
+          "Coesia"
+        ]
+      },
+      {
+        "component_category": "conveyors_and_material_handling",
+        "candidates": [
+          "Dorner",
+          "Dematic",
+          "Intralox"
+        ]
+      },
+      {
+        "component_category": "weighing_and_inspection",
+        "candidates": [
+          "Mettler-Toledo",
+          "Anritsu",
+          "Ishida"
+        ]
+      },
+      {
+        "component_category": "refrigeration_and_HVAC",
+        "candidates": [
+          "Munters",
+          "GEA",
+          "Mayekawa"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.fooddive.com/news/ferrero-214m-illinois-expansion-kinder-bueno/625390/",
+        "publication": "Google News - US Plant Expansions",
+        "fetched_at": "2026-05-20T01:27:13+00:00"
+      }
+    ],
+    "review": {
+      "status": "approved",
+      "reviewed_at": "2026-05-20T01:50:16+00:00"
+    }
+  },
+  {
+    "company": {
+      "name": "Eli Lilly and Company",
+      "hq_country": "United States"
+    },
+    "industry": "pharma_biotech",
+    "investment_type": "new_facility",
+    "amount_usd": 3500000000,
+    "amount_disclosed": true,
+    "location": {
+      "city": "Fogelsville",
+      "state": "PA",
+      "precision": "city",
+      "lat": 40.5831514,
+      "lon": -75.6326882
+    },
+    "dates": {
+      "announced": "2026-01-30",
+      "expected_start": "2026",
+      "expected_completion": "2031"
+    },
+    "description": "Eli Lilly is constructing a new $3.5 billion pharmaceutical manufacturing facility in Fogelsville, Pennsylvania (Lehigh Valley region) focused on injectables and device manufacturing, with emphasis on next-generation weight-loss therapies including retatrutide. The plant is expected to employ 850 people and come online in 2031.",
+    "id": "2026-01-eli-lilly-and-company-fogelsville-pa",
+    "suppliers": [
+      {
+        "component_category": "bioreactors_and_fermentation",
+        "candidates": [
+          "Sartorius",
+          "Cytiva",
+          "Thermo Fisher",
+          "ABEC"
+        ]
+      },
+      {
+        "component_category": "aseptic_filling_lines",
+        "candidates": [
+          "Bosch Packaging (Syntegon)",
+          "Optima",
+          "IMA",
+          "Marchesini"
+        ]
+      },
+      {
+        "component_category": "isolators_and_cleanrooms",
+        "candidates": [
+          "Getinge",
+          "SKAN",
+          "Comecer",
+          "AAF Flanders"
+        ]
+      },
+      {
+        "component_category": "chromatography_and_filtration",
+        "candidates": [
+          "Cytiva",
+          "Sartorius",
+          "Repligen"
+        ]
+      },
+      {
+        "component_category": "packaging_and_serialization",
+        "candidates": [
+          "Marchesini",
+          "IMA",
+          "Bosch Packaging (Syntegon)",
+          "Korber Pharma"
+        ]
+      },
+      {
+        "component_category": "HVAC_and_utilities",
+        "candidates": [
+          "Munters",
+          "AAF Flanders",
+          "Daikin Applied",
+          "Trane"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.fiercepharma.com/pharma/lilly-rounds-out-quartet-new-us-plants-35b-injectables-and-device-facility-pa",
+        "publication": "Google News - US Plant Expansions",
+        "fetched_at": "2026-05-20T01:27:20+00:00"
+      }
+    ],
+    "review": {
+      "status": "approved",
+      "reviewed_at": "2026-05-20T01:50:19+00:00"
+    }
+  },
+  {
+    "company": {
+      "name": "Eli Lilly and Company",
+      "hq_country": "United States"
+    },
+    "industry": "pharma_biotech",
+    "investment_type": "expansion",
+    "amount_usd": 27000000000,
+    "amount_disclosed": true,
+    "location": {
+      "city": null,
+      "state": null,
+      "precision": "state",
+      "lat": null,
+      "lon": null
+    },
+    "dates": {
+      "announced": "2025-02-26",
+      "expected_start": null,
+      "expected_completion": null
+    },
+    "description": "Eli Lilly announced a $27 billion investment in U.S. manufacturing expansion across multiple domestic sites for pharmaceutical manufacturing.",
+    "id": "2025-02-eli-lilly-and-company",
+    "suppliers": [
+      {
+        "component_category": "bioreactors_and_fermentation",
+        "candidates": [
+          "Sartorius",
+          "Cytiva",
+          "Thermo Fisher",
+          "ABEC"
+        ]
+      },
+      {
+        "component_category": "chromatography_and_filtration",
+        "candidates": [
+          "Cytiva",
+          "Sartorius",
+          "Repligen",
+          "Pall (Cytiva)"
+        ]
+      },
+      {
+        "component_category": "aseptic_filling_lines",
+        "candidates": [
+          "Bosch Packaging (Syntegon)",
+          "Optima",
+          "IMA",
+          "Marchesini"
+        ]
+      },
+      {
+        "component_category": "isolators_and_cleanrooms",
+        "candidates": [
+          "Getinge",
+          "SKAN",
+          "Comecer",
+          "AAF Flanders"
+        ]
+      },
+      {
+        "component_category": "HVAC_and_utilities",
+        "candidates": [
+          "Munters",
+          "AAF Flanders",
+          "Daikin Applied",
+          "Trane"
+        ]
+      },
+      {
+        "component_category": "water_purification",
+        "candidates": [
+          "Veolia Water Technologies",
+          "MECO",
+          "Elga (Veolia)"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.cnbc.com/video/2025/02/26/eli-lilly-ceo-on-27-billion-investment-in-u-s-manufacturing-expansion.html",
+        "publication": "Google News - US Plant Expansions",
+        "fetched_at": "2026-05-20T01:27:26+00:00"
+      }
+    ],
+    "review": {
+      "status": "approved",
+      "reviewed_at": "2026-05-20T01:50:24+00:00"
+    }
+  },
+  {
+    "company": {
+      "name": "Siemens Energy",
+      "hq_country": "Germany"
+    },
+    "industry": "electrical_equipment_and_grid",
+    "investment_type": "expansion",
+    "amount_usd": 1000000000,
+    "amount_disclosed": true,
+    "location": {
+      "city": null,
+      "state": "MS",
+      "precision": "state",
+      "lat": null,
+      "lon": null
+    },
+    "dates": {
+      "announced": "2026-02-04",
+      "expected_start": null,
+      "expected_completion": null
+    },
+    "description": "Siemens Energy is investing $1 billion across multiple US manufacturing facilities to expand grid component production. Primary investment includes a new high-voltage switchgear facility in Mississippi with expansions in North Carolina (power transformers, gas turbines), Florida (gas turbine blades), Alabama (electrical components), and other states, creating over 1,500 new jobs.",
+    "id": "2026-02-siemens-energy-ms",
+    "suppliers": [
+      {
+        "component_category": "switchgear_assembly",
+        "candidates": [
+          "ABB",
+          "Schneider Electric",
+          "Eaton",
+          "GE Vernova"
+        ]
+      },
+      {
+        "component_category": "transformer_manufacturing_equipment",
+        "candidates": [
+          "Hitachi Energy",
+          "GE Vernova",
+          "Howard Industries",
+          "Tuboly-Astronic"
+        ]
+      },
+      {
+        "component_category": "coil_winding",
+        "candidates": [
+          "Marsilli",
+          "Schleuniger",
+          "Komax"
+        ]
+      },
+      {
+        "component_category": "vacuum_pressure_impregnation",
+        "candidates": [
+          "Hedrich",
+          "Elantas"
+        ]
+      },
+      {
+        "component_category": "robotic_welding",
+        "candidates": [
+          "FANUC",
+          "ABB",
+          "KUKA",
+          "Lincoln Electric"
+        ]
+      },
+      {
+        "component_category": "structural_steel_fabrication",
+        "candidates": [
+          "Peddinghaus",
+          "Voortman",
+          "FICEP"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.enlit.world/library/siemens-energy-commits-1bn-to-us-manufacturing-expansion",
+        "publication": "Google News - US Plant Expansions",
+        "fetched_at": "2026-05-20T01:27:43+00:00"
+      }
+    ],
+    "review": {
+      "status": "approved",
+      "reviewed_at": "2026-05-20T01:50:28+00:00"
+    }
+  },
+  {
+    "company": {
+      "name": "American Spraytech",
+      "hq_country": "US"
+    },
+    "industry": "consumer_packaged_goods",
+    "investment_type": "expansion",
+    "amount_usd": null,
+    "amount_disclosed": false,
+    "location": {
+      "city": "Branchburg",
+      "state": "NJ",
+      "precision": "city",
+      "lat": 40.5688245,
+      "lon": -74.7002739
+    },
+    "dates": {
+      "announced": "2023-05-03",
+      "expected_start": null,
+      "expected_completion": null
+    },
+    "description": "American Spraytech is expanding its personal care spray manufacturing operations by acquiring the 18,600-square-foot Hahn's Woodworking facility on Meister Avenue in Branchburg, NJ to add a high-speed production line with propellant storage tanks. The expansion is part of the company's growth strategy to increase capacity from 72 million cans produced last year to an expected 100 million cans this year, serving major consumer companies including Unilever, Proctor & Gamble, and L'Oreal.",
+    "id": "2023-05-american-spraytech-branchburg-nj",
+    "suppliers": [
+      {
+        "component_category": "filling_and_capping",
+        "candidates": [
+          "Bosch Packaging (Syntegon)",
+          "IMA",
+          "Marchesini",
+          "Krones"
+        ]
+      },
+      {
+        "component_category": "conveyors_and_material_handling",
+        "candidates": [
+          "Dorner",
+          "Intralox",
+          "Dematic"
+        ]
+      },
+      {
+        "component_category": "cartoners_and_case_packers",
+        "candidates": [
+          "Coesia",
+          "IMA",
+          "ProMach",
+          "Marchesini"
+        ]
+      },
+      {
+        "component_category": "printing_and_labeling",
+        "candidates": [
+          "Markem-Imaje",
+          "Domino Printing",
+          "Videojet"
+        ]
+      },
+      {
+        "component_category": "weighing_and_inspection",
+        "candidates": [
+          "Mettler-Toledo",
+          "Anritsu",
+          "Ishida"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.mycentraljersey.com/story/news/local/somerset-county/2023/05/03/branchburg-nj-development-county-line-road/70169689007/",
+        "publication": "Google News - US Plant Expansions",
+        "fetched_at": "2026-05-20T01:28:06+00:00"
+      }
+    ],
+    "review": {
+      "status": "approved",
+      "reviewed_at": "2026-05-20T01:50:34+00:00"
+    }
+  },
+  {
+    "company": {
+      "name": "Eli Lilly and Company",
+      "hq_country": "United States"
+    },
+    "industry": "pharma_biotech",
+    "investment_type": "new_facility",
+    "amount_usd": null,
+    "amount_disclosed": false,
+    "location": {
+      "city": "Lebanon",
+      "state": "IN",
+      "precision": "city",
+      "lat": 40.0483744,
+      "lon": -86.4691677
+    },
+    "dates": {
+      "announced": "2025-03-03",
+      "expected_start": null,
+      "expected_completion": null
+    },
+    "description": "Eli Lilly is constructing four new pharmaceutical manufacturing sites in the United States, including locations in Research Triangle Park and Concord, North Carolina, Lebanon Indiana (home to the Lilly Medicine Foundry), and expanding existing facilities in Indianapolis and Kenosha County, Wisconsin. The expansion focuses on manufacturing active pharmaceutical ingredients, small molecule chemical synthesis, and parenteral manufacturing, with over $50 billion in total U.S. capital commitments since 2020.",
+    "id": "2025-03-eli-lilly-and-company-lebanon-in",
+    "suppliers": [
+      {
+        "component_category": "chromatography_and_filtration",
+        "candidates": [
+          "Cytiva",
+          "Sartorius",
+          "Pall (Cytiva)",
+          "Repligen"
+        ]
+      },
+      {
+        "component_category": "aseptic_filling_lines",
+        "candidates": [
+          "Bosch Packaging (Syntegon)",
+          "Optima",
+          "IMA",
+          "Marchesini"
+        ]
+      },
+      {
+        "component_category": "isolators_and_cleanrooms",
+        "candidates": [
+          "Getinge",
+          "SKAN",
+          "Comecer",
+          "AAF Flanders"
+        ]
+      },
+      {
+        "component_category": "single_use_systems",
+        "candidates": [
+          "Sartorius",
+          "Cytiva",
+          "Thermo Fisher",
+          "Pall (Cytiva)"
+        ]
+      },
+      {
+        "component_category": "HVAC_and_utilities",
+        "candidates": [
+          "Munters",
+          "AAF Flanders",
+          "Daikin Applied",
+          "Trane"
+        ]
+      },
+      {
+        "component_category": "water_purification",
+        "candidates": [
+          "Veolia Water Technologies",
+          "MECO",
+          "Elga (Veolia)"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://www.bwhealthcareworld.com/article/eli-lilly-to-invest-over-50-billion-in-us-pharmaceutical-manufacturing-expansion-549615",
+        "publication": "Google News - US Plant Expansions",
+        "fetched_at": "2026-05-20T01:28:39+00:00"
+      }
+    ],
+    "review": {
+      "status": "approved",
+      "reviewed_at": "2026-05-20T01:50:59+00:00"
+    }
   }
 ]
