@@ -213,12 +213,10 @@ function renderSidebar(inv) {
     ? formatAmount(inv.amount_usd)
     : "Undisclosed";
 
-  const suppliersHtml = (inv.suppliers || []).map(group => `
-    <div class="sb-supplier-group">
-      <div class="sb-supplier-category">${escapeHtml(humanize(group.component_category))}</div>
-      <div class="sb-supplier-list">${(group.candidates || []).map(escapeHtml).join(", ")}</div>
-    </div>
-  `).join("");
+  // Suppliers section disabled. The data may still exist on records but is no
+  // longer rendered. To re-enable: restore the suppliersHtml block and the
+  // matching <details> block below.
+  const suppliersHtml = "";
 
   const sourcesHtml = (inv.sources || []).map(s => `
     <div><a href="${escapeHtml(s.url)}" target="_blank" rel="noopener">${escapeHtml(s.publication || s.url)}</a></div>

@@ -15,7 +15,7 @@ SCRIPTS = Path(__file__).resolve().parent
 STEPS = [
     ("pipeline.py", "Fetch feed and extract investments"),
     ("geocode.py", "Geocode city locations"),
-    ("match_suppliers.py", "Match likely suppliers"),
+    # ("match_suppliers.py", "Match likely suppliers"),  # disabled to save LLM cost
 ]
 
 def main():
