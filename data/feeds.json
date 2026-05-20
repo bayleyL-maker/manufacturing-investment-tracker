@@ -8,5 +8,21 @@
     "name": "Area Development",
     "url": "https://www.areadevelopment.com/rss/NewsItems.xml?t=2",
     "enabled": true
+  },
+  {
+    "name": "Google News - New US Plants",
+    "url": "https://news.google.com/rss/search?q=%28%22new+manufacturing+plant%22+OR+%22new+factory%22+OR+%22new+production+facility%22%29+%28%22United+States%22+OR+American%29&hl=en-US&gl=US&ceid=US:en",
+    "enabled": true,
+    "us_only_filter": true,
+    "max_age_days": 60,
+    "_query": "(\"new manufacturing plant\" OR \"new factory\" OR \"new production facility\") (\"United States\" OR American)"
+  },
+  {
+    "name": "Google News - US Plant Expansions",
+    "url": "https://news.google.com/rss/search?q=%28%22plant+expansion%22+OR+%22factory+expansion%22+OR+%22manufacturing+expansion%22%29+%28%22United+States%22+OR+American%29&hl=en-US&gl=US&ceid=US:en",
+    "enabled": true,
+    "us_only_filter": true,
+    "max_age_days": 60,
+    "_query": "(\"plant expansion\" OR \"factory expansion\" OR \"manufacturing expansion\") (\"United States\" OR American)"
   }
 ]

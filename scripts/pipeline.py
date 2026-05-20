@@ -20,10 +20,16 @@ import os
 import re
 import sys
 import time
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
 import feedparser
+from urllib.parse import urlparse
+
+try:
+    from googlenewsdecoder import gnewsdecoder
+except ImportError:
+    gnewsdecoder = None  # handled at use site
 
 # Reuse our helpers
 sys.path.insert(0, os.path.dirname(__file__))
@@ -36,6 +42,65 @@ SEEN_PATH = DATA_DIR / "seen_urls.json"
 PENDING_PATH = DATA_DIR / "pending.json"
 APPROVED_PATH = DATA_DIR / "investments.json"
 FEEDS_PATH = DATA_DIR / "feeds.json"
+
+# Lightweight pre-filter for "us_only_filter" feeds. If the article's title +
+# summary contains none of these terms, skip without paying for an LLM call.
+US_HINTS = [
+    "United States", "U.S.", " US ", " USA", "American",
+    "Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado",
+    "Connecticut", "Delaware", "Florida", "Georgia", "Hawaii", "Idaho",
+    "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky", "Louisiana",
+    "Maine", "Maryland", "Massachusetts", "Michigan", "Minnesota",
+    "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada",
+    "New Hampshire", "New Jersey", "New Mexico", "New York", "North Carolina",
+    "North Dakota", "Ohio", "Oklahoma", "Oregon", "Pennsylvania",
+    "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas",
+    "Utah", "Vermont", "Virginia", "Washington", "West Virginia",
+    "Wisconsin", "Wyoming",
+]
+
+
+def is_google_news_url(url: str) -> bool:
+    try:
+        return urlparse(url).netloc.endswith("news.google.com")
+    except Exception:
+        return False
+
+
+def decode_google_news_url(url: str) -> str | None:
+    """Resolve a news.google.com redirect to the real publisher URL.
+    Returns None on failure."""
+    if gnewsdecoder is None:
+        return None
+    try:
+        res = gnewsdecoder(url, interval=1)
+    except Exception as e:
+        print(f"   GN decoder exception: {e}")
+        return None
+    if not res or not res.get("status"):
+        msg = res.get("message", "no message") if res else "no result"
+        print(f"   GN decode failed: {msg}")
+        return None
+    return res.get("decoded_url")
+
+
+def looks_us_based(entry) -> bool:
+    """Cheap keyword check: does title+summary mention any US state or US phrase?"""
+    blob = " ".join([
+        entry.get("title", ""),
+        entry.get("summary", ""),
+        entry.get("description", ""),
+    ])
+    return any(hint in blob for hint in US_HINTS)
+
+
+def entry_age_days(entry) -> float | None:
+    """Returns age in days, or None if no parseable date."""
+    parsed = entry.get("published_parsed") or entry.get("updated_parsed")
+    if not parsed:
+        return None
+    pub = datetime(parsed.tm_year, parsed.tm_mon, parsed.tm_mday, tzinfo=timezone.utc)
+    return (datetime.now(timezone.utc) - pub).total_seconds() / 86400.0
 
 # ---------------------------------------------------------------------------
 # JSON helpers
@@ -90,34 +155,75 @@ def main():
 
     existing_ids = {r["id"] for r in pending} | {r["id"] for r in approved}
 
-    counts = {"new": 0, "skipped_seen": 0, "skipped_not_relevant": 0,
+    counts = {"new": 0, "skipped_seen": 0, "skipped_too_old": 0,
+              "skipped_not_us": 0, "skipped_not_relevant": 0,
               "skipped_dup": 0, "errors": 0, "added": 0}
 
-    # Build the list of (entry, publication) tuples across all enabled feeds
+    # Build the list of (entry, publication) tuples across all enabled feeds,
+    # applying us_only_filter and max_age_days where configured.
     all_entries = []
     for feed_cfg in enabled_feeds:
         name = feed_cfg["name"]
         url = feed_cfg["url"]
+        us_only = feed_cfg.get("us_only_filter", False)
+        max_age = feed_cfg.get("max_age_days")  # None = no limit
         print(f"\nFetching feed: {name}  ({url})")
         feed = feedparser.parse(url)
         if feed.bozo:
             print(f"  warning: parser reported issue: {feed.bozo_exception}")
-        print(f"  -> {len(feed.entries)} entries")
-        for entry in feed.entries:
+        entries = feed.entries
+        raw = len(entries)
+
+        # Age filter
+        if max_age is not None:
+            kept = []
+            for e in entries:
+                age = entry_age_days(e)
+                if age is None or age <= max_age:
+                    kept.append(e)
+            dropped = len(entries) - len(kept)
+            counts["skipped_too_old"] += dropped
+            entries = kept
+
+        # US filter
+        if us_only:
+            kept = [e for e in entries if looks_us_based(e)]
+            counts["skipped_not_us"] += len(entries) - len(kept)
+            entries = kept
+
+        print(f"  -> {raw} raw, {len(entries)} after filters")
+        for entry in entries:
             all_entries.append((entry, name))
 
-    print(f"\nTotal entries across all feeds: {len(all_entries)}\n")
+    print(f"\nTotal entries across all feeds (after filters): {len(all_entries)}\n")
 
     for entry, publication in all_entries:
-        url = entry.link
-        if url in seen:
+        original_url = entry.link
+        if original_url in seen:
             counts["skipped_seen"] += 1
             continue
         counts["new"] += 1
 
         title = entry.get("title", "(no title)")
         print(f"-> {title}")
-        print(f"   {url}")
+        print(f"   {original_url}")
+
+        # If this is a Google News redirect URL, decode to the real article URL
+        if is_google_news_url(original_url):
+            decoded = decode_google_news_url(original_url)
+            if not decoded:
+                counts["errors"] += 1
+                seen.add(original_url)
+                continue
+            print(f"   -> decoded: {decoded}")
+            if decoded in seen:
+                print(f"   already seen (decoded URL)")
+                counts["skipped_seen"] += 1
+                seen.add(original_url)
+                continue
+            url = decoded
+        else:
+            url = original_url
 
         # date hint
         date_hint = None
@@ -131,13 +237,13 @@ def main():
         except Exception as e:
             print(f"   ERROR fetching: {e}")
             counts["errors"] += 1
-            seen.add(url)
+            seen.update({url, original_url})
             continue
 
         if not text:
             print(f"   ERROR: no text extracted")
             counts["errors"] += 1
-            seen.add(url)
+            seen.update({url, original_url})
             continue
 
         # extract
@@ -153,7 +259,7 @@ def main():
             reason = result.get("reason", "(no reason)")
             print(f"   SKIP: {reason}")
             counts["skipped_not_relevant"] += 1
-            seen.add(url)
+            seen.update({url, original_url})
             continue
 
         record = result["record"]
@@ -181,7 +287,7 @@ def main():
                     break
             print(f"   DUP of existing id: {record['id']} (source appended)")
             counts["skipped_dup"] += 1
-            seen.add(url)
+            seen.update({url, original_url})
             continue
 
         pending.append(record)
