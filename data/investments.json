@@ -3593,5 +3593,725 @@
       "status": "approved",
       "reviewed_at": "2026-05-20T01:50:59+00:00"
     }
+  },
+  {
+    "company": {
+      "name": "Harley-Davidson, Inc.",
+      "hq_country": "United States"
+    },
+    "industry": "automotive",
+    "investment_type": "onshoring",
+    "amount_usd": null,
+    "amount_disclosed": false,
+    "location": {
+      "city": "York",
+      "state": "PA",
+      "precision": "city",
+      "lat": 39.962493,
+      "lon": -76.7276989
+    },
+    "dates": {
+      "announced": "2026-06-10",
+      "expected_start": "2027",
+      "expected_completion": "2027"
+    },
+    "description": "Harley-Davidson is onshoring Revolution Max engine production and manufacturing of Pan America, Sportster S, and Nightster motorcycle models back to U.S. facilities in Pennsylvania and Wisconsin. The transition includes machining, powertrain assembly, painting, and final vehicle assembly, with the company targeting over 100,000 motorcycles at its York, Pennsylvania facility in 2027.",
+    "id": "2026-06-harley-davidson-inc-york-pa",
+    "suppliers": [],
+    "sources": [
+      {
+        "url": "https://www.manufacturingdive.com/news/harley-davidson-revolution-max-pan-america-sporster-nightster-production-us/822487/",
+        "publication": "Manufacturing Dive",
+        "fetched_at": "2026-06-12T01:17:18+00:00"
+      }
+    ],
+    "review": {
+      "status": "approved",
+      "reviewed_at": "2026-06-12T01:22:00+00:00"
+    }
+  },
+  {
+    "company": {
+      "name": "Corning Incorporated",
+      "hq_country": "United States"
+    },
+    "industry": "electrical_equipment_and_grid",
+    "investment_type": "expansion",
+    "amount_usd": null,
+    "amount_disclosed": false,
+    "location": {
+      "city": "Hickory",
+      "state": "NC",
+      "precision": "city",
+      "lat": 35.7333312,
+      "lon": -81.3442915
+    },
+    "dates": {
+      "announced": "2026-06-09",
+      "expected_start": null,
+      "expected_completion": null
+    },
+    "description": "Corning and Amazon signed a multibillion-dollar agreement to expand optical fiber, cable and connectivity manufacturing at Corning's four North Carolina sites (Hickory, Wilmington, Concord, Newton, and Winston-Salem), creating 1,000 jobs. The expansion will support Amazon's data center infrastructure buildout across the United States.",
+    "id": "2026-06-corning-incorporated-hickory-nc",
+    "suppliers": [],
+    "sources": [
+      {
+        "url": "https://www.manufacturingdive.com/news/amazon-corning-fiber-optic-cable-training-north-carolina-meta-nvidia-texas/822283/",
+        "publication": "Manufacturing Dive",
+        "fetched_at": "2026-06-12T01:17:27+00:00"
+      }
+    ],
+    "review": {
+      "status": "approved",
+      "reviewed_at": "2026-06-12T01:22:10+00:00"
+    }
+  },
+  {
+    "company": {
+      "name": "United States Steel Corporation",
+      "hq_country": "United States"
+    },
+    "industry": "metals_and_primary_materials",
+    "investment_type": "expansion",
+    "amount_usd": 2500000000,
+    "amount_disclosed": true,
+    "location": {
+      "city": "Braddock",
+      "state": "PA",
+      "precision": "city",
+      "lat": 40.4034024,
+      "lon": -79.8683824
+    },
+    "dates": {
+      "announced": "2026-06-09",
+      "expected_start": "2026 (later this year)",
+      "expected_completion": "2029-H2"
+    },
+    "description": "U.S. Steel plans to invest up to $2.5 billion to upgrade Mon Valley Works operations near Pittsburgh, including construction of a state-of-the-art hot strip mill at the Edgar Thomson plant in Braddock, Pennsylvania. The new facility will improve steel yields, product quality, reduce energy consumption, and expand the range of steel products for automotive, appliance and industrial markets, with production expected in the second half of 2029.",
+    "id": "2026-06-united-states-steel-corporatio-braddock-pa",
+    "suppliers": [],
+    "sources": [
+      {
+        "url": "https://www.manufacturingdive.com/news/us-steel-doubles-investment-oldest-plant-edgar-thomson-pennsylvania/822363/",
+        "publication": "Manufacturing Dive",
+        "fetched_at": "2026-06-12T01:17:32+00:00"
+      }
+    ],
+    "review": {
+      "status": "approved",
+      "reviewed_at": "2026-06-12T01:22:18+00:00"
+    }
+  },
+  {
+    "company": {
+      "name": "Mosdorfer Energy Systems",
+      "hq_country": "Austria"
+    },
+    "industry": "electrical_equipment_and_grid",
+    "investment_type": "new_facility",
+    "amount_usd": null,
+    "amount_disclosed": false,
+    "location": {
+      "city": "Oconee",
+      "state": "SC",
+      "precision": "city",
+      "lat": 34.7622221,
+      "lon": -83.1099645
+    },
+    "dates": {
+      "announced": "2026-06-12",
+      "expected_start": "2027-Q3",
+      "expected_completion": null
+    },
+    "description": "Austria-based Mosdorfer Energy Systems will establish a new manufacturing facility in Oconee, South Carolina to serve as its North American production hub for high-voltage transmission line components, including machining, steel fabrication, assembly, and testing operations. Operations are scheduled to begin in Q3 2027.",
+    "id": "2026-06-mosdorfer-energy-systems-oconee-sc",
+    "suppliers": [],
+    "sources": [
+      {
+        "url": "https://www.areadevelopment.com/newsItems/6-11-2026/mosdorfer-westminster-south-carolina.shtml",
+        "publication": "Area Development",
+        "fetched_at": "2026-06-12T01:17:51+00:00"
+      }
+    ],
+    "review": {
+      "status": "approved",
+      "reviewed_at": "2026-06-12T01:22:27+00:00"
+    }
+  },
+  {
+    "company": {
+      "name": "Red Metals",
+      "hq_country": null
+    },
+    "industry": "metals_and_primary_materials",
+    "investment_type": "new_facility",
+    "amount_usd": 70000000,
+    "amount_disclosed": true,
+    "location": {
+      "city": "North Charleston",
+      "state": "SC",
+      "precision": "city",
+      "lat": 32.8546197,
+      "lon": -79.9748103
+    },
+    "dates": {
+      "announced": "2026-06-12",
+      "expected_start": "2026-Q4",
+      "expected_completion": null
+    },
+    "description": "Red Metals is constructing a 42,000-square-foot manufacturing facility in North Charleston, South Carolina to produce high-conductivity copper rod for wire, cable, and electrical applications. The $70 million investment includes copper refining and rod production operations with production scheduled to begin in Q4 2026.",
+    "id": "2026-06-red-metals-north-charleston-sc",
+    "suppliers": [],
+    "sources": [
+      {
+        "url": "https://www.areadevelopment.com/newsItems/6-11-2026/red-metals-charleston-county-south-carolina.shtml",
+        "publication": "Area Development",
+        "fetched_at": "2026-06-12T01:17:55+00:00"
+      }
+    ],
+    "review": {
+      "status": "approved",
+      "reviewed_at": "2026-06-12T01:22:35+00:00"
+    }
+  },
+  {
+    "company": {
+      "name": "LiCAP Technologies",
+      "hq_country": null
+    },
+    "industry": "ev_battery",
+    "investment_type": "expansion",
+    "amount_usd": 11300000,
+    "amount_disclosed": true,
+    "location": {
+      "city": "Sacramento",
+      "state": "CA",
+      "precision": "city",
+      "lat": 38.5810606,
+      "lon": -121.493895
+    },
+    "dates": {
+      "announced": "2026-06-11",
+      "expected_start": null,
+      "expected_completion": null
+    },
+    "description": "LiCAP Technologies expands its existing Sacramento manufacturing facility to increase advanced manufacturing capabilities and accelerate commercialization of dry electrode technology for battery and energy storage applications. The $11.3 million expansion is supported by a California Energy Commission grant through the PowerForward program.",
+    "id": "2026-06-licap-technologies-sacramento-ca",
+    "suppliers": [],
+    "sources": [
+      {
+        "url": "https://www.areadevelopment.com/newsItems/6-11-2026/licap-technologies-sacramento-california.shtml",
+        "publication": "Area Development",
+        "fetched_at": "2026-06-12T01:18:05+00:00"
+      }
+    ],
+    "review": {
+      "status": "approved",
+      "reviewed_at": "2026-06-12T01:22:47+00:00"
+    }
+  },
+  {
+    "company": {
+      "name": "OPmobility",
+      "hq_country": null
+    },
+    "industry": "automotive",
+    "investment_type": "new_facility",
+    "amount_usd": null,
+    "amount_disclosed": false,
+    "location": {
+      "city": "Rossford",
+      "state": "OH",
+      "precision": "city",
+      "lat": 41.6097726,
+      "lon": -83.5643782
+    },
+    "dates": {
+      "announced": "2026-06-05",
+      "expected_start": "2027-Q2",
+      "expected_completion": null
+    },
+    "description": "OPmobility will construct a new manufacturing facility in Rossford, Ohio to produce exterior automotive systems. This is the company's 12th US plant and first Midwest facility for exterior solutions, expected to create over 500 jobs with production beginning in the second half of 2027.",
+    "id": "2026-06-opmobility-rossford-oh",
+    "suppliers": [],
+    "sources": [
+      {
+        "url": "https://www.areadevelopment.com/newsItems/6-5-2026/opmobilit-rossford-ohio.shtml",
+        "publication": "Area Development",
+        "fetched_at": "2026-06-12T01:18:35+00:00"
+      }
+    ],
+    "review": {
+      "status": "approved",
+      "reviewed_at": "2026-06-12T01:22:55+00:00"
+    }
+  },
+  {
+    "company": {
+      "name": "Hyper Solutions",
+      "hq_country": null
+    },
+    "industry": "electrical_equipment_and_grid",
+    "investment_type": "expansion",
+    "amount_usd": null,
+    "amount_disclosed": false,
+    "location": {
+      "city": null,
+      "state": "VA",
+      "precision": "state",
+      "lat": null,
+      "lon": null
+    },
+    "dates": {
+      "announced": "2026-06-04",
+      "expected_start": null,
+      "expected_completion": null
+    },
+    "description": "Hyper Solutions is expanding its operations in Henrico County, Virginia to support growing demand for power distribution and integrated module solutions used in digital infrastructure projects. The expansion will create new jobs and strengthen U.S.-based manufacturing capabilities.",
+    "id": "2026-06-hyper-solutions-va",
+    "suppliers": [],
+    "sources": [
+      {
+        "url": "https://www.areadevelopment.com/newsItems/6-4-2026/hyper-solutions-henrico-county-virginia.shtml",
+        "publication": "Area Development",
+        "fetched_at": "2026-06-12T01:18:43+00:00"
+      }
+    ],
+    "review": {
+      "status": "approved",
+      "reviewed_at": "2026-06-12T01:23:02+00:00"
+    }
+  },
+  {
+    "company": {
+      "name": "Gelatys",
+      "hq_country": "US"
+    },
+    "industry": "food_and_beverage",
+    "investment_type": "new_facility",
+    "amount_usd": null,
+    "amount_disclosed": false,
+    "location": {
+      "city": "Fort Myers",
+      "state": "FL",
+      "precision": "city",
+      "lat": 26.640628,
+      "lon": -81.8723084
+    },
+    "dates": {
+      "announced": "2026-06-04",
+      "expected_start": null,
+      "expected_completion": null
+    },
+    "description": "Gelatys established a new 30,000-square-foot manufacturing facility in Fort Myers, Florida for production of premium frozen gelato novelties and related frozen dessert products, including product development, manufacturing, packaging, and distribution operations.",
+    "id": "2026-06-gelatys-fort-myers-fl",
+    "suppliers": [],
+    "sources": [
+      {
+        "url": "https://www.areadevelopment.com/newsItems/6-4-2026/gelatys-fort-myers-florida.shtml",
+        "publication": "Area Development",
+        "fetched_at": "2026-06-12T01:18:56+00:00"
+      }
+    ],
+    "review": {
+      "status": "approved",
+      "reviewed_at": "2026-06-12T01:23:11+00:00"
+    }
+  },
+  {
+    "company": {
+      "name": "Jabil",
+      "hq_country": "United States"
+    },
+    "industry": "electrical_equipment_and_grid",
+    "investment_type": "new_facility",
+    "amount_usd": null,
+    "amount_disclosed": false,
+    "location": {
+      "city": null,
+      "state": "VA",
+      "precision": "state",
+      "lat": null,
+      "lon": null
+    },
+    "dates": {
+      "announced": "2026-06-04",
+      "expected_start": "Fall 2026",
+      "expected_completion": null
+    },
+    "description": "Jabil is establishing a 300,000-square-foot manufacturing facility in Prince George County, Virginia, to produce advanced systems and solutions for data center, utility, and industrial power generation and distribution applications. The facility is expected to create 352 jobs and begin production in Fall 2026.",
+    "id": "2026-06-jabil-va",
+    "suppliers": [],
+    "sources": [
+      {
+        "url": "https://www.areadevelopment.com/newsItems/6-4-2026/jabil-prince-george-county-virginia.shtml",
+        "publication": "Area Development",
+        "fetched_at": "2026-06-12T01:18:59+00:00"
+      }
+    ],
+    "review": {
+      "status": "approved",
+      "reviewed_at": "2026-06-12T01:23:17+00:00"
+    }
+  },
+  {
+    "company": {
+      "name": "BorgWarner Inc.",
+      "hq_country": "United States"
+    },
+    "industry": "automotive",
+    "investment_type": "expansion",
+    "amount_usd": null,
+    "amount_disclosed": false,
+    "location": {
+      "city": "Henderson",
+      "state": "NC",
+      "precision": "city",
+      "lat": 35.3389062,
+      "lon": -82.4663918
+    },
+    "dates": {
+      "announced": "2026-06-02",
+      "expected_start": null,
+      "expected_completion": null
+    },
+    "description": "BorgWarner is expanding its Henderson, North Carolina facility with an additional 140,000 square feet to support production of critical components for propulsion systems and vehicle components for automotive and commercial vehicle markets, including powertrain, drivetrain, and battery system technologies.",
+    "id": "2026-06-borgwarner-inc-henderson-nc",
+    "suppliers": [],
+    "sources": [
+      {
+        "url": "https://www.areadevelopment.com/newsItems/6-2-2026/borgwarner-henderson-county-north-carolina.shtml",
+        "publication": "Area Development",
+        "fetched_at": "2026-06-12T01:19:06+00:00"
+      }
+    ],
+    "review": {
+      "status": "approved",
+      "reviewed_at": "2026-06-12T01:23:22+00:00"
+    }
+  },
+  {
+    "company": {
+      "name": "DUCK IL USA",
+      "hq_country": "South Korea"
+    },
+    "industry": "fabricated_metal_products",
+    "investment_type": "expansion",
+    "amount_usd": null,
+    "amount_disclosed": false,
+    "location": {
+      "city": "Auburn",
+      "state": "AL",
+      "precision": "city",
+      "lat": 32.6098566,
+      "lon": -85.4807825
+    },
+    "dates": {
+      "announced": "2026-05-30",
+      "expected_start": null,
+      "expected_completion": null
+    },
+    "description": "DUCK IL USA is expanding its existing manufacturing facility at Auburn Technology Park West with an upgrade including a new clean-room manufacturing process for printed circuit boards and electronic system components used in the automotive industry.",
+    "id": "2026-05-duck-il-usa-auburn-al",
+    "suppliers": [],
+    "sources": [
+      {
+        "url": "https://www.areadevelopment.com/newsItems/5-30-2026/duck-il-usa-auburn-alabama.shtml",
+        "publication": "Area Development",
+        "fetched_at": "2026-06-12T01:19:14+00:00"
+      }
+    ],
+    "review": {
+      "status": "approved",
+      "reviewed_at": "2026-06-12T01:23:29+00:00"
+    }
+  },
+  {
+    "company": {
+      "name": "McCarl's LLC",
+      "hq_country": "United States"
+    },
+    "industry": "fabricated_metal_products",
+    "investment_type": "expansion",
+    "amount_usd": 15000000,
+    "amount_disclosed": true,
+    "location": {
+      "city": null,
+      "state": "PA",
+      "precision": "state",
+      "lat": null,
+      "lon": null
+    },
+    "dates": {
+      "announced": "2026-05-25",
+      "expected_start": null,
+      "expected_completion": null
+    },
+    "description": "McCarl's is expanding its manufacturing operations in Beaver County, Pennsylvania by acquiring and redeveloping an 80,000-square-foot facility to serve as its new headquarters and expanded pipe fabrication center. The $15 million investment will create 130 jobs and consolidate the company's pipe fabrication, welding, and mechanical installation operations.",
+    "id": "2026-05-mccarl-s-llc-pa",
+    "suppliers": [],
+    "sources": [
+      {
+        "url": "https://www.areadevelopment.com/newsItems/5-25-2026/mccarls-beaver-county-pennsylvania.shtml",
+        "publication": "Area Development",
+        "fetched_at": "2026-06-12T01:19:32+00:00"
+      }
+    ],
+    "review": {
+      "status": "approved",
+      "reviewed_at": "2026-06-12T01:23:34+00:00"
+    }
+  },
+  {
+    "company": {
+      "name": "Bittermilk Bottling Co.",
+      "hq_country": "United States"
+    },
+    "industry": "food_and_beverage",
+    "investment_type": "expansion",
+    "amount_usd": 8200000,
+    "amount_disclosed": true,
+    "location": {
+      "city": "Charleston",
+      "state": "SC",
+      "precision": "city",
+      "lat": 32.7884363,
+      "lon": -79.9399309
+    },
+    "dates": {
+      "announced": "2026-05-25",
+      "expected_start": "Summer 2026",
+      "expected_completion": null
+    },
+    "description": "Bittermilk Bottling Co. is expanding its production operations in Charleston County with an $8.2 million investment in a 12,000-square-foot facility. The company will relocate to 5340 Savannah Highway and continue manufacturing bottled cocktail mixers and beverage products for retail and hospitality markets.",
+    "id": "2026-05-bittermilk-bottling-co-charleston-sc",
+    "suppliers": [],
+    "sources": [
+      {
+        "url": "https://www.areadevelopment.com/newsItems/5-25-2026/bittermilk-bottling-charleston-county-south-carolina.shtml",
+        "publication": "Area Development",
+        "fetched_at": "2026-06-12T01:19:36+00:00"
+      }
+    ],
+    "review": {
+      "status": "approved",
+      "reviewed_at": "2026-06-12T01:23:41+00:00"
+    }
+  },
+  {
+    "company": {
+      "name": "Barilla",
+      "hq_country": "Italy"
+    },
+    "industry": "food_and_beverage",
+    "investment_type": "expansion",
+    "amount_usd": null,
+    "amount_disclosed": false,
+    "location": {
+      "city": "Avon",
+      "state": "NY",
+      "precision": "city",
+      "lat": 42.9119925,
+      "lon": -77.7454567
+    },
+    "dates": {
+      "announced": "2026-05-22",
+      "expected_start": null,
+      "expected_completion": null
+    },
+    "description": "Barilla is expanding its existing manufacturing site in Avon, New York with a new 52,000-square-foot production facility and additional warehouse facility. The expansion is expected to create nearly 100 jobs and is supported by up to $2.75 million in performance-based tax credits from Empire State Development.",
+    "id": "2026-05-barilla-avon-ny",
+    "suppliers": [],
+    "sources": [
+      {
+        "url": "https://www.areadevelopment.com/newsItems/5-22-2026/barilla-avon-new-york.shtml",
+        "publication": "Area Development",
+        "fetched_at": "2026-06-12T01:19:49+00:00"
+      }
+    ],
+    "review": {
+      "status": "approved",
+      "reviewed_at": "2026-06-12T01:23:47+00:00"
+    }
+  },
+  {
+    "company": {
+      "name": "Intermountain Electronics",
+      "hq_country": null
+    },
+    "industry": "electrical_equipment_and_grid",
+    "investment_type": "expansion",
+    "amount_usd": null,
+    "amount_disclosed": false,
+    "location": {
+      "city": "Centralia",
+      "state": "IL",
+      "precision": "city",
+      "lat": 38.5250491,
+      "lon": -89.1334037
+    },
+    "dates": {
+      "announced": "2026-05-22",
+      "expected_start": null,
+      "expected_completion": null
+    },
+    "description": "Intermountain Electronics is expanding its existing Centralia, Illinois facility with 108,000 square feet of additional manufacturing space to increase production capacity for Power Distribution Units. The expansion is expected to create 60 new full-time jobs and expand the facility workforce to over 200 employees.",
+    "id": "2026-05-intermountain-electronics-centralia-il",
+    "suppliers": [],
+    "sources": [
+      {
+        "url": "https://www.areadevelopment.com/newsitems/5-21-2026/intermountain-electronics-centralia-illinois.shtml",
+        "publication": "Area Development",
+        "fetched_at": "2026-06-12T01:19:53+00:00"
+      }
+    ],
+    "review": {
+      "status": "approved",
+      "reviewed_at": "2026-06-12T01:23:54+00:00"
+    }
+  },
+  {
+    "company": {
+      "name": "CEP USA",
+      "hq_country": "Italy"
+    },
+    "industry": "electrical_equipment_and_grid",
+    "investment_type": "new_facility",
+    "amount_usd": null,
+    "amount_disclosed": false,
+    "location": {
+      "city": "Little Rock",
+      "state": "AR",
+      "precision": "city",
+      "lat": 34.7465071,
+      "lon": -92.2896267
+    },
+    "dates": {
+      "announced": "2026-05-21",
+      "expected_start": null,
+      "expected_completion": null
+    },
+    "description": "CEP USA will establish a new manufacturing facility in Little Rock, Arkansas to manufacture medium-voltage power station platforms and electrical equipment for utility-scale energy projects, including prefabricated electrical substations and power distribution systems.",
+    "id": "2026-05-cep-usa-little-rock-ar",
+    "suppliers": [],
+    "sources": [
+      {
+        "url": "https://www.areadevelopment.com/newsItems/5-21-2026/cep-usa-north-little-rock-arkansas.shtml",
+        "publication": "Area Development",
+        "fetched_at": "2026-06-12T01:20:05+00:00"
+      }
+    ],
+    "review": {
+      "status": "approved",
+      "reviewed_at": "2026-06-12T01:23:59+00:00"
+    }
+  },
+  {
+    "company": {
+      "name": "Virginia Transformer",
+      "hq_country": "United States"
+    },
+    "industry": "electrical_equipment_and_grid",
+    "investment_type": "new_facility",
+    "amount_usd": null,
+    "amount_disclosed": false,
+    "location": {
+      "city": "Muscle Shoals",
+      "state": "AL",
+      "precision": "city",
+      "lat": 34.7436791,
+      "lon": -87.6532615
+    },
+    "dates": {
+      "announced": "2026-05-20",
+      "expected_start": "2028-01",
+      "expected_completion": null
+    },
+    "description": "Virginia Transformer is constructing a 600,000-square-foot manufacturing facility in Colbert County, Alabama to produce power transformers and electrical equipment for utility and infrastructure applications. The facility will feature automated warehousing, digital manufacturing dashboards, and an on-site training center, with initial production scheduled for January 2028.",
+    "id": "2026-05-virginia-transformer-muscle-shoals-al",
+    "suppliers": [],
+    "sources": [
+      {
+        "url": "https://www.areadevelopment.com/newsitems/5-20-2026/virginia-transformer-colbert-county-alabama.shtml",
+        "publication": "Area Development",
+        "fetched_at": "2026-06-12T01:20:09+00:00"
+      }
+    ],
+    "review": {
+      "status": "approved",
+      "reviewed_at": "2026-06-12T01:24:02+00:00"
+    }
+  },
+  {
+    "company": {
+      "name": "Combe Incorporated",
+      "hq_country": "United States"
+    },
+    "industry": "consumer_packaged_goods",
+    "investment_type": "expansion",
+    "amount_usd": null,
+    "amount_disclosed": false,
+    "location": {
+      "city": "Rantoul",
+      "state": "IL",
+      "precision": "city",
+      "lat": 40.3083672,
+      "lon": -88.1558785
+    },
+    "dates": {
+      "announced": "2026-05-20",
+      "expected_start": null,
+      "expected_completion": null
+    },
+    "description": "Combe Incorporated expands its existing Rantoul, Illinois manufacturing facility with relocation of operations from California. The expansion focuses on durability and job retention at the facility that has operated in the community for over half a century.",
+    "id": "2026-05-combe-incorporated-rantoul-il",
+    "suppliers": [],
+    "sources": [
+      {
+        "url": "https://www.areadevelopment.com/newsItems/5-20-2026/combe-incorporated-rantoul-illinois.shtml",
+        "publication": "Area Development",
+        "fetched_at": "2026-06-12T01:20:25+00:00"
+      }
+    ],
+    "review": {
+      "status": "approved",
+      "reviewed_at": "2026-06-12T01:24:42+00:00"
+    }
+  },
+  {
+    "company": {
+      "name": "Nippon Steel",
+      "hq_country": "Japan"
+    },
+    "industry": "metals_and_primary_materials",
+    "investment_type": "equipment_upgrade",
+    "amount_usd": 2500000000,
+    "amount_disclosed": true,
+    "location": {
+      "city": null,
+      "state": "PA",
+      "precision": "state",
+      "lat": null,
+      "lon": null
+    },
+    "dates": {
+      "announced": "2026-06-09",
+      "expected_start": null,
+      "expected_completion": "2029"
+    },
+    "description": "Nippon Steel plans to invest $2.5 billion over three years to modernize equipment and strengthen high-value-added steel production at U.S. Steel's Mon Valley Works complex in Pennsylvania, with focus on automotive-grade steel products.",
+    "id": "2026-06-nippon-steel-pa",
+    "suppliers": [],
+    "sources": [
+      {
+        "url": "https://newsonjapan.com/article/149581.php",
+        "publication": "Google News - US Plant Expansions",
+        "fetched_at": "2026-06-12T01:21:02+00:00"
+      }
+    ],
+    "review": {
+      "status": "approved",
+      "reviewed_at": "2026-06-12T01:24:46+00:00"
+    }
   }
 ]

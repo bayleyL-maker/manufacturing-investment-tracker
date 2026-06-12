@@ -815,5 +815,41 @@
       "status": "rejected",
       "reviewed_at": "2026-05-20T01:51:28+00:00"
     }
+  },
+  {
+    "company": {
+      "name": "Pratt Miller Engineering & Fabrication",
+      "hq_country": "United States"
+    },
+    "industry": "fabricated_metal_products",
+    "investment_type": "expansion",
+    "amount_usd": null,
+    "amount_disclosed": false,
+    "location": {
+      "city": "New Hudson",
+      "state": "MI",
+      "precision": "city",
+      "lat": 42.511726,
+      "lon": -83.6156648
+    },
+    "dates": {
+      "announced": "2026-05-20",
+      "expected_start": null,
+      "expected_completion": "2028"
+    },
+    "description": "Pratt Miller Engineering & Fabrication is expanding its New Hudson, Michigan operations by approximately 24,000 square feet across two existing facilities to support growth in motorsports engineering, advanced manufacturing, and defense technologies. The expansion is expected to create more than 50 new high-paying jobs over the next two years.",
+    "id": "2026-05-pratt-miller-engineering-fabri-new-hudson-mi",
+    "suppliers": [],
+    "sources": [
+      {
+        "url": "https://www.areadevelopment.com/newsItems/5-20-2026/pratt-miller-engineering-fabrication-new-hudson-michigan.shtml",
+        "publication": "Area Development",
+        "fetched_at": "2026-06-12T01:20:21+00:00"
+      }
+    ],
+    "review": {
+      "status": "rejected",
+      "reviewed_at": "2026-06-12T01:24:36+00:00"
+    }
   }
 ]
