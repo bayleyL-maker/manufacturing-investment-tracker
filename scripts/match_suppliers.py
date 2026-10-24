@@ -27,7 +27,7 @@ APPROVED_PATH = DATA_DIR / "investments.json"
 CATEGORIES_PATH = DATA_DIR / "supplier_categories.json"
 
 load_dotenv()
-MODEL = "claude-haiku-4-5"
+MODEL = "claude-haiku-5-5"
 
 
 def load_json(path, default):
@@ -101,11 +101,15 @@ def match_suppliers(record: dict, catalog: dict, client) -> list:
 
     resp = client.messages.create(
         model=MODEL,
-        max_tokens=800,
+        max_tokens=16000,  # thinking counts toward this
         system=SYSTEM_PROMPT,
+        output_config={"effort": "medium"},
         messages=[{"role": "user", "content": user_msg}],
     )
-    result = extract_json(resp.content[0].text)
+    if resp.stop_reason in ("refusal", "max_tokens"):
+        raise ValueError(f"no usable answer (stop_reason={resp.stop_reason})")
+    # The reply can start with thinking blocks; the answer is in the text blocks.
+    result = extract_json("".join(b.text for b in resp.content if b.type == "text"))
 
     # Defensive filtering: drop any category/mfr not actually in the catalog
     cleaned = []

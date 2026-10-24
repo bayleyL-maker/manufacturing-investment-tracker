@@ -14,11 +14,14 @@ Live site: GitHub Pages at the repo's Pages URL.
 - Pin clustering, hover tooltips, click-to-open sidebar
 - Four filters: industry, investment type, dollar bucket, announced date
 - Pins styled by location precision (solid = city, hollow = state-level)
+- Multi-state investments (no single site) listed in a panel over the map
 - Automated daily ingestion from multiple RSS feeds via Google News, Manufacturing Dive, and Area Development
 - Google News URL decoder (resolves redirects to real publisher URLs)
 - LLM-based article triage and structured extraction (Claude Haiku)
 - Geocoding via Nominatim (OpenStreetMap) with caching
-- Age filter (drops articles older than 60 days from Google News feeds)
+- Age filters (drops Google News articles older than 60 days, and any record announced more than 180 days ago)
+- Record validation (malformed LLM output is retried up to 3 times, then skipped)
+- Previously rejected investments are not re-queued
 - US-only pre-filter (drops obviously non-US articles before any LLM call)
 - Human-in-the-loop review workflow (CLI script or desktop GUI)
 - GitHub Pages hosting + GitHub Actions pipeline runner (currently manual-trigger only)
@@ -76,6 +79,7 @@ Sales Webpage/
 │   ├── pending.json           Awaiting human review
 │   ├── rejected.json          Audit trail
 │   ├── seen_urls.json         URL cache (prevents re-processing)
+│   ├── failed_urls.json       Retry counts for articles the LLM couldn't parse
 │   ├── geocode_cache.json     City -> lat/lon cache
 │   ├── feeds.json             RSS feed configuration
 │   ├── supplier_categories.json  Curated supplier reference (currently unused)
@@ -89,6 +93,7 @@ Sales Webpage/
     ├── fetch_article.py       Article HTML -> clean text (trafilatura)
     ├── extract.py             LLM extraction (single article)
     ├── geocode.py             City/state -> lat/lon via Nominatim
+    ├── records.py             Shared record validation + ID generation
     ├── match_suppliers.py     (disabled) LLM supplier matching
     ├── review.py              CLI review workflow (alternative to GUI)
     ├── unsee.py               Clear URLs from seen cache
@@ -100,13 +105,13 @@ Sales Webpage/
 ## Tech stack
 
 - **Frontend:** Plain HTML/CSS/JS + Leaflet (map) + Leaflet MarkerCluster. No frameworks or build step.
-- **Map tiles:** CartoDB Dark Matter (free, no API key)
+- **Map tiles:** Esri World Dark Gray Base (free, no API key)
 - **Backend (ingestion):** Python 3.11
   - `feedparser` — RSS parsing
   - `requests` + `trafilatura` — article fetch + clean text extraction
   - `googlenewsdecoder` — resolves Google News redirect URLs
   - `anthropic` — Claude API client
-- **LLM:** `claude-haiku-4-5` for article triage, extraction, and (previously) supplier matching
+- **LLM:** `claude-haiku-5-5` (effort `medium`) for article triage, extraction, and (previously) supplier matching
 - **Geocoding:** Nominatim (OpenStreetMap, free, polite usage)
 - **Hosting:** GitHub Pages (free, static)
 - **Automation:** GitHub Actions (currently manual-trigger only)

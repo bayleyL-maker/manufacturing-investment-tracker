@@ -87,6 +87,12 @@
   <main>
     <div id="map"></div>
 
+    <!-- Investments spread across several states have no single pin -->
+    <div id="multistate-panel" class="multistate-panel" hidden>
+      <div class="ms-title">Multi-state investments <span class="ms-note">(not pinned)</span></div>
+      <ul id="multistate-list" class="ms-list"></ul>
+    </div>
+
     <aside id="sidebar" class="sidebar sidebar-hidden" aria-hidden="true">
       <button id="sidebar-close" class="sidebar-close" aria-label="Close">&times;</button>
       <div id="sidebar-content"></div>
@@ -94,8 +100,8 @@
   </main>
 
   <div id="empty-state" class="empty-state" hidden>
-    <p>No investments to show yet.</p>
-    <p class="muted">New announcements will appear here as the ingestion pipeline runs.</p>
+    <p id="empty-title">No investments to show yet.</p>
+    <p id="empty-sub" class="muted">New announcements will appear here as the ingestion pipeline runs.</p>
   </div>
 
   <!-- Leaflet JS -->

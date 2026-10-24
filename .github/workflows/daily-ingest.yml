@@ -39,7 +39,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/pending.json data/investments.json data/seen_urls.json data/geocode_cache.json || true
+          git add data/pending.json data/investments.json data/seen_urls.json data/failed_urls.json data/geocode_cache.json || true
           if git diff --staged --quiet; then
             echo "No changes to commit."
           else

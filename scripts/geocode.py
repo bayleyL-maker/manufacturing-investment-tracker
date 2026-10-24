@@ -82,6 +82,31 @@ def geocode(city: str, state: str, cache: dict) -> tuple | None:
     return (lat, lon)
 
 
+def regeocode_if_moved(old: dict, new: dict) -> None:
+    """After a hand edit: if city/state/precision changed, drop the stale
+    lat/lon and look the new place up. Leaves coordinates alone if the editor
+    changed them by hand. Failures just leave lat/lon empty; the next
+    geocode.py run fills them."""
+    old_loc = old.get("location") or {}
+    new_loc = new.get("location")
+    if not isinstance(new_loc, dict):
+        return
+    keys = ("city", "state", "precision")
+    if all(old_loc.get(k) == new_loc.get(k) for k in keys):
+        return
+    if (old_loc.get("lat"), old_loc.get("lon")) != (new_loc.get("lat"), new_loc.get("lon")):
+        return
+    new_loc["lat"] = new_loc["lon"] = None
+    city, state = new_loc.get("city"), new_loc.get("state")
+    if new_loc.get("precision") != "city" or not city or not state:
+        return
+    cache = load_json(CACHE_PATH, {})
+    coords = geocode(city, state, cache)
+    save_json(CACHE_PATH, cache)
+    if coords:
+        new_loc["lat"], new_loc["lon"] = coords
+
+
 def fill_coords(records: list, cache: dict) -> int:
     """Fill lat/lon in records that need it. Returns count of newly geocoded."""
     new_count = 0

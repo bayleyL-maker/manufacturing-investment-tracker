@@ -23,6 +23,10 @@ from pathlib import Path
 import tkinter as tk
 from tkinter import ttk, messagebox
 
+sys.path.insert(0, os.path.dirname(__file__))
+from records import validate_record, announced_age_days  # noqa: E402
+from geocode import regeocode_if_moved  # noqa: E402
+
 ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT / "data"
 PENDING_PATH = DATA_DIR / "pending.json"
@@ -30,8 +34,11 @@ APPROVED_PATH = DATA_DIR / "investments.json"
 REJECTED_PATH = DATA_DIR / "rejected.json"
 RUN_DAILY = ROOT / "scripts" / "run_daily.py"
 
-# Three separate commands (Windows cmd doesn't support &&). Joined with newlines
-# so pasting into a terminal runs them in sequence.
+# Warn in the review pane when a record's announcement is older than this.
+STALE_ANNOUNCED_DAYS = 180
+
+# Three separate commands joined with newlines, so pasting into any terminal
+# runs them in sequence (Windows PowerShell 5.1 has no &&).
 GIT_PUSH_CMD = 'git add data/\ngit commit -m "Daily review"\ngit push'
 
 
@@ -239,11 +246,17 @@ class AdminApp(tk.Tk):
         lines.append(f"Type:       {r.get('investment_type', '?')}")
         lines.append(f"Amount:     {format_amount(r)}")
         loc = r["location"]
-        lines.append(f"Location:   {loc.get('city') or '(no city)'}, {loc.get('state')}  ({loc.get('precision')})")
+        if loc.get("precision") == "multi_state":
+            lines.append("Location:   multiple states (listed beside the map, not pinned)")
+        else:
+            lines.append(f"Location:   {loc.get('city') or '(no city)'}, {loc.get('state')}  ({loc.get('precision')})")
         lat, lon = loc.get('lat'), loc.get('lon')
         if lat is not None and lon is not None:
             lines.append(f"            lat/lon: {lat:.4f}, {lon:.4f}")
         lines.append(f"Announced:  {r['dates']['announced']}")
+        age = announced_age_days(r)
+        if age is not None and age > STALE_ANNOUNCED_DAYS:
+            lines.append(f"            WARNING: announced {age} days ago - may be old news")
         exp = r["dates"]
         if exp.get("expected_start") or exp.get("expected_completion"):
             lines.append(f"Expected:   start={exp.get('expected_start')}   complete={exp.get('expected_completion')}")
@@ -264,43 +277,70 @@ class AdminApp(tk.Tk):
         self.detail_text.configure(state="disabled")
 
     def _set_action_buttons_state(self, on):
-        s = "normal" if on else "disabled"
-        for b in (self.approve_btn, self.reject_btn, self.edit_btn, self.open_btn):
-            b.configure(state=s)
+        # Approve/reject/edit stay off while the pipeline runs: it rewrites
+        # pending.json and investments.json when it finishes, which would
+        # silently undo any review done in the meantime.
+        review_ok = on and not self.pipeline_running
+        for b in (self.approve_btn, self.reject_btn, self.edit_btn):
+            b.configure(state="normal" if review_ok else "disabled")
+        self.open_btn.configure(state="normal" if on else "disabled")
 
     # ------------------------------------------------------------------
     # Actions: approve / reject / edit / open
     # ------------------------------------------------------------------
     def _approve(self):
-        if self.selected_index is None:
-            return
-        r = self.pending.pop(self.selected_index)
-        r["review"] = {"status": "approved", "reviewed_at": now_iso()}
-        self.approved.append(r)
-        self._persist_all()
-        self._reload_all()
+        self._move_selected("approved")
 
     def _reject(self):
-        if self.selected_index is None:
+        self._move_selected("rejected")
+
+    def _move_selected(self, status):
+        if self.selected_index is None or self.pipeline_running:
             return
-        r = self.pending.pop(self.selected_index)
-        r["review"] = {"status": "rejected", "reviewed_at": now_iso()}
-        self.rejected.append(r)
+        record_id = self.pending[self.selected_index]["id"]
+        # Re-read from disk so we never write back a stale copy (e.g. if the
+        # pipeline was run from a terminal while this window was open).
+        self._reload_all()
+        i = self._pending_index(record_id)
+        if i is None:
+            messagebox.showwarning("Record changed", "That record is no longer pending. The list has been refreshed.")
+            return
+        r = self.pending.pop(i)
+        r["review"] = {"status": status, "reviewed_at": now_iso()}
+        (self.approved if status == "approved" else self.rejected).append(r)
         self._persist_all()
         self._reload_all()
 
+    def _pending_index(self, record_id):
+        for i, r in enumerate(self.pending):
+            if r["id"] == record_id:
+                return i
+        return None
+
     def _edit(self):
-        if self.selected_index is None:
+        if self.selected_index is None or self.pipeline_running:
             return
         r = self.pending[self.selected_index]
-        EditDialog(self, r, on_save=self._on_edit_save)
+        # Bind the record now: the selection may change before Save.
+        EditDialog(self, r, on_save=lambda updated, original=r: self._on_edit_save(original, updated))
 
-    def _on_edit_save(self, updated):
-        if self.selected_index is None:
-            return
-        self.pending[self.selected_index] = updated
+    def _on_edit_save(self, original, updated):
+        """Returns True if the dialog should close."""
+        problem = validate_record(updated)
+        if problem:
+            messagebox.showerror("Invalid record", f"Not saved: {problem}")
+            return False
+        updated["id"] = original["id"]
+        i = self._pending_index(original["id"])
+        if i is None:
+            messagebox.showwarning("Record changed", "That record is no longer pending. Edit not saved.")
+            return True
+        regeocode_if_moved(original, updated)
+        self.pending[i] = updated
         save_json(PENDING_PATH, self.pending)
-        self._render_detail(updated)
+        if self.selected_index == i:
+            self._render_detail(updated)
+        return True
 
     def _open_source(self):
         if self.selected_index is None:
@@ -327,6 +367,7 @@ class AdminApp(tk.Tk):
             return
         self.pipeline_running = True
         self.run_btn.configure(state="disabled", text="Running...")
+        self._set_action_buttons_state(self.selected_index is not None)
         self.notebook.select(1)  # jump to Log tab
 
         self._log_clear()
@@ -336,10 +377,15 @@ class AdminApp(tk.Tk):
         t.start()
 
     def _pipeline_thread(self):
+        # UTF-8 so headlines with any character can be printed into the pipe
+        # (the Windows default, cp1252, crashes on e.g. arrows or CJK text);
+        # unbuffered so the log updates line by line instead of in bursts.
+        env = dict(os.environ, PYTHONIOENCODING="utf-8", PYTHONUNBUFFERED="1")
         try:
             proc = subprocess.Popen(
                 [sys.executable, str(RUN_DAILY)],
                 cwd=str(ROOT),
+                env=env,
                 stdout=subprocess.PIPE,
                 stderr=subprocess.STDOUT,
                 bufsize=1,
@@ -401,6 +447,9 @@ class EditDialog(tk.Toplevel):
         self.title(f"Edit - {record['company']['name']}")
         self.geometry("700x600")
         self.on_save = on_save
+        # Modal: block the main window so the selection can't change under us.
+        self.transient(master)
+        self.grab_set()
 
         ttk.Label(self, text="Edit the JSON below, then click Save. Invalid JSON will be rejected.", padding=8).pack(anchor="w")
 
@@ -419,8 +468,8 @@ class EditDialog(tk.Toplevel):
         except json.JSONDecodeError as e:
             messagebox.showerror("Invalid JSON", f"Could not parse: {e}")
             return
-        self.on_save(data)
-        self.destroy()
+        if self.on_save(data):
+            self.destroy()
 
 
 # ---------------------------------------------------------------------------

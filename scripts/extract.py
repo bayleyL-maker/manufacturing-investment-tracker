@@ -22,7 +22,14 @@ import feedparser  # noqa: E402
 
 load_dotenv()
 
-MODEL = "claude-haiku-4-5"
+MODEL = "claude-haiku-5-5"
+
+# How hard Haiku 5.5 thinks before answering: low | medium (default) | high.
+# Thinking is always on by default on this model; effort is the dial.
+EFFORT = "medium"
+
+# Long pages (live blogs, PDFs-as-HTML) cost tokens without adding signal.
+MAX_ARTICLE_CHARS = 15000
 
 EXTRACTION_PROMPT = """You are extracting structured data about US manufacturing investments from a news article.
 
@@ -56,12 +63,12 @@ If the article IS relevant, respond with EXACTLY this JSON shape and nothing els
     "company": {"name": "<official company name>", "hq_country": "<country or null>"},
     "industry": "<one of the 12 values above>",
     "investment_type": "<one of: new_facility, expansion, equipment_upgrade, onshoring, automation, retooling, reopening>",
-    "amount_usd": <integer dollars, or null if not disclosed>,
+    "amount_usd": <integer dollars for THIS investment, or null if not disclosed>,
     "amount_disclosed": <true or false>,
     "location": {
       "city": "<city name or null>",
-      "state": "<2-letter state code>",
-      "precision": "<'city' if a city is named, otherwise 'state'>"
+      "state": "<2-letter state code, or null for multi_state>",
+      "precision": "<'city' if a city is named, 'state' if only the state is known, 'multi_state' if the investment spans several states with no single primary site>"
     },
     "dates": {
       "announced": "<YYYY-MM-DD of article date>",
@@ -76,8 +83,10 @@ Rules:
 - Return ONLY the JSON object. No markdown fences, no commentary before or after.
 - amount_usd must be raw integer dollars (e.g., 7600000000 for $7.6 billion). Never include commas or currency symbols.
 - If the article hints at a number like "billions" without a specific figure, set amount_usd to null and amount_disclosed to false.
+- amount_usd is the amount for the investment this record describes. If the record is one specific facility but the only figure is a broader company-wide or multi-year national commitment covering many projects (e.g. "$500 billion across the US over four years"), set amount_usd to null and amount_disclosed to false, and mention the broader figure in the description.
 - Use the article's publish date as 'announced'. If unsure, use today's date.
 - If multiple US locations are mentioned, pick the primary one. Note others in the description if important.
+- Only if there is no primary site (e.g. a national program spread across several states) use precision 'multi_state' with state and city set to null. In that case amount_usd is the program total.
 - Do NOT populate suppliers, lat/lon, sources, or id - those are added by later pipeline steps.
 """
 
@@ -96,14 +105,21 @@ def extract_json(text: str) -> dict:
 
 def call_claude(article_text: str, article_date_hint: str | None) -> dict:
     client = Anthropic()
+    article_text = article_text[:MAX_ARTICLE_CHARS]
     user_content = f"Article publish date (use as 'announced' if relevant): {article_date_hint or 'unknown'}\n\nArticle text:\n\n{article_text}"
     resp = client.messages.create(
         model=MODEL,
-        max_tokens=1000,
+        max_tokens=16000,  # thinking counts toward this; the JSON itself is short
         system=EXTRACTION_PROMPT,
+        output_config={"effort": EFFORT},
         messages=[{"role": "user", "content": user_content}],
     )
-    raw = resp.content[0].text
+    # Raised as ValueError so the pipeline counts it as an unusable reply
+    # (retried a few times, then skipped) rather than an API outage.
+    if resp.stop_reason in ("refusal", "max_tokens"):
+        raise ValueError(f"no usable answer (stop_reason={resp.stop_reason})")
+    # The reply can start with thinking blocks; the answer is in the text blocks.
+    raw = "".join(b.text for b in resp.content if b.type == "text")
     return extract_json(raw)
 
 

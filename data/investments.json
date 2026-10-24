@@ -2090,8 +2090,8 @@
     },
     "industry": "non_auto_transportation",
     "investment_type": "new_facility",
-    "amount_usd": 500000000000,
-    "amount_disclosed": true,
+    "amount_usd": null,
+    "amount_disclosed": false,
     "location": {
       "city": "Houston",
       "state": "TX",
@@ -2104,7 +2104,7 @@
       "expected_start": "2025",
       "expected_completion": "2026"
     },
-    "description": "Apple will build a new 250,000-square-foot advanced manufacturing facility in Houston to produce servers for Apple Intelligence and Private Cloud Compute. The facility is expected to open in 2026 and create thousands of jobs, with server production beginning later in 2025.",
+    "description": "Apple will build a new 250,000-square-foot advanced manufacturing facility in Houston to produce servers for Apple Intelligence and Private Cloud Compute. The facility is expected to open in 2026 and create thousands of jobs, with server production beginning later in 2025. The facility is part of Apple's broader commitment to spend more than $500 billion in the US over four years; no figure was given for the Houston plant itself.",
     "id": "2025-02-apple-inc-houston-tx",
     "suppliers": [
       {
@@ -2647,7 +2647,7 @@
     "location": {
       "city": null,
       "state": null,
-      "precision": "state",
+      "precision": "multi_state",
       "lat": null,
       "lon": null
     },
@@ -2821,7 +2821,7 @@
     "location": {
       "city": null,
       "state": null,
-      "precision": "state",
+      "precision": "multi_state",
       "lat": null,
       "lon": null
     },
@@ -2995,7 +2995,7 @@
     "location": {
       "city": null,
       "state": null,
-      "precision": "state",
+      "precision": "multi_state",
       "lat": null,
       "lon": null
     },
@@ -3260,7 +3260,7 @@
     "location": {
       "city": null,
       "state": null,
-      "precision": "state",
+      "precision": "multi_state",
       "lat": null,
       "lon": null
     },

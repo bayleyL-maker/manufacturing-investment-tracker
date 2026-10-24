@@ -16,6 +16,10 @@ import tempfile
 from datetime import datetime, timezone
 from pathlib import Path
 
+sys.path.insert(0, os.path.dirname(__file__))
+from records import validate_record  # noqa: E402
+from geocode import regeocode_if_moved  # noqa: E402
+
 ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT / "data"
 PENDING_PATH = DATA_DIR / "pending.json"
@@ -58,7 +62,7 @@ def print_record(r, index, total):
     print("\n" + "=" * 70)
     print(f"  Record {index + 1} of {total}")
     print("=" * 70)
-    print(f"  Company:    {r['company']['name']}  ({r['company'].get('hq_country', '?')})")
+    print(f"  Company:    {r['company']['name']}  ({r['company'].get('hq_country') or '?'})")
     print(f"  Industry:   {r['industry']}")
     print(f"  Type:       {r['investment_type']}")
     print(f"  Amount:     {format_amount(r)}")
@@ -83,7 +87,11 @@ def edit_record(r):
     try:
         subprocess.call([EDITOR, tmp_path])
         with open(tmp_path, "r", encoding="utf-8") as f:
-            return json.load(f)
+            updated = json.load(f)
+    except OSError as e:
+        print(f"  ERROR: could not run editor '{EDITOR}': {e}")
+        print("  Keeping the original record. Set $EDITOR to an installed editor.")
+        return r
     except json.JSONDecodeError as e:
         print(f"  ERROR: edited file is not valid JSON: {e}")
         print("  Keeping the original record.")
@@ -93,6 +101,15 @@ def edit_record(r):
             os.unlink(tmp_path)
         except OSError:
             pass
+
+    problem = validate_record(updated)
+    if problem:
+        print(f"  ERROR: edited record is invalid: {problem}")
+        print("  Keeping the original record.")
+        return r
+    updated["id"] = r["id"]
+    regeocode_if_moved(r, updated)
+    return updated
 
 
 def prompt():
@@ -115,47 +132,50 @@ def main():
     print(f"{len(pending)} record(s) pending review.")
     print(f"Editor: {EDITOR}  (set $EDITOR env var to override)")
 
-    # Iterate over a copy so we can mutate `pending` safely
-    remaining = list(pending)
-    next_remaining = []
+    def persist():
+        # Saved after every decision, so Ctrl+C or a crash loses nothing.
+        save_json(PENDING_PATH, pending)
+        save_json(APPROVED_PATH, approved)
+        save_json(REJECTED_PATH, rejected)
+
+    # Walk a snapshot; `pending` itself shrinks as records are decided.
+    queue = list(pending)
+    total = len(queue)
     i = 0
-    total = len(remaining)
 
-    while i < len(remaining):
-        r = remaining[i]
-        print_record(r, i, total)
-        action = prompt()
+    try:
+        while i < len(queue):
+            r = queue[i]
+            print_record(r, i, total)
+            action = prompt()
 
-        if action == "a":
-            r["review"] = {"status": "approved", "reviewed_at": now_iso()}
-            approved.append(r)
-            print(f"  -> approved.")
-        elif action == "r":
-            r["review"] = {"status": "rejected", "reviewed_at": now_iso()}
-            rejected.append(r)
-            print(f"  -> rejected.")
-        elif action == "e":
-            updated = edit_record(r)
-            remaining[i] = updated
-            # don't advance; re-show the edited record
-            continue
-        elif action == "s":
-            next_remaining.append(r)
-            print(f"  -> skipped (stays pending).")
-        elif action == "q":
-            # everything from i onward stays pending
-            next_remaining.extend(remaining[i:])
-            break
-        i += 1
-
-    save_json(PENDING_PATH, next_remaining)
-    save_json(APPROVED_PATH, approved)
-    save_json(REJECTED_PATH, rejected)
+            if action in ("a", "r"):
+                status = "approved" if action == "a" else "rejected"
+                r["review"] = {"status": status, "reviewed_at": now_iso()}
+                (approved if action == "a" else rejected).append(r)
+                pending[:] = [p for p in pending if p is not r]
+                persist()
+                print(f"  -> {status}.")
+            elif action == "e":
+                updated = edit_record(r)
+                if updated is not r:
+                    queue[i] = updated
+                    pending[:] = [updated if p is r else p for p in pending]
+                    persist()
+                # don't advance; re-show the edited record
+                continue
+            elif action == "s":
+                print(f"  -> skipped (stays pending).")
+            elif action == "q":
+                break
+            i += 1
+    except (KeyboardInterrupt, EOFError):
+        print("\n  Interrupted. Decisions made so far are saved.")
 
     print("\n--- done ---")
     print(f"  Approved: {len(approved)} total")
     print(f"  Rejected: {len(rejected)} total")
-    print(f"  Pending:  {len(next_remaining)} remaining")
+    print(f"  Pending:  {len(pending)} remaining")
 
 
 if __name__ == "__main__":

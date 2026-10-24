@@ -52,14 +52,14 @@ const map = L.map("map", {
   maxZoom: 10
 });
 
-// CartoDB Dark Matter - dark, minimal-label, no-roads aesthetic.
-// Other free options to swap in:
-//   Positron (light minimal): https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png
-//   Voyager (color minimal):  https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png
-L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}{r}.png", {
-  attribution: "&copy; OpenStreetMap contributors &copy; CARTO",
-  subdomains: "abcd",
-  maxZoom: 19
+// Esri World Dark Gray Base - dark, no labels, no API key needed.
+// (CARTO's basemaps, used previously, now require an API key and serve
+// "API KEY REQUIRED" placeholder tiles without one.)
+// Esri's matching label layer, if ever wanted on top:
+//   https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Reference/MapServer/tile/{z}/{y}/{x}
+L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}", {
+  attribution: "Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ",
+  maxZoom: 16
 }).addTo(map);
 
 // Marker cluster group - collapses dense pins when zoomed out
@@ -138,7 +138,10 @@ function render() {
 
   const visible = allInvestments.filter(passesFilters);
 
+  renderMultiStateList(visible.filter(isMultiState));
+
   visible.forEach(inv => {
+    if (isMultiState(inv)) return;
     const { lat, lon } = getCoords(inv);
     if (lat == null || lon == null) return;
 
@@ -174,7 +177,42 @@ function render() {
     countEl.textContent = `${shown} of ${total} shown`;
   }
 
-  document.getElementById("empty-state").hidden = total !== 0;
+  const emptyEl = document.getElementById("empty-state");
+  emptyEl.hidden = shown !== 0;
+  if (total === 0) {
+    document.getElementById("empty-title").textContent = "No investments to show yet.";
+    document.getElementById("empty-sub").textContent = "New announcements will appear here as the ingestion pipeline runs.";
+  } else {
+    document.getElementById("empty-title").textContent = "No investments match these filters.";
+    document.getElementById("empty-sub").textContent = "Try widening a filter, or press Clear.";
+  }
+}
+
+// Investments with no single primary site (state is null). They can't be
+// pinned, so they're listed in a panel over the map instead.
+function isMultiState(inv) {
+  return inv.location.precision === "multi_state" || !inv.location.state;
+}
+
+function renderMultiStateList(items) {
+  const panel = document.getElementById("multistate-panel");
+  const list = document.getElementById("multistate-list");
+  list.innerHTML = "";
+  panel.hidden = items.length === 0;
+  items.forEach(inv => {
+    const amount = inv.amount_disclosed && inv.amount_usd != null
+      ? formatAmount(inv.amount_usd)
+      : "Undisclosed";
+    const li = document.createElement("li");
+    const btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "ms-item";
+    btn.innerHTML = `<span class="ms-company">${escapeHtml(inv.company.name)}</span>
+      <span class="ms-amount">${amount}</span>`;
+    btn.addEventListener("click", () => openSidebar(inv));
+    li.appendChild(btn);
+    list.appendChild(li);
+  });
 }
 
 function getCoords(inv) {
@@ -205,9 +243,11 @@ function closeSidebar() {
 }
 
 function renderSidebar(inv) {
-  const locText = inv.location.precision === "city"
-    ? `${escapeHtml(inv.location.city)}, ${escapeHtml(inv.location.state)}`
-    : `${stateName(inv.location.state)} (state-level)`;
+  const locText = isMultiState(inv)
+    ? "Multiple US states"
+    : inv.location.precision === "city"
+      ? `${escapeHtml(inv.location.city)}, ${escapeHtml(inv.location.state)}`
+      : `${escapeHtml(stateName(inv.location.state))} (state-level)`;
 
   const amountText = inv.amount_disclosed && inv.amount_usd != null
     ? formatAmount(inv.amount_usd)
@@ -218,9 +258,13 @@ function renderSidebar(inv) {
   // matching <details> block below.
   const suppliersHtml = "";
 
-  const sourcesHtml = (inv.sources || []).map(s => `
-    <div><a href="${escapeHtml(s.url)}" target="_blank" rel="noopener">${escapeHtml(s.publication || s.url)}</a></div>
-  `).join("");
+  const sourcesHtml = (inv.sources || []).map(s => {
+    const href = safeHref(s.url);
+    const label = escapeHtml(sourceLabel(s));
+    return href
+      ? `<div><a href="${escapeHtml(href)}" target="_blank" rel="noopener">${label}</a></div>`
+      : `<div>${label}</div>`;
+  }).join("");
 
   return `
     <h2 class="sb-company">${escapeHtml(inv.company.name)}</h2>
@@ -301,8 +345,24 @@ function formatAmount(usd) {
   return `$${usd.toLocaleString()}`;
 }
 
-function humanize(snake) {
-  return snake.replace(/_/g, " ").replace(/\b\w/g, c => c.toUpperCase());
+// Only http(s) links are rendered as links (no javascript: or data: URLs).
+function safeHref(url) {
+  try {
+    const u = new URL(url);
+    return u.protocol === "http:" || u.protocol === "https:" ? u.href : null;
+  } catch {
+    return null;
+  }
+}
+
+// Label a source by the publisher's domain; `publication` is the feed name
+// (e.g. "Google News - New US Plants"), which says little about the source.
+function sourceLabel(s) {
+  try {
+    return new URL(s.url).hostname.replace(/^www\./, "");
+  } catch {
+    return s.publication || s.url || "Source";
+  }
 }
 
 function stateName(code) {
@@ -344,6 +404,9 @@ function bindFilters() {
 }
 
 document.getElementById("sidebar-close").addEventListener("click", closeSidebar);
+document.addEventListener("keydown", e => {
+  if (e.key === "Escape") closeSidebar();
+});
 
 bindFilters();
 loadData();

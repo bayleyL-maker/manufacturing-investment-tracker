@@ -20,13 +20,15 @@ client = Anthropic(api_key=api_key)
 
 print("Sending test message to Claude...")
 resp = client.messages.create(
-    model="claude-haiku-4-5",
-    max_tokens=100,
+    model="claude-haiku-5-5",
+    max_tokens=1024,  # room for thinking plus the short reply
+    output_config={"effort": "low"},
     messages=[
         {"role": "user", "content": "Reply with exactly: 'API connection works.'"}
     ],
 )
 
 print("\nResponse:")
-print(resp.content[0].text)
+# Skip any thinking blocks at the start of the reply.
+print("".join(b.text for b in resp.content if b.type == "text"))
 print("\nIf you see 'API connection works.' above, you're all set.")
